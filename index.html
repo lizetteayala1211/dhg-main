@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is a description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Five Decades of Chicane Muralism </title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script src="./script.js"></script>
+
+  <!-- Background Image Slider -->
+  <div id="main-bg">
+    <img src="./imgs/GAMBOA_Instant_mural@180dpi_A-min.jpg">
+  </div>
+  <!-- Navigation -->
+  <nav class="nav">
+    <!-- Language Toggle -->
+    <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
+      <p class="hidden" id="language-switcher1"> </p>
+      <div class="language__container--left language__container--en">
+        <input class="language__control" type="radio" id="language1-1" name="language-switch1">
+        <label class="language__label__mid" for="language1-1" id="language-toggle-en">
+          EN <span class="hidden"></span>
+        </label>
+      </div>
+      <div class="language__container--right language__container--sp">
+        <input class="language__control" type="radio" id="language1-2" name="language-switch1">
+        <label class="language__label__mid" for="language1-2" id="language-toggle-sp">
+          SP <span class="hidden"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="buffer-space"></div>
+    <!-- Pop-out Sub Navigation -->
+    <button type="button" id="hamburger-menu__mid" class="open-nav-btn__mid" aria-label="open navigation"
+      aria-controls="link-list" aria-expanded="false">&#9776;</button>
+    <div id="slide-nav" class="slide-content">
+      <button type="button" id="close" class="close-btn" aria-label="close navigation">&times;</button>
+      <ul id="link-list">
+        <li class="text-on" id="nav-intro-link en"><a href="#intro-section"> INTRODUCTION </a></li>
+        <li class="text-hidden" id="nav-intro-link sp"><a href=""> INTRODUCCIÓN </a></li>
+        <li class="text-on"><a href="./objects/objects.html"> OBJECTS </a>
+        <li class="text-hidden"><a href="./objects/objects.html"> OBJETOS </a>
+        <li class="text-on"><a href="./archive/archive.html"> ARCHIVE </a></li>
+        <li class="text-hidden"><a href="./archive/archive.html"> ARCHIVO </a></li>
+        <li class="text-on"><a href="./dialogues/dialogues.html"> DIALOGUES </a></li>
+        <li class="text-hidden"><a href="./dialogues/dialogues.html"> DIÁLOGOS </a></li>
+        <li class="text-on"><a href="./guides/teaching-guides.html"> TEACHING GUIDES </a></li>
+        <li class="text-hidden"><a href="/guides/teaching-guides.html"> GUÍAS DOCENTES </a></li>
+        <li class="text-on"><a href="./resources/resources.html"> ADDITIONAL RESOURCES </a></li>
+        <li class="text-hidden"><a href="./resources/resources.html"> RECURSOS ADICIONALES </a></li>
+        <li class="text-on"><a href="./credits.html"> CREDITS </a></li>
+        <li class="text-hidden"><a href="./credits.html"> CRÉDITOS </a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+
+    <!-- Landing Title -->
+    <div class="title-flex-container">
+      <div class="title-top">
+        <h3> ASCO </h3>
+        <h3> BARBARA CARRASCO </h3>
+        <h3> TIMOI </h3>
+      </div>
+      <div class="title-middle">
+        <h1> FIVE DECADES OF CHICANE MURALISM </h1>
+      </div>
+      <div class="title-bottom">
+        <h3> RAFA ESPARZA </h3>
+        <h3> YREINA CERVÁNTEZ </h3>
+        <h3> JUDITHE HERNÁNDEZ </h3>
+      </div>
+      <div class="landing-arrow">
+        <div class="section-one-arrow"> <a class="arrow" href="#intro-section"> &#8595; </a> </div>
+      </div>
+    </div>
+
+    <!-- Introduction Page Section -->
+    <div class="intro" id="intro-section">
+      <div class="top-column">
+        <div class="label-row">
+          <h2 class="page-label"> INTRODUCTION </h2>
+        </div>
+        <div class="row-content introduction">
+          <hr class="label-hr" />
+          <!-- <div class="content-container introduction">
+                    <p class="introduction"> Diam maecenas ultricies mi eget. Fusce ut placerat orci nulla tesque 
+                        dignissim enim sit. Augue interdum velit euismod in pellen tesque massa placerat duis ultricies. 
+                        Neque volutpat ac tincidunt vitae semper quis lectus nulla at. Tincidunt augue interdu velit 
+                        euismod in pellentesque massa place rat duis. Felis bibendum ut tristique et egestas. 
+                        <br><br>
+                        Blandit turpis cursus in hac. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. 
+                        Ut tristique et egestas quis ipsum suspendisse. Quis lectus nulla at volutpat. 
+                        Nunc non blandit massa enim nec dui nunc mattis. Mi sit amet mauris commodo quis. Ut aliquam 
+                        purus sit amet luctus. 
+                        <br><br>
+                        Integer eget aliquet nibh praesent tristique magna. Praesent semper feugiat nibh sed pulvinar.
+                        Amet dictum sit amet justo donec. Neque ornare aenean euismod elementum nisi quis eleifend quam. 
+                        Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Arcu ac tortor dignissim convallis 
+                        aenean et tortor. Sapien nec sagittis aliquam malesuada bibendum.
+                        <br><br>
+                        Aliquet eget sit amet tellus. Risus commodo viverra maecenas accumsan lacus vel facilisis. Habitasse 
+                        platea dictumst quisque sagittis. Facilisis sed odio morbi quis commodo odio aenean sed adipiscing. 
+                        Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Sit amet venenatis urna cursus eget
+                        nunc scelerisque viverra mauris. 
+                        <br><br>
+                        Congue mauris rhoncus aenean vel elit scelerisque. Mauris in aliquam sem fringilla ut morbi. 
+                    </p>
+                </div> -->
+          <div class="content-container introduction">
+            <p class="introduction">
+              Five Decades of Chicane Muralism in Los Angeles gathers six murals made in Los Angeles from 1972 to 2019.
+              By bringing together dispersed works of public art in the digital space, the show traces the evolution of
+              this mode of artistic expression so crucial to the city’s Chicane visual and cultural identity. On freeway
+              underpasses, freestanding buildings, community centers, bars, and commercial venues, visual artists have
+              taken hold of the wall as a platform for political activism, social commentary, and community building for
+              decades. These muralists utilized the large-scale format not only as platforms for celebration but
+              moreover as vehicles of critical socio-political commentary––reflecting on dynamics of citywide violence,
+              economic disenfranchisement, and the exclusion of Central and South migrants and their descendents from
+              formal and informal artistic institutions. Over time, the works in this exhibition have become
+              cornerstones of the neighborhoods in which they exist, cherished memories of those who live among or have
+              witnessed them. All the same, the works evidence a categorical expansion of the mural in this context,
+              encompassing experimental intermedial practices, performances recorded by photographs, censored works that
+              were relegated to storage or permanent destruction, or graffiti tags and imagery.
+              <br><br>
+              This exhibition aims to be a resource for discovering, learning about, and, in turn, preserving these
+              murals, which, in their fundamental logic, resist transport precluding their display in “traditional”
+              exhibitions and expose them to the elements and threats of erasure and destruction. Through this digital
+              dialogue, Five Decades of Chicane Muralism in Los Angeles creates a database for major murals in the city
+              made principally by Chicane artists. In some cases, a guiding objective is to correct the long-standing
+              documentation errors regarding the titles, contributors, even locations of these artworks. Moreover, the
+              show proposes connections and correspondences between works that exist across a geographic and
+              chronological spread, unity fifty years of artmaking in a sprawling city. In their intersectional focus on
+              women, femme subjects, migrants, and other marginalized groups, these artists galvanized the evolution of
+              a visual aesthetic and ideology which challenged social stereotypes within and beyond their communities.
+              These radical gestures overlapped with civil rights reform, feminism, and gay liberation. In this way, the
+              works addressed and redressed sociocultural conditions that hampered artistic freedom and access, like
+              sexism and homophobia within Mexican-American communities and police surveillance and the censorship of
+              protests and activism.
+              <br><br>
+              Contemplating these six murals in tandem, one observes how the large-scale format and positionality
+              allowed artists to visualize complex (oftentimes, corrective) historical narratives, impart messages and
+              communal values, contemplate the relationship between place and identity, and communicate on both public
+              and deeply personal levels. To this end, the exhibition includes new photography to chronicle how murals
+              appear today, explicatory descriptions of the six murals, an archive of objects, ephemera, and photographs
+              related to each artwork, dialogues between artists either in the show or imbricated in these stories and
+              their legacies, teaching guides for broad audiences to engage with the murals, and resources for further
+              learning. We are especially proud to make this exhibition fully bilingual, honoring the choice of many of
+              the artists in this show to incorporate both English and Spanish texts into their own artworks.
+              <br><br>
+              Public art by Mexican and Central American immigrants and their descendants in Southern California has led
+              to a vital reconfiguration of muralism, and public art more generally: using shared spaces to both
+              contemplate and create local culture and identity. Developing alongside the Chicano Movement (El
+              Movimiento), from the beginning of the Los Angeles mural movement, the mass format provided public space
+              for artists to complete sanctioned commissions that both asserted the presence of Chicane communities and
+              galvanized the period’s revolutionary ideology––attesting to the nascent intersectionality between racial
+              identity, labor reform, protest, and liberatory politics. Over time, community leaders established groups
+              aimed at the preservation and perpetuation of the mural as a vehicle for underrepresented communities. In
+              1976, the Social and Public Art Resource Center (SPARC) was founded by a team of artists to support public
+              art throughout the city––“taking its name from the notion that it takes only a spark to start a prairie
+              fire.”
+              <br><br>
+              Murals and other public works, like banners, were often commissioned to accompany protests and other
+              activist missions. The painter Barbara Carrasco, for instance, worked closely with the United Farmer
+              Workers (UFW) led by César Chavez and Dolores Huerta, most typically producing banners for conventions. As
+              Carrasco recounted in an oral history interview, she approached Chavez when a student about opportunities
+              to contribute to the cause through art: “And I immediately volunteered my services to him. I said, "I
+              would like to do anything for you. I draw really well. If you want me to go on a picket line, I'll do
+              that." And I had no idea that I would work with him for fifteen years.” Labor activists became potent
+              symbols of public murals, including Yreina Cervantéz’s La Ofrenda (1989-1990), which honors Huerta. While
+              Huerta is the centerpiece of the composition, the mural capaciously honors the resilience of farmworkers,
+              Chicana women, and Central American migrants in the United States––evidencing the intersectional symbolism
+              that leaders such as Huerta communicated.
+              <br><br>
+              Many of the works in this exhibition speak to the dislocations of the immigrant experience and the
+              interconnected realities of assimilation, oppression, and alterity, while, simultaneously, preserving
+              artistic traditions, community values, and ancestral cultures as a means of resistance and solidarity. In
+              Los Angeles, the visual arts (from murals to poster design and printmaking) directly aided activist
+              causes. From the earliest works in the exhibition, like Judithe Hernández’s mural Homenaje a los Mujeres
+              de Aztlán of 1976, murals provided a vehicle for political statements and calls to action. While a
+              celebration of Mesoamerican matriarchal indigenous traditions, the heroines of the Mexican Revolution, and
+              the Chicane labor activists and members of the UFW,, the mural also signaled a crucial characteristic of
+              murals made in Los Angeles. This new generation of painters, which increasingly included women, radically
+              evaluated the format’s own limiting conventions, as well as cultural conservatism of Mexican and Chicane
+              communities. Hernández’s overtly feminist mural challenged the essentializing and stereotypical depictions
+              of women typical of murals. A powerful and capacious figure, Herández’s monumental matriarch symbolized
+              Chicane women’s agency to both maintain tradition and participate in radical action, from fighting
+              alongside male revolutionaries to agitating for labor reform. Hernández, the first woman allowed entry
+              into “Los Four” (Los Angeles’s answer to “Los Tres Grandes” of the earlier Mexican mural movement), helped
+              break down barriers for other women artists to obtain commissions and permission to work on large-scale
+              murals––a privilege traditionally reserved for their male counterparts.
+              <br><br>
+              To this day, the best known muralists are the all-male members of “Los Tres Grandes”: José Clemente
+              Orozco, Diego Rivera, and David Alfaro Siqueiros. By extension, the most recognizable murals owe to the
+              zenith of the post-revolutionary Mexican mural movement of the 1920s and 1930s: typically “permanent,”
+              government-sanctioned commissions in purportedly public centers (in actuality, many of these murals were
+              not accessible either inside prestigious schools or the offices of high-ranking public servants).
+              Moreover, both the muralists and their sponsors intentionally thwarted women from participating in the
+              movement. In an emblematic instance, Rivera and Siqueiros even teamed up to prevent María Izquierdo from
+              completing a government commission to paint the staircase of the Departmento del Distrito Federal
+              building. In brief, these artists averred that women were incapable of partaking in what they marketed as
+              a hyper-masculine, hyper-physical craft. With generational and geographic distance, women artists in Los
+              Angeles have battled the legacy of these misogynistic practices, arguing that women have a place not only
+              within the mural’s visual imagery or as nationalist symbols, but moreover as creators, actors, and
+              cultural producers. Participating in the legacy of muralist resistance, that at once critiques oppression
+              and violence against nonconforming subjects and artistic production which upholds these values, the most
+              recent work in the show, rafa esparza and Gabriela Ruiz’s Nostra Fiesta (2019) adorns the façade of The
+              New Jalisco Bar––a nightclub that serves the Latinx LGBTQ community of downtown Los Angeles. Celebrating
+              the venue’s embrace of gender non-conformist customers and performers, as well as working class locals and
+              immigrants, the mural disrupts long standing discriminatory values that situated the mural within
+              heteronormative tropes.
+              <br><br>
+              As the murals made in Los Angeles query the gender dynamics of Mexican art and culture, the artists in
+              this exhibition also tapped into shared sources like the artforms and mythology of pre-conquest
+              Mesoamerican civilizations, the lessons of Mexican muralism, the broader history of Chicane art and
+              politics, the visual culture and built environment of Los Angeles. At the same time, Chicane muralists
+              continued to utilize the conventions of the format, like the centralization of monumental figures and its
+              capacity to present sweeping historical narratives, to voice alternate visions. Homages to formidable
+              women and narrations of marginalized events and silenced groups predominate these works. As discussed,
+              Hernández’s mural project for the Ramona Gardens Housing Project narrates a matrilineal, diasporic history
+              that unites the mythical progenitors of the Aztec civilization with Chicane labor activists of the
+              twentieth century. To Hernández, the subject matter directly confronted the shortcomings of the mural
+              movement: “We made the conscious decision to design murals dedicated to women in response to all the
+              male-dominated subject matter of most Chicano murals of the era.”
+              <br><br>
+              Another artwork, Barbara Carrasco’s multi-part, portable mural L.A. History: A Mexican Perspective (1981),
+              provides a monumental portrait of “La Reina de Los Ángeles” (“The Princess of Los Angeles”) with nearly
+              forty scenes chronicling important events in the city’s formation set into a web of vignettes in La
+              Reina’s flowing hair. While focusing on the contributions of the Chicane population to culture,
+              infrastructure, and politics, the intersectional history imbricates other marginalized communities and
+              their stories. The potency of this mural exists, in part, through the implication that a radical history,
+              which honors multicultural contributions and condemns racialized violence and exploitation, exists in the
+              space provided by feminine power and beauty––namely, that of La Reina’s flowing hair. Carrasco’s mural
+              also spotlight the work of other women, like the freed slave Bridget “Biddy” Mason who founded the First
+              African Methodist Episcopal Church in Los Angeles and Yreina Cervántez, a fellow artist who assisted with
+              the project. Eight years later, Cervántez went on to make her first major mural, La Ofrenda, which
+              commemorated Dolores Huerta. Composed on a large wall of a freeway underpass in Downtown Los Angeles, the
+              project both celebrated the achievements of the Mexican-American community organizer and the artmaking
+              practices of women from Mexico. Surrounding Huerta with objects typically found in a traditional “ofrenda”
+              (offering), Cervántez visualized the intergenerational and matrilineal connections to land, spirituality,
+              and agriculture. Her work also critiqued the maltreatment of migrants from Central America in the United
+              States, contemplating the perils of crossing the border, the surveillance of immigrants, and the
+              marginalization of these communities. Far from the nationalizing rhetoric of Mexican murals produced in
+              the wake of the Mexican Revolution, La Ofrenda exists in a precarious spatiality of errancy, exile, and
+              escape. Here, the mural’s free-floating figures and objects and darting bodies refer to the displacement
+              wrought by cultural assimilation and migration.
+              <br><br>
+              In this way, though inspired by certain qualities of muralismo, the murals made in Los Angeles activate
+              their own artistic languages that upend hegemonic claims to permanence, historical determinism, and
+              absolutism. This is, in part, evidenced by the expansion of the mural over the last fifty years by Chicane
+              artists in Los Angeles as they tackled questions of gender, representation, and inclusivity from within a
+              highly sanctified mode of visuality. In so doing, these artists expanded the very definition of the mural
+              by encompassing portable objects, performance, photography, graffiti, and erasure. To this point, the
+              exhibition includes the art collective Asco’s The Walking Mural (1972), a documented performance that
+              directly challenged the idea that the Chicane experience could only be valorized by sanctioned murals.
+              Here, a member of the group, Patssi Valdez [flesh out]. Similarly, the Los Angeles-based graffiti artist,
+              Timoi, has undertaken dozens of murals across the city––including what she recollects as “risky” missions
+              to take on particularly ambitious graffiti projects on the sides of freeways. In some cases, these
+              transgressions explicitly reject traditional power dynamics within the art world and Chicane communities.
+              For some, like Asco, the temporary act cut against muralism’s promise of permanence and eternality. To
+              Timoi, proving herself and honing their craft meant acceptance among the male graffiti artists who did not
+              readily accept women into their groups. The risks of tagging structures also included the possibility that
+              their work might be partially covered up by other graffiti artists or intentionally erased by city
+              officials.
+              <br><br>
+              Another dimension of the work presented in this exhibition is marked by the wholesale embrace of
+              collective work and community spirit. Carrasco paid homage to her team of assistants by painting their
+              portraits in one of the narrative frames. Cervántez, then a young art student, is among those portraits.
+              As Carrasco recently reflected: “The artists, when you’re working on a mural, the first thing is that you
+              have to be compatible and respect one another. I liked Yreina and I thought she would be perfect. She’s
+              good with people, good with kids.” Later, Cervántez hired Chicane and Central American student workers as
+              mural assistants when she earned the commission for La Ofrenda. She also included the work of two poets
+              and a graffiti artist, crediting each by name within the composition. Hernández’s mural for the Ramona
+              Gardens Housing Projects was designed in concert with Carlos Almaraz’s mural La Adelita, jointly asserting
+              the role of women in social revolution. Nostra Fiesta is the work of an artist pair.
+              <br><br>
+              In these works, collectivity extends beyond process: many artists turned to understudied archives and
+              records to rebuild histories that have been pushed to the margins. While preparing L.A. History: A Mexican
+              Perspective, Carrasco poured over materials in the Natural History Museum of Los Angeles, scoured
+              newspaper articles, and exhumed stories of racial prejudice and exploitation. esparza and Ruiz cite
+              emblems of Mexican art, specifically a print made by José Guadalupe Posada in their mural for the New
+              Jalisco Bar. As will be explored in this exhibition, they crucially reconceived the print’s overarching
+              ideology and details, effectively negating the heteronormative prejudices of Posada’s original work and
+              Mexican society under the dictatorship of Porfirio Díaz. In Timoi’s graffiti mural for The Higher Path, a
+              marijuana dispensary, they produced a counterhistory of Los Angeles’s mainstream entertainment industry by
+              highlighting gender nonconforming performers Jimi Hendrix and Mae West.
+              <br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-column">
+        <div class="back-arrow introduction" id="intro-arrow">
+          <div class="section-two-arrow"> &#8593; </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>

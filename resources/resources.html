@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Five Decades of Chicane Muralism: Objects </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../darkui.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+</head>
+
+<body id="objects">
+    <script src="../script.js"></script>
+</body>
+
+<!-- Navigation -->
+<nav class="nav">
+    <!-- Language Toggle -->
+    <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
+        <p class="hidden" id="language-switcher1"> </p>
+        <div class="language__container--left language__container--en">
+            <input class="language__control" type="radio" id="language1-1" name="language-switch1">
+            <label class="language__label__dark" for="language1-1" id="language-toggle-en">
+                EN <span class="hidden"></span>
+            </label>
+        </div>
+        <div class="language__container--right language__container--sp">
+            <input class="language__control" type="radio" id="language1-2" name="language-switch1">
+            <label class="language__label__dark" for="language1-2" id="language-toggle-sp">
+                SP <span class="hidden"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="buffer-space"></div>
+    <!-- Pop-out Sub Navigation -->
+    <button type="button" id="hamburger-menu__dark" class="open-nav-btn__dark" aria-label="open navigation"
+        aria-controls="link-list" aria-expanded="false">&#9776;</button>
+    <div id="slide-nav" class="slide-content">
+        <button type="button" id="close" class="close-btn" aria-label="close navigation">&times;</button>
+        <ul id="link-list">
+            <li class="text-on" id="nav-intro-link en"><a href="/index.html"> INTRODUCTION </a></li>
+            <li class="text-hidden" id="nav-intro-link sp"><a href=""> INTRODUCCIÓN </a></li>
+            <li class="text-on"><a href="../objects/objects.html"> OBJECTS </a>
+            <li class="text-hidden"><a href="../objects/objects.html"> OBJETOS </a>
+            <li class="text-on"><a href="../archive/archive.html"> ARCHIVE </a></li>
+            <li class="text-hidden"><a href="../archive/archive.html"> ARCHIVO </a></li>
+            <li class="text-on"><a href="../dialogues/dialogues.html"> DIALOGUES </a></li>
+            <li class="text-hidden"><a href="../dialogues/dialogues.html"> DIÁLOGOS </a></li>
+            <li class="text-on"><a href="../guides/teaching-guides.html"> TEACHING GUIDES </a></li>
+            <li class="text-hidden"><a href="../guides/teaching-guides.html"> GUÍAS DOCENTES </a></li>
+            <li class="text-on"><a href="../resources/resources.html"> ADDITIONAL RESOURCES </a></li>
+            <li class="text-hidden"><a href="../resources/resources.html"> RECURSOS ADICIONALES </a></li>
+            <li class="text-on"><a href="../credits.html"> CREDITS </a></li>
+            <li class="text-hidden"><a href="../credits.html"> CRÉDITOS </a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <!-- Resources Page Section -->
+    <div class="intro" id="objects-main-section">
+        <div class="top-column">
+            <div class="label-row">
+                <h2 class="page-label"> ADDITIONAL RESOURCES </h2>
+            </div>
+            <div class="row-content resources">
+                <hr class="label-hr" />
+                <div class="content-container resources">
+                    <div class="resources-list">
+                        <div class="list-01">
+                            <div class="resources-title first">
+                                <p class="resources font-change"> DIGITAL ARCHIVES </p>
+                                <p class="resources font-change"> &#43; </p>
+                            </div>
+                            <hr class="label-hr">
+                            <div class="digital-archives">
+                                <p class="resources archives hidden">
+                                    Hammer Museum, Radical Women: Latin American Art, 1960-1985 <br>
+                                    <a href="https://hammer.ucla.edu/radical-women" target="_blank" class="resources">
+                                        https://hammer.ucla.edu/radical-women </a>
+                                </p>
+                                <p class="resources archives hidden">
+                                    UCLA: Chicano Studies Research Center <br>
+                                    <a href="https://www.chicano.ucla.edu/library" target="_blank" class="resources">
+                                        https://www.chicano.ucla.edu/library </a>
+                                </p>
+                                <p class="resources archives hidden">
+                                    Chicana por mi Raza Digital Memory Collective <br>
+                                    <a href="https://chicanapormiraza.org/" target="_blank" class="resources">
+                                        https://chicanapormiraza.org/ </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list-02">
+                            <div class="resources-title second">
+                                <p class="resources font-change"> BOOKS & ARTICLES </p>
+                                <p class="resources font-change"> &#43; </p>
+                            </div>
+                            <hr class="label-hr">                         
+                            <div class="books-articles">
+                                <p class="resources books-articles hidden">
+                                    Alva, R. &#34;Wisk&#34; and R. &#34;Relax&#34; Reiling, ed. by S. Bloch. <br> <i> The History of Los Angeles Graffiti Art, volume 2, 1989-1994. <br> </i> A&R Publishing, 2015.
+                                </p>      
+                                <p class="resources books-articles hidden">
+                                    Anaya, Rudolfo and Francisco Lomeli, eds. <br> <i> Aztlán: Essays on the Chicano Homeland. </i> Albuquerque: <br> El Norte, 1989.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Anzaldúa, Gloria. <i> Borderlands/La Frontera: The New Mestiza. <br> </i> San Francisco, CA: Spinsters/Aunt Lute, 1987.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Aparicio, Frances R. &#34;(Re)constructing Latinidad: The Challenge <br> of Latina/o Studies,&#34; in <i> A Companion to Latina/o Studies, 39-49. <br> </i> Eds. Juan Flores and
+                                    Renato Rosaldo. Blackwell Publishing, 2007.
+                                </p>           
+                                <p class="resources books-articles hidden">
+                                    Arredondo, Gabriela F., Aída Hurtado, Norma Klahn, <br> Olga Nájera-Ramírez, and Patricia Zavella, eds. <br> <i> Chicana Feminisms: A Critical Reader. </i> <br> Durham: Duke University
+                                    Press, 2003.
+                                </p>            
+                               <p class="resources books-articles hidden">
+                                    Arroyo, J.C. &#34;Culture in Concrete: art and the re-imagination <br> of the Los Angeles River as civic space.&#34; Masters thesis, <br> Department of City Planning,
+                                    Massachusetts Institute of  <br> Technology, 2010.
+                                </p>             
+                                <p class="resources books-articles hidden">
+                                    Austin, Joe. <i> Taking the Train: How Graffiti Art Became an <br> Urban Crisis in New York. </i> Columbia University Press, 2001.
+                                </p>                     
+                                <p class="resources books-articles hidden">
+                                    Barnet-Sanchez, Holly and Tim Drescher. <i> Give Me Life: <br> Iconography and Identity in East LA Murals. </i> <br> Albuquerque, N.M.: University of New Mexico Press, 2016.
+                                </p>                 
+                                <p class="resources books-articles hidden">
+                                    Bebout, Lee. <i> Mythohistorical Interventions: <br> The Chicano  Movement and its Legacies. </i> <br> Minneapolis: The University of Minnesota Press, 2011.
+                                </p>                   
+                                <p class="resources books-articles hidden">
+                                    Blackwell, Maylei. <i> ¡Chicana Power! Contested Histories <br> of Feminism in the Chicano Movement. </i> <br> Austin, TX: University of Texas Press, 2011.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Bloch, Stefano. &#34;The Changing Face of Wall Space: <br> Graffiti-murals in the context of neighborhood change in <br> Los Angeles.&#34; PhD diss., University of Minnesota, 2012.
+                                </p>                  
+                                <p class="resources books-articles hidden">
+                                    Brading, D. A. <i> Mexican Phoenix. Our Lady of Guadalupe: <br> Image and Tradition Across Five Centuries. </i> <br> Cambridge: Cambridge University Press, 2001.
+                                </p>                 
+                                <p class="resources books-articles hidden">
+                                    Cheng, Meiling. <i> In Other Los Angeleses: <br> Multicentric Performance Art. </i> <br> Berkeley: University of California Press, 2002.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Chávez, Ernesto. <i> &#34;¡Mi Raza Primero!&#34; (My People First!): <br> nationalism, identity, and insurgency in the Chicano movement <br> in Los Angeles, 1966-1978. </i> University of California Press, 2002.
+                                </p>                   
+                                <p class="resources books-articles hidden">
+                                    Chavoya, C. Ondine and Rita González. <br> <i> Asco: Elite of the Obscure: A Retrospective, 1972-1987. </i> <br> Ostfildern, Germany: Hatje Cantz, 2011.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Cockroft, Eva Sperling and Holly Barnet-Sánchez. <br> <i> Signs from the Heart: California Chicano Murals. </i> <br> University of New Mexico Press, 1993.
+                                </p>                  
+                                <p class="resources books-articles hidden">
+                                    Dávila, Arlene. <i> Latinx Art: Artists, Markets, Politics. </i> <br> Durham: Duke University Press, 2020.
+                                </p>                   
+                                <p class="resources books-articles hidden">
+                                    Davis, Mike. <i> City of Quartz: Excavating the Future in Los Angeles. </i> <br> New York: Verso, 1990.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Escobedo, Elizabeth. “The Pachuca Panic: Sexual and Cultural <br> Battlegrounds in World War II Los Angeles,” <i> <br> Western Historical Quarterly 38, </i> no/ 2 (Summer 2007): 133-156.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Gamboa, Harry Jr. <i> Urban Exile: Collected Writings of Harry Gamboa, Jr, </i> <br> ed Chon A. Noriega. Minneapolis: University of Minnesota Press, 1985.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    García, Mario T. <i> The Chicano Movement: Perspectives from the <br> Twenty-First Century. </i> New York: Routledge, 2014.
+                                </p>                               
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <i> The Chicano Generation: Testimonios of <br> the Movement. </i> Oakland: University of California Press, 2015.
+                                </p>                  
+                                <p class="resources books-articles hidden">
+                                    García, Mario T. and Ellen McCracken. <i> Rewriting the <br> Chicano Movement: New Histories of Mexican American Activism <br> in the Civil Rights Era. </i> Tucson, AZ: The University of Arizona Press, 2021.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Garcia, Rupert. &#34;La Raza Murals of California, 1963-1970: <br> A Period of Social Change and Protest.&#34; Master&#39;s thesis, <br> University of California, Berkeley, 1981.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Goldman, Shifra M., and Tomás Ybarra-Frausto. <i> Arte Chicano: <br> a comprehensive annotated bibliography of Chicano art, 1965-1981. </i> <br> Berkeley: Chicano Studies Library
+                                    Publications Unit, <br> University of California, 1985.
+                                </p>                    
+                                <p class="resources books-articles hidden">
+                                    Goldman, Shifra. &#34;Resistance and Identity: Street Murals of <br> Occupied Aztlán,&#34; in <i> Dimensions of the Americas: Art and <br> Social Change in Latin America and the United States. </i> <br> Chicago: University of Chicago Press, 1994.
+                                </p>                                
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> &#34;Affirmations of Existence: Barrio Murals of Los Angeles.&#34; <i> <br> Revista Chicano-Riqueria, </i> 1976, 3.
+                                </p>                   
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> &#34;Siqueiros and Three Early Murals in Los Angeles.&#34; <br> <i> Art Journal, </i> 33, no. 4 (1974): 321-327.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> &#34;Mexican Muralism: its social-educative roles in <br> Latin America and the United States.&#34; <i> <br> Aztlán: A Journal of Chicano Studies </i> 13, no. 1 (1982): 111-133.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> &#34;A Public Voice: fifteen years of Chicano posters.&#34; <br> <i> Art Journal </i> 44, no. 1 (1984): 51-57.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> <i> Dimensions of the Americas: art and social change <br> in Latin America and the United States. <br> </i> Chicago: University Of Chicago Press, 1995.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Gómez, Laura E. <br> <i> Manifest Destinies: The Making of the Mexican American Race. </i> <br> New York: New York University Press, 2007.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Gonzalez, Gilbert and Raul Fernandez. <br> <i> A Century of Chicano History: Empire, Nations, and Migration. </i> <br> New York: Routledge, 2003.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Gonzalez, Jennifer. <br> &#34;Invention as Critique: Neologisms in Chicana Art Theory.&#34; In <br> <i> Chicana Feminisms. </i> Eds. Patricia Zavella, Gabriela Arredondo, <br> Aida Hurtado, Norma Klahn, Olga Najera-Ramirez. <br> Durham, N.C.: Duke University Press, 2003.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Gonzalez, Michael. <br> &#34;This Small City Will Be a Mexican Paradise.&#34; <i> <br> Exploring the Origins of Mexican Culture in Los Angeles, 1821-1846. </i> <br> New Mexico: Univ. of New Mexico Press, 2005.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Gonzalez, Rita, Howard N. Fox, Chon A. Noriega. <br> <i> Phantom Sightings: Art After the Chicano Movement. </i> <br> Berkeley and Los Angeles: Los Angeles County Museum of Art <br> and University of California Press, 2008.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Griswold del Castilo, Richard, Teresa McKenna, <br> and Yvonne Yarbro-Bejarano, eds. <br> <i> Chicano Art: Resistance and Affirmation, 1965-1985. </i> <br> Los Angeles: Wight Art Gallery, University of California, 1991.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Gunckel, Colin, ed. <br> <i> Art in the Heart of Los Angeles. The Chicano Archives, <br> Vol. 1 </i> January 2014.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Jackson, Carlos Francisco. <br> <i> Chicana and Chicano Art: Protestarte. </i> <br> Tucson: The University of Arizona Press, 2009.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Latorre, Guisela. <br> <i> Walls of empowerment: Chicana/o indigenist murals of California. </i> <br> Austin: University of Texas Press. 2008
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Mazón, Mauricio. <br> <i> The Zoot-Suit Riots: The Psychology of Symbolic Annihilation. </i> <br> Austin: University of Texas Press, 1984.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    McCaughan, Edward J. <i> <br> Art and Social Movements: Cultural Politics in Mexico and Aztlán. </i> <br> Durham: Duke University Press, 2012.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Mesa-Bains, Amalia. <br> &#34;&#39;Domesticana&#39;: The Sensibility of Chicana Rasquache.&#34; <i> <br> Aztlán: A Journal of Chicano Studies </i> 24, no. 2 (fall 1999): 155-67.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> <i> Ceremony of Spirit: Nature and Memory in Contemporary Latino Art. </i> <br> Washington, D.C.: The Mexican Museum, 1993.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> &#34;Califia/Califas: A Brief History of Chicana California,&#34; 123-140. <br> In <i> Art/Women/California, 1950-2000; Parallels and Intersections. </i> <br> Eds. Burgess Fuller, Diana, and Daniela Salvoni. <br> San Jose: San Jose Museum of Art, 2002.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Moraga, Cherríe L. <br> <i> A Xicana Codex of Changing Consciousness: Writings, 2000-2010. </i> <br> Durham, NC: Duke University Press, 2011.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> &#34;Queer Aztlán: The Re-formation of Chicano Tribe. <br> In <i> Queer Cultures,&#34; </i> 224-38. Eds. Deborah Carlin and Jennifer DiGrazia. <br> Upper Saddle River: Pearson Prentice Hall, 2004.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Noriega, Chon A. &#34;From Beats to Borders: An Alternative History <br> of Chicano/s in California.&#34; In <i> Reading California: Art, Image, <br> and Identity, 1900-2000, </i> ed. Stephanie Barron, Sheri Bernstein, <br> Ilene Susan Fort, 353-382. Los Angeles and Berkeley: Los Angeles <br> County Museum of Art and University of California Press, 2000.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    ---------------------------. <br> &#34;&#39;Your Art Disgusts Me&#39;: Early Asco, 1971-75.&#34; <br> <i> Afterall </i> 19, no. 19 (2008-2011): 109-121.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Norte, Marisela. &#34;Gronk.&#34; <i> Bomb, </i> 98, 2007.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Ortega, Mariana. <br> <i> In-Between: Latina Feminist Phenomenology, Multiplicity, <br> and the Self. </i> Albany, NY: State University of New York Press, 2016.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Pagan, Eduardo. <br> <i> Murder at the Sleepy Lagoon: Zoot Suits, Race, and <br> Riot in Wartime L.A. </i> Univ. of North Carolina Press, 2003.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Pérez, Emma, &#34;Sexing the Colonial Imaginary: <br> (En)gendering Chicano History, Theory, and Consciousness,&#34; 4-7. <br> <i> The Decolonial Imaginary. </i> Bloomington: Indiana University
+                                    Press, 1994.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Pérez, Laura E. <br> <i> Chicana Art: The Politics of Spiritual and Aesthetic Altarities. <br> </i> Durham, NC: Duke University Press, 2007.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Ramos, E. Carmen, ed. <br> <i> ¡Printing the Revolution! The Rise and Impact of Chicano <br> Graphics, 1965 to Now. </i> Washington D.C.: <br> Smithsonian American Art Museum, 2020.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Rocco, R.A.. <br> &#34;Latino Los Angeles: reframing boudaries/boarders.&#34; <br> In Scott, A, J. and E.W. Soja, eds. <i> The City: Los Angeles and <br> urban theory at the end of the Twentieth Century. </i> Berkeley: <br> University of California Press, 1998.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Salazar, Ruben. 1970. <br> &#34;Who is a Chicano? and What is it the Chicanos Want?&#34; <br> Los Angeles Times. Reprinted in Quirarte, Jacinto. <i> <br> Chicano Art History: A Book of Selected Readings, 5. </i> <br> San Antonio: Research Center for the Arts and Humanities, <br> University of Texas, San Antonio, 1984.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Sanchez-Tranquilino, Marcos. <br> &#34;Space, Power, and Youth Culture; Mexican American Graffiti <br> and Chicano Murals in East Los Angeles, 1972-1978,&#34; in <i> <br> Looking High and Low: Art and Cultural Identity, </i> 55-88. <br> Eds. Brenda Jo Bright and Liza Bakewell. Tucson: <br> University of Arizona Press, 1995.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Theung, Linda, ed. <br> <i> The U.S.-Mexico Border: Place, Imagination, and Possibility. </i> <br> Los Angeles: Getty Foundation/Los Angeles Craft & Folk Museum, 2017.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Valencia, Joseph Daniel. <br> &#34;Queer Nightlife and Contemporary Art Networks: <br> A Study of Artists at the Bar.&#34; <i> Art </i> 13 (2024): 72.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Ybarra-Frausto, Tomás. <br> <i> Chicano Aesthetics: Rasquachismo. </i> <br> Phoenix, AZ: MARS Artspace, 1989.
+                                </p>
+                                <p class="resources books-articles hidden">
+                                    Zaragoza Vargas, <br> <i> Labor Rights are Civil Rights: <br> Mexican American Workers in Twentieth-Century America. 
+                                    </i> <br> Princeton: Princeton University Press, 2005.
+                                </p>
+                            </div>              
+                        </div>
+                        <div class="list-03">
+                            <div class="resources-title third">
+                                <p class="resources font-change"> ARTIST INTERVIEWS & PROFILES </p>
+                                <p class="resources font-change"> &#43; </p>
+                            </div>
+                            <hr class="label-hr">  
+                            <div class="interviews-profiles">
+                                <p class="resources interviews-profiles hidden">
+                                    Alvarez, Paulina. <br> &#34;Life Model 101: Judithe Hernández.&#34; Los Angeles County Museum of Art. <br>
+                                    <a href="https://unframed.lacma.org/2019/06/12/life-model-101-judithe-hern%C3%A1ndez" target="_blank" class="resources"> https://unframed.lacma.org/2019/06/12/life-model-101-judithe-hern%C3%A1ndez </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Barbara Carrasco interviewed by Karen Mary Davalos on August 30, <br> September 11 and 21, and October 10, 2007.&#34; CSRC Oral History Series. <br> UCLA Chicano Studies Research Center. <br>
+                                    <a href="https://www.chicano.ucla.edu/files/03Carrasco.pdf" target="_blank" class="resources"> https://www.chicano.ucla.edu/files/03Carrasco.pdf </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    Christovale, Erin, and Anne Ellegood. <br> Bridging and Breaking: Roundtable with Erin Christovale. Jennifer Doyle, <br> Anne Ellegood, rafa esparza, Naima J. Keith, and Lauren Mackler, 92-113. <br> In <i> Made in L.A. 2018. </i> Edited by Erin Christovale and Anne Ellegood. <br> Los Angeles: Hammer Museum, 2018.
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;CSUN Professor Paints Her Way Through Male-Dominated Art Industry.&#34; <br> Interview with Yreina Cervántez, <i> Daily Sundial, </i> November 7, 2011. <br> <a href="https://www.chicano.ucla.edu/files/news/PST-CSUNProfessorPaints-DailySundial-11-7-11%5B1%5D.pdf" target="_blank" class="resources"> https://www.chicano.ucla.edu/files/news/PST-CSUNProfessorPaints-DailySundial-11-7-11%5B1%5D.pdf
+                                    </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Culture Fix: Judithe Hernandez on the Role of Women in the <br> Chicano Art Movement.&#34; The Fowler Museum, UCLA January 25, 2012. <br> <a href="https://www.youtube.com/watch?v=6VfWyZnzDDQ" target="_blank" class="resources"> https://www.youtube.com/watch?v=6VfWyZnzDDQ </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Digital Engrams with Gabriela Ruiz.&#34; <br> Penny Stamps Distinguished Speaker Series, PBS <br> <a href="https://www.pbs.org/video/digital-engrams-with-gabriela-ruiz-1stkvw/" target="_blank" class="resources"> https://www.pbs.org/video/digital-engrams-with-gabriela-ruiz-1stkvw/ </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Inside the Mind of Gabriela Ruiz.&#34; <br> 1957 to Now &#8212; The Vincent Price Art Museum Blog. <br> Interview by Anika Giron <br> <a href="https://vincentpriceartmuseum.wordpress.com/2020/05/15/inside-the-mind-of-gabriela-ruiz/" target="_blank" class="resources"> https://vincentpriceartmuseum.wordpress.com/2020/05/15/inside-the-mind-of-gabriela-ruiz/
+                                    </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    Judithe Hernández interviewed by Karen Mary Davalos, <br> September 26, 2009 and July 14, 2010. CSRC Oral Histories Series, <br> UCLA Chicano Studies Research Center. <br>
+                                    <a href="https://www.chicano.ucla.edu/files/13Hernandez_0.pdf" target="_blank" class="resources"> https://www.chicano.ucla.edu/files/13Hernandez_0.pdf </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    Lipschitz, Pancho. <br> &#34;A Word with Artist and Activist Barbara Carrasco.&#34; <br> <i> Riot Material, </i> April 27, 2018. <br> <a href="https://www.riotmaterial.com/word-with-barbara-carrasco/" target="_blank" class="resources"> https://www.riotmaterial.com/word-with-barbara-carrasco/ </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Meet Ariel Xochitl Hernández, Self Help Graphics & Arts Archive Intern.&#34; <br> Interview by Jennifer Cuevas, January 5, 2022. <br> <a href="https://www.selfhelpgraphics.com/blog/meet-ariel-hernandez-archive-intern" target="_blank" class="resources"> https://www.selfhelpgraphics.com/blog/meet-ariel-hernandez-archive-intern </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Meet Timoi: Artist/Designer/Entrepreneur,&#34; <br> <i> Shoutout LA, </i> September 19, 2022.
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Oral History Interview with Barbara Carrasco, April 13-26, 1999.&#34; <br> Archives of American Art, Smithsonian Institution. <br> <a href="https://www.aaa.si.edu/download_pdf_transcript/ajax?record_id=edanmdm-AAADCD_oh_216606" target="_blank" class="resources"> https://www.aaa.si.edu/download_pdf_transcript/ajax?record_id=edanmdm-AAADCD_oh_216606
+                                    </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    Oral history interview with Yreina Cervántez, 2022 May 18-June 9. <br> Archives of American Art, Smithsonian Institution. <br>
+                                    <a href="https://www.aaa.si.edu/collections/interviews/oral-history-interview-yreina-cervntez-22163" target="_blank" class="resources"> https://www.aaa.si.edu/collections/interviews/oral-history-interview-yreina-cervntez-22163
+                                    </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Other Voices: Judithe Hernández,&#34; Los Angeles County Museum of Art. <br> Artist statement. <a href="https://www.lacma.org/other-voices-judithe-hern%C3%A1ndez" target="_blank" class="resources"> https://www.lacma.org/other-voices-judithe-hern%C3%A1ndez
+                                    </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    Talk: Yreina Cervántez and Jessica Sabogal. <br> Evenings for Educators, Los Angeles County Museum of Art. <br>
+                                    <a href="https://www.youtube.com/watch?v=iE-_uUFrwbU" target="_blank" class="resources"> https://www.youtube.com/watch?v=iE-_uUFrwbU </a>
+                                </p>
+                                <p class="resources interviews-profiles hidden">
+                                    &#34;Timoi,&#34; LA Graffiti Girls Tumblr. <br>
+                                    <a href="https://lagraffitigirls-blog.tumblr.com/post/5675896549/timoi" target="_blank" class="resources"> https://lagraffitigirls-blog.tumblr.com/post/5675896549/timoi
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-column">
+            <div class="back-arrow objects" id="objects-arrow">
+                <div class="section-three-arrow"> <a href="../index.html"> &#8592; </a> </div>
+            </div>
+        </div>
+    </div>
+</main>
