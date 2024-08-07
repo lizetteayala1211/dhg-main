@@ -54,11 +54,11 @@
 
 /* Pop-out Sub Navigation (Dark Mode) */  
 button.open-nav-btn__dark {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
+    font-size: 16px;
     cursor: pointer; 
-    padding: 10px 36px 10px 36px !important;
+    padding: 18px 36px 18px 36px !important;
     margin: 28px 0px 0px 0px;
-    /* font-size: 32px; */
     color: #1A1019;
     border: 1px solid #1A1019;
     border-radius: 40px;

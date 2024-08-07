@@ -32,26 +32,24 @@ $(document).ready(function () {
 
 
   ////// Object Inner Page Info Drawer Toggle Open ///////
-  $('#open-bottom-row, #open-bottom-row-two').on('click', function () {
-    $('.hidden, .hidden-transparent').slideToggle("slow");
-  }
-  );
+  // $('#open-bottom-row, #open-bottom-row-two').on('click', function () {
+  //   $('.hidden, .hidden-transparent').slideToggle("slow");
+  // }
+  // );
 
-      //toggle the component with class accordion_body
-//       $(".accordion_head").click(function () {
-//         if ($('.accordion_body').is(':visible')) {
-//             $(".accordion_body").slideUp(300);
-//             $(".plusminus").text('+');
-//         }
-//         if ($(this).next(".accordion_body").is(':visible')) {
-//             $(this).next(".accordion_body").slideUp(300);
-//             $(this).children(".plusminus").text('+');
-//         } else {
-//             $(this).next(".accordion_body").slideDown(300);
-//             $(this).children(".plusminus").text('-');
-//         }
-//     });
-// });
+  $("#open-bottom-row-two").click(function () {
+    if ($(".hidden, .hidden-transparent").is(':visible')) {
+        $(".hidden, .hidden-transparent").slideUp(300);
+        $(".plusminus").text('+');
+    }
+    // if ($(this).next(".hidden, .hidden-transparent").is(':visible')) {
+    //     $(this).next(".hidden, .hidden-transparent").slideUp(300);
+    //     $(this).children(".plusminus").text('+');
+    // } else {
+    //     $(this).next(".hidden, .hidden-transparent").slideDown(300);
+    //     $(this).children(".plusminus").text('-');
+    // }
+});
 
   ////// Credits Page (Curator) Drawer Toggle Open ///////
   $('#credits-title-one').on('click', function () {
