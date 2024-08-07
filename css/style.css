@@ -166,13 +166,13 @@ nav * {
   display: none;
 }
 
-.text-on {
+/* .text-on {
   display: show;
 }
 
 .text-off {
   display: none;
-}
+} */
 
 
 .text-shown {
@@ -340,7 +340,7 @@ main {
   /* background-color: red; */
 }
 
-.title-top h2 {
+.title-top h3 {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   margin: 0px;
@@ -351,9 +351,9 @@ main {
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 60%;
+  height: 55%;
   width: 100vw;
-  font-size: calc(.5 * (7.5vh + 7.1vw));
+  font-size: calc(.5 * (6.5vh + 6.1vw));
   text-align: center;
   color: #EEE17E;
   /* background-color: purple; */
@@ -505,8 +505,10 @@ a.arrow {
   margin: 0px 0px 0px 40px;
 }
 
-div.row-content.introduction>div>p {
-  color: #1A1019 !important;
+p.introduction {
+  display: inline-block !important;
+  color: black;
+  overflow-wrap: normal;
 }
 
 .bottom-column {
@@ -517,7 +519,6 @@ div.row-content.introduction>div>p {
   height: 100%;
   width: 96%;
   color: #1A1019;
-  /* background-color: red; */
   font-family: "Antonio", sans-serif;
   font-size: 24px;
   margin: 20px 0px 0px 0px;
@@ -531,51 +532,55 @@ div.row-content.introduction>div>p {
   align-items: flex-start;
   flex-direction: column;
   align-self: center;
-  /* height: 10vh; */
+  text-decoration: none;
   width: 100vw;
-  /* background-color: black; */
   margin: 0px 0px 40px 0px;
 }
 
-.section-two-arrow {
+#intro-arrow {
+  position: fixed;
+  bottom: 0;
+  /* 
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility; */
+}
+
+/* #intro-arrow.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+} */
+
+.section-arrow {
   font-size: 24px;
   cursor: pointer;
   padding: 15px 48px 15px 48px !important;
   margin: 0px 0px 0px 0px;
-  /* font-size: 32px; */
   color: #1A1019;
   border: 1px solid #1A1019;
   border-radius: 40px;
   background-color: transparent;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.section-two-arrow:hover {
+.section-arrow:hover {
   background-color: #1a191306;
   /* Change the color and opacity as needed */
 }
 
 /* <!-- Objects Main (Content) --> */
 
-.row-content>div {
+.row-content > div {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
 }
-
-/* #objects-main-section > div.top-column > div.row-content {
-  display: flex;
-    justify-content: flex-end;
-} */
-
-/* #objects-main-section > div.top-column > div.row-content > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-} */
 
 .objects-artwork-container {
   display: flex;
@@ -601,6 +606,11 @@ div.row-content.introduction>div>p {
 }
 
 img.objects-artwork-img.barbara {
+  object-fit: cover;
+  object-position: 0% 0;
+}
+
+img.objects-artwork-img.rafagabby {
   object-fit: cover;
   object-position: 0% 0;
 }
@@ -642,23 +652,10 @@ img.objects-artwork-img.barbara {
 }
 
 /* Objects Main Page Arrow */
-.section-three-arrow {
-  font-size: 24px;
-  cursor: pointer;
-  padding: 15px 48px 15px 48px !important;
-  margin: 0px 0px 0px 0px;
-  /* font-size: 32px; */
-  color: #1A1019;
-  text-decoration: none;
-  border: 1px solid #1A1019;
-  border-radius: 40px;
-  background-color: transparent;
-  cursor: pointer;
-}
 
-.section-three-arrow:hover {
-  background-color: #1a191306;
-  /* Change the color and opacity as needed */
+#objects-arrow {
+  position: fixed;
+  bottom: 0;
 }
 
 #objects-arrow>div>a {
@@ -828,7 +825,6 @@ p.hidden {
 
 /* <!-- Resources Pages (Content) --> */
 
-
 .row-content.resources {
   width: 68%;
   align-items: flex-end;
@@ -939,6 +935,17 @@ a.resources:hover {
 
 .interviews-profiles {
   white-space: wrap;
+}
+
+/* Resources Main Page Arrow */
+
+#resources-arrow {
+  position: fixed;
+  bottom: 0;
+}
+
+#resources-arrow>div>a {
+  text-decoration: none !important;
 }
 
 /* <!-- Credits Pages (Content) --> */
@@ -1090,4 +1097,15 @@ a.thanks:hover {
 
 .thanks.hidden {
   display: none;
+}
+
+/* Credits Main Page Arrow */
+
+#credits-arrow {
+  position: fixed;
+  bottom: 0;
+}
+
+#credits-arrow>div>a {
+  text-decoration: none !important;
 }
