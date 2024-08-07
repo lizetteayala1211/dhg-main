@@ -37,6 +37,22 @@ $(document).ready(function () {
   }
   );
 
+      //toggle the component with class accordion_body
+//       $(".accordion_head").click(function () {
+//         if ($('.accordion_body').is(':visible')) {
+//             $(".accordion_body").slideUp(300);
+//             $(".plusminus").text('+');
+//         }
+//         if ($(this).next(".accordion_body").is(':visible')) {
+//             $(this).next(".accordion_body").slideUp(300);
+//             $(this).children(".plusminus").text('+');
+//         } else {
+//             $(this).next(".accordion_body").slideDown(300);
+//             $(this).children(".plusminus").text('-');
+//         }
+//     });
+// });
+
   ////// Credits Page (Curator) Drawer Toggle Open ///////
   $('#credits-title-one').on('click', function () {
     $('.curators').slideToggle("slow");
@@ -83,7 +99,7 @@ $(document).ready(function () {
       $('body').off('keyup.modal-close');
     }
     modal = $('<div>').css({
-      background: 'RGBA(0,0,0,.5) url(' + src + ') no-repeat center',
+      background: 'RGBA(0,0,0,.6) url(' + src + ') no-repeat center',
       backgroundSize: 'contain',
       width: '100%',
       height: '100%',
