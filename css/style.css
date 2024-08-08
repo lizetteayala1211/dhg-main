@@ -947,6 +947,37 @@ a.resources:hover {
   text-decoration: none !important;
 }
 
+/* <!-- Dialogues Pages (Content) --> */
+
+.row-content.dialogues {
+  width: 85%;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.content-container.dialogues {
+  display: block;
+  flex-direction: column;
+  width: 45%;
+}
+
+.dialogues-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Dialogues Main Page Arrow */
+
+#dialogues-arrow {
+  position: fixed;
+  bottom: 0;
+}
+
+#dialogues-arrow>div>a {
+  text-decoration: none !important;
+}
+
 /* <!-- Credits Pages (Content) --> */
 
 .row-content.credits {
