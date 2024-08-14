@@ -1,3 +1,5 @@
+/* Default: Large devices such as laptops, computers (greater than 1024px) *
+
 /* <!-- Global (Content) --> */
 
 /* Custom Font Faces */
@@ -952,19 +954,103 @@ a.resources:hover {
 .row-content.dialogues {
   width: 85%;
   align-items: flex-start;
-  flex-direction: row;
 }
 
 .content-container.dialogues {
   display: block;
-  flex-direction: column;
-  width: 45%;
+  flex-direction: row !important;
+  width: 100%;
 }
 
-.dialogues-list {
+.dialogues-artist-list {
   display: flex;
   width: 100%;
   flex-direction: column;
+}
+
+.dialogues-title-container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-content: space-between;
+  overflow-wrap: break-word;
+  width: 55%;
+}
+
+.dialogues-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1.5px solid black;
+  /* border-right: 1.5px solid black; */
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+
+.dialogues-artists-list {
+  display: flex;
+}
+
+.dialogues-copy-container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  align-content: space-between;
+  overflow-wrap: break-word;
+  width: 100%;
+  height: 30%;
+  overflow: hidden !important;
+
+}
+
+p.dialogues {
+  display: inline-block;
+  color: black;
+  /* font-family: "Ovo", serif; */
+  line-height: 28px;
+  font-size: 16px;
+  font-family: "Ovo", serif;
+  /* white-space: nowrap; */
+  /* width: 60% !important; */
+  overflow-wrap: normal;
+}
+
+.dialogues-copy {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+  overflow-wrap: normal;
+  padding: 0px 20px 0px 20px;
+}
+
+.moderator {
+  font-family: "Ovo", serif;
+  width: 70%;
+  align-self: center;
+  /* padding: 0px 20px 0px 20px; */
+}
+
+.first-person {
+  font-family: "Ovo", serif;
+  width: 70%;
+  /* padding: 0px 20px 0px 20px; */
+}
+
+.second-person {
+  align-self: flex-end !important;
+  font-family: "Ovo", serif;
+  width: 65%;
+  align-self: flex-end;
+  /* padding: 0px 20px 0px 20px; */
 }
 
 /* Dialogues Main Page Arrow */
@@ -1142,4 +1228,140 @@ a.thanks:hover {
 
 .artist-bio {
   display: none !important;
+}
+
+/* Medium devices such as tablets (1024px or lesser) */
+
+@media only screen and (max-width: 1024px) {
+
+h2 {
+  margin-bottom: 0px;
+}
+
+.bottom-column {
+  width: 92%;
+}
+
+.label-row {
+  width: 25%;
+}
+
+/* <!-- Objects Main (Content) --> */
+
+.top-column {
+  width: 92%;
+}
+
+/* label hr second class */
+.objects-main {
+  width: 87% !important;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* width: 80vw !important; */
+}
+
+.row-content > div {
+  display: flex;
+  width: 87% !important;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.objects-artwork-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  color: #1A1019;
+  /* background-color: red; */
+  font-family: "Antonio", sans-serif;
+  font-size: 24px;
+  margin: 20px 0px 0px 0px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* <!-- Objects Inner Pages (Global Content) --> */
+
+.top-column.objects-inner {
+  width: 92%;
+}
+
+.content-container.objects-inner {
+  width: 100% !important;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  font-size: 2.5vmin;
+  margin-bottom: 0px;
+}
+
+.objects-artwork-img-copy.inner {
+  flex-direction: column;
+}
+
+.artwork-img-top-copy.inner > p {
+  font-size: 18px !important;
+}
+
+
+#objects-main-section>div.top-column.objects-inner>div.row-content.object-inner>div>div>div.objects-artwork-img-copy.inner.bottom-row>* {
+  width: 100% !important;
+}
+
+/* <!-- Resources Pages (Content) --> */
+
+.content-container.resources {
+  width: 100% !important;
+}
+
+p.resources {
+  white-space: pre-line;
+}
+
+/* <!-- Dialogues Pages (Content) --> */
+
+.content-container.dialogues {
+  width: 100% !important;
+}
+
+.dialogues-artists-list {
+  flex-direction: column;
+}
+
+.dialogues-title-container {
+  width: 100% !important;
+}
+
+/* <!-- Credits Pages (Content) --> */
+
+#objects-main-section > div > div.row-content.credits > div {
+  width: 100% !important;
+}
+
+.list-01.credits, .list-02.credits, .list-03.credits {
+  width: 100% !important;
+}
+
+
+}
+
+
+
+/* Small devices such as phones (768px or lesser) */
+
+@media only screen and (max-width: 768px) {
+
 }
