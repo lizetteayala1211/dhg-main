@@ -422,6 +422,7 @@ a.arrow {
 }
 
 /* <!-- Intro (Content) --> */
+
 .intro {
   display: flex;
   justify-content: center;
@@ -1243,8 +1244,33 @@ h2 {
 }
 
 .label-row {
-  width: 25%;
+  width: auto !important;
 }
+
+/* <!-- Intro (Content) --> */
+
+.title-flex-container { 
+  width: 95% !important;
+}
+
+.title-top {
+  width: 100% !important;
+}
+
+.title-middle {
+  width: 100% !important;
+}
+
+.content-container .introduction {
+  width: 100% !important;
+  font-size: 18px;
+  margin: 0px 0px 0px 0px;
+}
+
+.content-container .introduction > p {
+  width: 100% !important;
+}
+
 
 /* <!-- Objects Main (Content) --> */
 
@@ -1255,6 +1281,10 @@ h2 {
 /* label hr second class */
 .objects-main {
   width: 87% !important;
+}
+
+.object-maker {
+  width: 95% !important;
 }
 
 .row-content {
@@ -1331,6 +1361,12 @@ p.resources {
   white-space: pre-line;
 }
 
+.top-column.resources {
+  width: 88%;
+  flex-direction: row !important;
+  /* margin: 40px 0px 40px 0px; */
+}
+
 /* <!-- Dialogues Pages (Content) --> */
 
 .content-container.dialogues {
@@ -1364,6 +1400,10 @@ p.resources {
   width: 100% !important;
 }
 
+.top-column.resources {
+  flex-direction: row !important;
+}
+
 
 }
 
@@ -1378,11 +1418,51 @@ p.resources {
   position: static !important;
 }
 
+/* <!-- Intro (Content) --> */
+
+.title-flex-container {
+  width: 92% !important;
+}
+
+.top-column.intro {
+  width: 88% !important;
+}
+
+.title-top {
+  width: 100%;
+  align-items: center;
+}
+
+.title-top > h3 {
+  font-size: 16px;
+  width: 75%;
+}
+
+.title-middle {
+  margin-bottom: 10px;
+}
+
+.title-bottom {
+  width: 100%;
+  align-items: center;
+}
+
+.title-bottom > h3 {
+  font-size: 14px;
+  width: 100%;
+}
+
+
+.row-content .introduction {
+  width: 100% !important;
+  margin: 10px 0px 20px 0px;
+}
+
 /* <!-- Objects Main (Content) --> */
 
 .top-column.objects {
   flex-direction: column;
-  width: 92%;
+  width: 88%;
 }
 
 .row-content.objects {
@@ -1439,6 +1519,7 @@ p.resources {
 
 .top-column.resources {
   width: 88%;
+  flex-direction: column !important;
   /* margin: 40px 0px 40px 0px; */
 }
 
@@ -1452,6 +1533,7 @@ p.resources {
 
 .top-column.dialogues {
   width: 88%;
+  flex-direction: column !important;
 }
 
 .row-content.dialogues {
@@ -1464,6 +1546,7 @@ p.resources {
 
 .top-column.credits {
   width: 88%;
+  flex-direction: column;
 }
 
 .row-content.credits {
