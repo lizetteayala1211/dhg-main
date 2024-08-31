@@ -281,8 +281,8 @@ main a:hover,
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.32);
   /* Change the color and opacity as needed */
 }
@@ -293,6 +293,8 @@ main a:hover,
   top: 0;
   left: 0;
   z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 #main-bg img {
@@ -301,7 +303,7 @@ main a:hover,
   width: 100vw;
 }
 
-/* <!-- Main (Content) --> */
+/* Main (Content) */
 
 main {
   height: fit-content;
@@ -421,13 +423,13 @@ a.arrow {
   /* Change the color and opacity as needed */
 }
 
-/* <!-- Intro (Content) --> */
+/* <!-- Introduction Page (Content) --> */
 
 .intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   align-self: center;
   height: 100%;
   width: 100vw;
@@ -576,6 +578,17 @@ p.introduction {
 
 /* <!-- Objects Main (Content) --> */
 
+#objects-main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #EDE4DD;
+}
+
 .row-content > div {
   display: flex;
   justify-content: center;
@@ -665,6 +678,17 @@ img.objects-artwork-img.rafagabby {
 }
 
 /* <!-- Objects Inner Pages (Global Content) --> */
+
+#objects-inner-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #EDE4DD;
+}
 
 .top-column.objects-inner {
   display: flex;
@@ -827,6 +851,17 @@ p.hidden {
 
 /* <!-- Resources Pages (Content) --> */
 
+#resources-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #EDE4DD;
+}
+
 .row-content.resources {
   width: 68%;
   align-items: flex-end;
@@ -952,6 +987,17 @@ a.resources:hover {
 
 /* <!-- Dialogues Pages (Content) --> */
 
+#dialogues-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #EDE4DD;
+}
+
 .row-content.dialogues {
   width: 85%;
   align-items: flex-start;
@@ -1066,6 +1112,17 @@ p.dialogues {
 }
 
 /* <!-- Credits Pages (Content) --> */
+
+#credits-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  height: 100%;
+  width: 100vw;
+  background-color: #EDE4DD;
+}
 
 .row-content.credits {
   width: 88%;
