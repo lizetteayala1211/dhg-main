@@ -638,7 +638,7 @@ img.objects-artwork-img.rafagabby {
   align-items: flex-start;
   height: 100%;
   width: 100%;
-  color: #1A1019;
+  color: #1A1019 !important;
 }
 
 .objects-artwork-img-copy>* {
@@ -652,11 +652,11 @@ img.objects-artwork-img.rafagabby {
   align-content: flex-start;
   justify-content: space-between;
   align-items: flex-start;
-  color: #1A1019;
+  color: #1A1019 !important;
 }
 
-.artwork-img-top-copy>* {
-  color: #1A1019;
+.artwork-img-top-copy > * {
+  color: #1A1019 !important;
 }
 
 .object-maker {
@@ -768,6 +768,86 @@ p.hidden {
 #objects-main-section>div.top-column.objects-inner>div.row-content.object-inner>div>div>div:nth-child(4)>*>div>* {
   color: black;
 }
+
+#open-bottom-row {
+  width: 95% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  cursor: pointer;
+}
+
+#open-bottom-row > * {
+  color: #1A1019 !important;
+}
+
+#open-bottom-row-two {
+  width: 95% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+  align-self: center;
+  cursor: pointer;
+}
+
+#open-bottom-row-two > * {
+  display: flex;
+  flex-direction: row;
+  color: #1A1019 !important;
+  text-decoration: none;
+}
+
+
+.vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+.horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+.opened {
+  /* opacity: 1; */
+}
+
+.vertical {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+}
+.horizontal {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.horizontal {
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 5px;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -2.5px;
+}
+.vertical {
+    position: absolute;
+    background-color: red;
+    width: 5px;
+    height: 30px;
+    left: 50%;
+    margin-left: -2.5px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+
+
+
 
 /* Carousel(s) */
 
@@ -1258,7 +1338,7 @@ a.thanks:hover {
   flex-direction: column;
   overflow: hidden;
   /* width: 60vw; */
-  gap: 1em;
+  /* gap: 1em; */
 }
 
 .curators.hidden {

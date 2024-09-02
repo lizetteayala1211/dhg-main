@@ -31,25 +31,57 @@ $(document).ready(function () {
   });
 
 
-  ////// Object Inner Page Info Drawer Toggle Open ///////
-  // $('#open-bottom-row, #open-bottom-row-two').on('click', function () {
-  //   $('.hidden, .hidden-transparent').slideToggle("slow");
-  // }
-  // );
+  //// Object Inner Page Info Drawer Toggle Open ///////
+//   $('#open-bottom-row, #open-bottom-row-two').on('click', function () {
+//     $('.hidden, .hidden-transparent').slideToggle("slow");
+//   }
+//   );
 
-  $("#open-bottom-row-two").click(function () {
-    if ($(".hidden, .hidden-transparent").is(':visible')) {
-        $(".hidden, .hidden-transparent").slideUp(300);
-        $(".plusminus").text('+');
-    }
-    // if ($(this).next(".hidden, .hidden-transparent").is(':visible')) {
-    //     $(this).next(".hidden, .hidden-transparent").slideUp(300);
-    //     $(this).children(".plusminus").text('+');
-    // } else {
-    //     $(this).next(".hidden, .hidden-transparent").slideDown(300);
-    //     $(this).children(".plusminus").text('-');
-    // }
+//   $("#open-bottom-row-two").click(function () {
+//     if ($(".hidden, .hidden-transparent").is(':visible')) {
+//         $(".hidden, .hidden-transparent").slideUp(300);
+//         $(".plusminus").text('+');
+//     }
+//     if ($(this).next(".hidden, .hidden-transparent").is(':visible')) {
+//         $(this).next(".hidden, .hidden-transparent").slideUp(300);
+//         $(this).children(".plusminus").text('+');
+//     } else {
+//         $(this).next(".hidden, .hidden-transparent").slideDown(300);
+//         $(this).children(".plusminus").text('-');
+//     }
+// });
+
+
+// $('#toggle_icon').toggle(function() {
+
+//   $('#toggle_icon').text('-');
+//   $('#hidden').slideToggle();
+
+// }, function() {
+
+//   $('#toggle_icon').text('+');
+//   $('#hidden').slideToggle();
+// });
+
+
+$(document).ready(function(){
+
+  $(".slidingDiv").hide();
+  $(".show_hide").show();
+
+  $('.show_hide').toggle(function(){
+      $("#plus").text("-");
+      $(".slidingDiv").slideDown();
+      
+  },function(){
+      $("#plus").text("+");
+      $(".slidingDiv").slideUp();
+  });
+   
 });
+
+
+
 
   ////// Credits Page (Curator) Drawer Toggle Open ///////
   $('#credits-title-one').on('click', function () {
@@ -250,6 +282,25 @@ $(document).ready(function () {
   // Allows to use multiple carousels on the same page:
   els(".carousel").forEach(carousel);
   å
+
+    ////// Show/Hide Button Toggle ///////
+
+  // $('#toggle_icon').toggle(function() {
+
+  //   $('#toggle_icon').text('-');
+  //   $('#toggle_text').slideToggle();
+  
+  // }, function() {
+  
+  //   $('#toggle_icon').text('+');
+  //   $('#toggle_text').slideToggle();
+  
+  // });
+
+  $('.circle-plus').on('click', function(){
+    $(this).toggleClass('opened');
+  })
+  
 
 });
 
