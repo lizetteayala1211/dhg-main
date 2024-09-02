@@ -64,23 +64,6 @@ $(document).ready(function () {
 // });
 
 
-$(document).ready(function(){
-
-  $(".slidingDiv").hide();
-  $(".show_hide").show();
-
-  $('.show_hide').toggle(function(){
-      $("#plus").text("-");
-      $(".slidingDiv").slideDown();
-      
-  },function(){
-      $("#plus").text("+");
-      $(".slidingDiv").slideUp();
-  });
-   
-});
-
-
 
 
   ////// Credits Page (Curator) Drawer Toggle Open ///////
