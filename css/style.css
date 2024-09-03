@@ -1294,12 +1294,16 @@ p.dialogues {
 
 .content-container .credits {
   display: block;
-  flex-direction: column;
   width: 45%;
+}
+
+#credits-section > div > div.row-content.credits > div {
+  flex-direction: row !important;
 }
 
 .credits-list {
   display: flex;
+  width: 48%;
   /* width: 100%;
   max-width: 100%; */
   /* margin-top: 40px; */
@@ -1337,6 +1341,7 @@ p.thanks {
   overflow-wrap: normal;
   width: 100% !important;
   max-width: 100% !important;
+  border-bottom: 1.5px solid #1A1019;
 }
 
 p.credits.title {
@@ -1375,6 +1380,7 @@ a.thanks:hover {
   align-self: flex-end;
   align-content: space-between;
   overflow-wrap: break-word;
+  width: 100%;
 }
 
 #credits-title-one {
@@ -1391,6 +1397,7 @@ a.thanks:hover {
   align-self: flex-end;
   align-content: space-between;
   overflow-wrap: break-word;
+  width: 100%;
 }
 
 #credits-title-two {
@@ -1407,6 +1414,7 @@ a.thanks:hover {
   align-self: flex-end;
   align-content: space-between;
   overflow-wrap: break-word;
+  width: 100%;
 }
 
 #credits-title-three {
@@ -1420,8 +1428,11 @@ a.thanks:hover {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  /* width: 60vw; */
-  /* gap: 1em; */
+  width: 98%;
+}
+
+.credit-bios.special-thanks {
+  width: 88%;
 }
 
 .curators.hidden {
@@ -1434,6 +1445,25 @@ a.thanks:hover {
 
 .thanks.hidden {
   display: none;
+}
+
+.credit-logos-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  width: 100%;
+  /* height: 150px; */
+}
+
+.credit-logos {
+  display: flex;
+  width: 150px;
+  height: auto;
+  /* padding-right: 25px; */
 }
 
 /* Credits Main Page Arrow */
@@ -1648,10 +1678,13 @@ p.resources {
   flex-direction: row !important;
 }
 
-
+.credit-logos-wrapper {
+  gap: 1em !important;
+  padding-bottom: 20px !important;
 }
 
 
+}
 
 /* Small devices such as phones (768px or lesser) */
 
@@ -1798,7 +1831,28 @@ p.resources {
   align-items: flex-end;
 }
 
+.credits-list {
+  display: flex;
+  width: 100%;
+}
 
+.credit-bios.special-thanks {
+  width: 100%;
+}
+
+.credit-logos-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  width: 100%;
+  /* height: 150px; */
+  padding-bottom: 40px;
+  border-bottom: 1.5px solid #1A1019;
+}
 
 
 }
