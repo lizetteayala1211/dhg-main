@@ -102,6 +102,12 @@ $(document).ready(function () {
   }
   );
 
+    // ////// Teaching Guides Page (Lesson 01) Drawer Toggle Open ///////
+    // $('.credits-title.two').on('click', function () {
+    //   $('.guides-copy.guides.hidden').slideToggle("slow");
+    // }
+    // );
+
   ////// Zoom in on Object Images when Clicked ///////
   $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
     var src = $(this).attr('src');
