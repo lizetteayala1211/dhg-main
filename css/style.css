@@ -290,7 +290,7 @@ main a:hover,
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   /* Change the color and opacity as needed */
 }
 
@@ -518,6 +518,8 @@ a.arrow {
   align-items: flex-end;
   align-self: flex-end;
   margin: 0px 0px 0px 40px;
+  font-size: 18px;
+  line-height: 150% !important;
 }
 
 p.introduction {
@@ -602,7 +604,7 @@ p.introduction {
 
 .row-content > div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
@@ -668,6 +670,7 @@ img.objects-artwork-img.rafagabby {
 
 .artwork-img-top-copy > * {
   color: #1A1019 !important;
+  line-height: 150% !important;
 }
 
 .object-maker {
@@ -988,6 +991,7 @@ p.hidden {
 .archives-img-top-copy > * {
   color: #1A1019;
   font-size: 16px;
+  line-height: 150% !important;
 }
 
 .archives-img-top-copy {
@@ -1229,7 +1233,7 @@ p.dialogues {
   display: inline-block;
   color: black;
   /* font-family: "Ovo", serif; */
-  line-height: 28px;
+  line-height: 150% !important;
   font-size: 16px;
   font-family: "Ovo", serif;
   /* white-space: nowrap; */
@@ -1243,6 +1247,7 @@ p.dialogues {
   width: 80%;
   align-self: center;
   overflow-wrap: normal;
+  line-height: 150% !important;
   padding: 0px 20px 0px 20px;
 }
 
@@ -1250,12 +1255,14 @@ p.dialogues {
   font-family: "Ovo", serif;
   width: 70%;
   align-self: center;
+  line-height: 150% !important;
   /* padding: 0px 20px 0px 20px; */
 }
 
 .first-person {
   font-family: "Ovo", serif;
   width: 70%;
+  line-height: 150% !important;
   /* padding: 0px 20px 0px 20px; */
 }
 
@@ -1264,6 +1271,7 @@ p.dialogues {
   font-family: "Ovo", serif;
   width: 65%;
   align-self: flex-end;
+  line-height: 150% !important;
   /* padding: 0px 20px 0px 20px; */
 }
 
@@ -1329,7 +1337,7 @@ p.curators {
   display: inline-block;
   color: black;
   /* font-family: "Ovo", serif; */
-  /* line-height: 32px; */
+  line-height: 150% !important;
   font-size: 16px;
   overflow-wrap: normal;
   width: 100% !important;
@@ -1340,7 +1348,7 @@ p.thanks {
   display: inline-block;
   color: black;
   /* font-family: "Ovo", serif; */
-  /* line-height: 32px; */
+  line-height: 150% !important;
   font-size: 16px;
   overflow-wrap: normal;
   width: 100% !important;
@@ -1352,6 +1360,7 @@ p.credits.title {
   width: auto !important;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
+  line-height: 150%;
 }
 
 a.credits {
@@ -1563,17 +1572,24 @@ p.guides {
   display: inline-block;
   color: black;
   /* font-family: "Ovo", serif; */
-  /* line-height: 32px; */
+  line-height: 150% !important;
   font-size: 16px;
   overflow-wrap: normal;
   width: 100% !important;
   max-width: 100% !important;
 }
 
+p.guides.hidden {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 p.guides.title {
   width: auto !important;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
+  line-height: 200% !important;
 }
 
 .guides-img-wrapper {
@@ -1595,11 +1611,14 @@ p.guides.title {
   /* padding-right: 25px; */
 }
 
+.guides-bold {
+  line-height: 250%;
+}
 
 
-/* Medium devices such as tablets (1024px or lesser) */
+/* Medium devices such as tablets (1020px or lesser) */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1020px) {
 
 h2 {
   margin-bottom: 0px;
@@ -1630,6 +1649,7 @@ h2 {
 .content-container .introduction {
   width: 100% !important;
   font-size: 18px;
+  line-height: 150% !important;
   margin: 0px 0px 0px 0px;
 }
 
@@ -1709,7 +1729,8 @@ h2 {
 }
 
 .artwork-img-top-copy.inner > p {
-  font-size: 18px !important;
+  font-size: 16px !important;
+  line-height: 150% !important;
 }
 
 

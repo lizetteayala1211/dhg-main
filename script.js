@@ -78,12 +78,6 @@ $(document).ready(function () {
   }
   );
 
-  ////// Credits Page (Contributor) Drawer Toggle Open ///////
-  $('#credits-title-three').on('click', function () {
-    $('.thanks.hidden').slideToggle("slow");
-  }
-  );
-
   ////// Resources Page (Digital Archives) Drawer Toggle Open ///////
   $('.resources-title.first').on('click', function () {
     $('.resources.archives.hidden').slideToggle("slow");
@@ -102,11 +96,17 @@ $(document).ready(function () {
   }
   );
 
-    // ////// Teaching Guides Page (Lesson 01) Drawer Toggle Open ///////
-    // $('.credits-title.two').on('click', function () {
-    //   $('.guides-copy.guides.hidden').slideToggle("slow");
-    // }
-    // );
+    ////// Teaching Guides Page (Lesson 01) Drawer Toggle Open ///////
+    $('.guides-title-two').on('click', function () {
+      $('.guides.hidden').slideToggle("slow");
+    }
+    );
+
+    ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
+    $('.guides-title-one').on('click', function () {
+      $('.guides.hidden').slideToggle("slow");
+    }
+    );
 
   ////// Zoom in on Object Images when Clicked ///////
   $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
