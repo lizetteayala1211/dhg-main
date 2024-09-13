@@ -308,6 +308,9 @@ main a:hover,
   /* background: rgba(0, 0, 0, 0.9); */
   height: 100vh;
   width: 100vw;
+  object-fit: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* Main (Content) */
@@ -505,7 +508,7 @@ a.arrow {
   flex-direction: column;
   align-self: flex-start;
   /* background-color: green; */
-  margin: 40px 0px 40px 0px;
+  margin: 20px 0px 40px 0px;
   padding: 0px 0px 0px 0px;
   /* background-color: #1A1019; */
 }
@@ -519,13 +522,14 @@ a.arrow {
   align-self: flex-end;
   margin: 0px 0px 0px 40px;
   font-size: 18px;
-  line-height: 150% !important;
+  line-height: 175% !important;
 }
 
 p.introduction {
   display: inline-block !important;
   color: black;
   overflow-wrap: normal;
+  line-height: 175% !important;
 }
 
 .bottom-column {
@@ -742,6 +746,14 @@ img.objects-artwork-img.rafagabby {
 
 .artwork-img-top-copy.inner {
   flex-direction: column;
+}
+
+.artwork-h2 {
+  width: 85% !important;
+}
+
+.p-under-h2 {
+  width: 80% !important;
 }
 
 /* Artwork Material & Artist About */
@@ -970,11 +982,35 @@ p.hidden {
   cursor: pointer;
 }
 
-.archives-artwork-img {
+.img-full-screen {
   height: 400px;
   width: 100%;
   /* width: 610px; */
   object-fit: cover;
+  cursor: zoom-in !important;
+}
+
+.scroll-disabled {
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-full-screen, 
+.img-placeholder {
+  cursor:pointer;
+}
+.img-placeholder {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0.6);;
+  z-index: 999;
 }
 
 .archives-img-copy {
@@ -1008,7 +1044,6 @@ p.hidden {
   display: none;
 }
 
-
 .archives-wrapper {
   display: flex;
   flex-direction: row;
@@ -1018,7 +1053,6 @@ p.hidden {
   border-bottom: 1.5px solid #1A1019;
   /* padding-bottom: 10px; */
 }
-
 
 /* <!-- Resources Pages (Content) --> */
 
@@ -1396,7 +1430,7 @@ a.thanks:hover {
   width: 100%;
 }
 
-#credits-title-one {
+.credits-title-one {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1413,7 +1447,7 @@ a.thanks:hover {
   width: 100%;
 }
 
-#credits-title-two {
+.credits-title-two {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1428,13 +1462,6 @@ a.thanks:hover {
   align-content: space-between;
   overflow-wrap: break-word;
   width: 100%;
-}
-
-#credits-title-three {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100% !important;
 }
 
 .credit-bios {

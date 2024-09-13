@@ -30,89 +30,11 @@ $(document).ready(function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-
-  //// Object Inner Page Info Drawer Toggle Open ///////
-//   $('#open-bottom-row, #open-bottom-row-two').on('click', function () {
-//     $('.hidden, .hidden-transparent').slideToggle("slow");
-//   }
-//   );
-
-//   $("#open-bottom-row-two").click(function () {
-//     if ($(".hidden, .hidden-transparent").is(':visible')) {
-//         $(".hidden, .hidden-transparent").slideUp(300);
-//         $(".plusminus").text('+');
-//     }
-//     if ($(this).next(".hidden, .hidden-transparent").is(':visible')) {
-//         $(this).next(".hidden, .hidden-transparent").slideUp(300);
-//         $(this).children(".plusminus").text('+');
-//     } else {
-//         $(this).next(".hidden, .hidden-transparent").slideDown(300);
-//         $(this).children(".plusminus").text('-');
-//     }
-// });
-
-
-// $('#toggle_icon').toggle(function() {
-
-//   $('#toggle_icon').text('-');
-//   $('#hidden').slideToggle();
-
-// }, function() {
-
-//   $('#toggle_icon').text('+');
-//   $('#hidden').slideToggle();
-// });
-
-
-
-
-  ////// Credits Page (Curator) Drawer Toggle Open ///////
-  $('#credits-title-one').on('click', function () {
-    $('.curators').slideToggle("slow");
-  }
-  );
-
-  ////// Credits Page (Contributor) Drawer Toggle Open ///////
-  $('#credits-title-two').on('click', function () {
-    $('.credits.hidden').slideToggle("slow");
-  }
-  );
-
-  ////// Resources Page (Digital Archives) Drawer Toggle Open ///////
-  $('.resources-title.first').on('click', function () {
-    $('.resources.archives.hidden').slideToggle("slow");
-  }
-  );
-
-  ////// Resources Page (Books & Articles) Drawer Toggle Open ///////
-  $('.resources-title.second').on('click', function () {
-    $('.resources.books-articles.hidden').slideToggle("slow");
-  }
-  );
-
-  ////// Resources Page (Artist Interviews & Profiles) Drawer Toggle Open ///////
-  $('.resources-title.third').on('click', function () {
-    $('.resources.interviews-profiles.hidden').slideToggle("slow");
-  }
-  );
-
-    ////// Teaching Guides Page (Lesson 01) Drawer Toggle Open ///////
-    $('.guides-title-two').on('click', function () {
-      $('.guides.hidden').slideToggle("slow");
-    }
-    );
-
-    ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
-    $('.guides-title-one').on('click', function () {
-      $('.guides.hidden').slideToggle("slow");
-    }
-    );
-
   ////// Zoom in on Object Images when Clicked ///////
-  $('img[data-enlargeable]').addClass('img-enlargeable').click(function() {
+  $('img[data-enlargeable]').addClass('img-enlargeable').click(function () {
     var src = $(this).attr('src');
     var modal;
-  
+
     function removeModal() {
       modal.remove();
       $('body').off('keyup.modal-close');
@@ -127,15 +49,49 @@ $(document).ready(function () {
       top: '0',
       left: '0',
       cursor: 'zoom-out'
-    }).click(function() {
+    }).click(function () {
       removeModal();
     }).appendTo('body');
     //handling ESC
-    $('body').on('keyup.modal-close', function(e) {
+    $('body').on('keyup.modal-close', function (e) {
       if (e.key === 'Escape') {
         removeModal();
       }
     });
+  });
+
+  ////// Archive Image(s) Fullscreen ///////
+
+  // Makes the clicked image full screen (uses a <div> with a background image)
+  $('.img-full-screen').click(function () {
+
+    // Prevents scrolling
+    $('body').addClass('scroll-disabled');
+
+    // Optional: Enables pinch and zoom
+    $('meta[name=viewport]').attr('content', 'width = device-width, initial-scale = 1.00, minimum-scale = 1.00, maximum-scale = 2.00, user-scalable=yes');
+
+    // Get image path source
+    let imagePath = $(this).attr('src');
+
+    // Set image path source
+    $('.img-placeholder').attr('style', 'background-image: url(' + imagePath + ')');
+
+    // Show image
+    $('.img-placeholder').fadeIn();
+
+  });
+
+  $('.img-placeholder').click(function () {
+
+    // Enables scrolling again
+    $('body').removeClass('scroll-disabled');
+
+    // Optional: Disables pinch and zoom
+    $('meta[name=viewport]').attr('content', 'width = device-width, initial-scale = 1.00, minimum-scale = 1.00, maximum-scale = 1.00');
+
+    // Hide image
+    $('.img-placeholder').fadeOut();
   });
 
 
@@ -271,26 +227,65 @@ $(document).ready(function () {
 
   // Allows to use multiple carousels on the same page:
   els(".carousel").forEach(carousel);
-  å
 
-    ////// Show/Hide Button Toggle ///////
+    ////// Show/Hide (Credits) Button Toggle ///////
+    $('.credits-title-one').click(function () {
+      var toggleIcon = $(this).find('.toggle_icon');
+      toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    })
 
-  // $('#toggle_icon').toggle(function() {
-
-  //   $('#toggle_icon').text('-');
-  //   $('#toggle_text').slideToggle();
+    ////// Credits Page (Curator) Drawer Toggle Open ///////
+    $('.credits-title-one').on('click', function () {
+      $('.curators').slideToggle("slow");
+    }
+    );
   
-  // }, function() {
+    ////// Credits Page (Contributor) Drawer Toggle Open ///////
+    $('.credits-title-two').on('click', function () {
+      $('.credits.hidden').slideToggle("slow");
+    }
+    );
   
-  //   $('#toggle_icon').text('+');
-  //   $('#toggle_text').slideToggle();
-  
-  // });
+  ////// Show/Hide (Resources) Button Toggle ///////
+  $('.resources-title').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  })
 
-  $('.circle-plus').on('click', function(){
+    ////// Resources Page (Digital Archives) Drawer Toggle Open ///////
+    $('.resources-title.first').on('click', function () {
+      $('.resources.archives.hidden').slideToggle("slow");
+    }
+    );
+  
+    ////// Resources Page (Books & Articles) Drawer Toggle Open ///////
+    $('.resources-title.second').on('click', function () {
+      $('.resources.books-articles.hidden').slideToggle("slow");
+    }
+    );
+  
+    ////// Resources Page (Artist Interviews & Profiles) Drawer Toggle Open ///////
+    $('.resources-title.third').on('click', function () {
+      $('.resources.interviews-profiles.hidden').slideToggle("slow");
+    }
+    );
+  
+    ////// Teaching Guides Page (Lesson 01) Drawer Toggle Open ///////
+    $('.guides-title-two').on('click', function () {
+      $('.guides.hidden').slideToggle("slow");
+    }
+    );
+  
+    ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
+    $('.guides-title-one').on('click', function () {
+      $('.guides.hidden').slideToggle("slow");
+    }
+    );
+
+  $('.circle-plus').on('click', function () {
     $(this).toggleClass('opened');
   })
-  
+
 
 });
 
