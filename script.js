@@ -206,9 +206,6 @@ $(document).ready(function () {
   }
   );
 
-
-
-
     ////// Show/Hide (Credits 01) Button Toggle ///////
     $('.credits-title-one').click(function () {
       var toggleIcon = $(this).find('.toggle_icon');
@@ -239,39 +236,54 @@ $(document).ready(function () {
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
   })
 
-    ////// Resources Page (Digital Archives) Drawer Toggle Open ///////
-    $('.resources-title.first').on('click', function () {
-      $('.resources.archives.hidden').slideToggle("slow");
-    }
-    );
+  // Resources Page (Digital Archives) Drawer Toggle Open //
+  $('.resources-title.first').on('click', function () {
+    $('.resources.archives.hidden').slideToggle("slow");
+  }
+  );
   
-    ////// Resources Page (Books & Articles) Drawer Toggle Open ///////
+    // Resources Page (Books & Articles) Drawer Toggle Open //
     $('.resources-title.second').on('click', function () {
       $('.resources.books-articles.hidden').slideToggle("slow");
     }
     );
   
-    ////// Resources Page (Artist Interviews & Profiles) Drawer Toggle Open ///////
+    // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
     $('.resources-title.third').on('click', function () {
       $('.resources.interviews-profiles.hidden').slideToggle("slow");
     }
     );
+
+  ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
+  $('#guides-title-two').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  })
   
-    ////// Teaching Guides Page (Lesson 01) Drawer Toggle Open ///////
-    $('.guides-title-two').on('click', function () {
-      $('.guides.hidden').slideToggle("slow");
-    }
-    );
-  
-    ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
-    $('.guides-title-one').on('click', function () {
-      $('.guides.hidden').slideToggle("slow");
+    // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
+    $('#guides-title-two').on('click', function () {
+      $('.guides.02.hidden').slideToggle("slow");
     }
     );
 
-  $('.circle-plus').on('click', function () {
-    $(this).toggleClass('opened');
+  ////// Show/Hide (Teaching Guide 02) Button Toggle ///////
+  $('#guides-title-one').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
   })
+  
+    ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
+    $('#guides-title-one').on('click', function () {
+      $('.guides.01.hidden').slideToggle("slow");
+    }
+    );
+
+
+
+
+  // $('.circle-plus').on('click', function () {
+  //   $(this).toggleClass('opened');
+  // })
 
 
 });

@@ -1109,13 +1109,14 @@ p.resources {
   font-family: "Ovo", serif;
   line-height: 28px;
   font-size: 16px;
-  white-space: nowrap;
-  /* width: 60% !important; */
+  white-space: initial;
+  /* width: 90% !important; */
   overflow-wrap: normal;
 }
 
 .resources.hidden {
   display: none;
+  width: 90% !important;
 }
 
 a.resources {
@@ -1174,7 +1175,7 @@ a.resources:hover {
 }
 
 .interviews-profiles {
-  white-space: wrap;
+  white-space: initial !important;
 }
 
 /* Resources Main Page Arrow */
@@ -1544,6 +1545,10 @@ a.thanks:hover {
   width: 45%;
 }
 
+#guides-section > div > div.row-content.guides > div {
+  width: 100% !important;
+}
+
 .guides-list {
   display: flex;
   width: 48%;
@@ -1616,7 +1621,7 @@ p.guides.title {
   width: auto !important;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
-  line-height: 200% !important;
+  line-height: 175% !important;
 }
 
 .guides-img-wrapper {
@@ -1641,7 +1646,6 @@ p.guides.title {
 .guides-bold {
   line-height: 250%;
 }
-
 
 /* Medium devices such as tablets (1020px or lesser) */
 
