@@ -193,19 +193,41 @@ $(document).ready(function () {
   // Allows to use multiple carousels on the same page:
   els(".carousel").forEach(carousel);
 
-    ////// Show/Hide (Credits) Button Toggle ///////
+
+  ////// Show/Hide (Asco Inner Page) Button Toggle ///////
+  $('#open-bottom-row-two').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  })
+
+  // Asco Inner Page (About) Drawer Toggle Open //
+  $('#open-bottom-row-two').on('click', function () {
+    $('.about.hidden').slideToggle("slow");
+  }
+  );
+
+
+
+
+    ////// Show/Hide (Credits 01) Button Toggle ///////
     $('.credits-title-one').click(function () {
       var toggleIcon = $(this).find('.toggle_icon');
       toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
     })
 
-    ////// Credits Page (Curator) Drawer Toggle Open ///////
+    // Credits Page (Curator) Drawer Toggle Open //
     $('.credits-title-one').on('click', function () {
-      $('.curators').slideToggle("slow");
+      $('.curators.hidden').slideToggle("slow");
     }
     );
+
+    ////// Show/Hide (Credits 02) Button Toggle ///////
+    $('.credits-title-two').click(function () {
+      var toggleIcon = $(this).find('.toggle_icon');
+      toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    })
   
-    ////// Credits Page (Contributor) Drawer Toggle Open ///////
+    // Credits Page (Contributor) Drawer Toggle Open //
     $('.credits-title-two').on('click', function () {
       $('.credits.hidden').slideToggle("slow");
     }

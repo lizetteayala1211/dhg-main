@@ -433,10 +433,6 @@ a.arrow {
   /* Change the color and opacity as needed */
 }
 
-/* .landing-title-small {
-
-} */
-
 /* <!-- Introduction Page (Content) --> */
 
 .intro {
@@ -561,19 +557,7 @@ p.introduction {
 #intro-arrow {
   position: fixed;
   bottom: 0;
-  /* 
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-  will-change: opacity, visibility; */
 }
-
-/* #intro-arrow.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-} */
 
 .section-arrow {
   font-size: 24px;
@@ -590,7 +574,6 @@ p.introduction {
 
 .section-arrow:hover {
   background-color: #1a191306;
-  /* Change the color and opacity as needed */
 }
 
 /* <!-- Objects Main (Content) --> */
@@ -621,7 +604,7 @@ p.introduction {
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
-  width: 49%;
+  width: 48.5%;
   color: #1A1019;
   /* background-color: red; */
   font-family: "Antonio", sans-serif;
@@ -791,6 +774,21 @@ p.hidden {
   margin-bottom: 20px;
 }
 
+p.about {
+  align-self: flex-end;
+  color: #1A1019 !important;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 150%;
+  width: 95%;
+  margin: 0px 0px 30px 0px;
+}
+
+.artist-bio {
+  width: 50%;
+  align-self: flex-end;
+}
+
 #objects-main-section>div.top-column.objects-inner>div.row-content.object-inner>div>div>div:nth-child(4)>*>div>* {
   color: black;
 }
@@ -799,7 +797,7 @@ p.hidden {
   width: 95% !important;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-self: center;
   cursor: pointer;
 }
@@ -809,13 +807,13 @@ p.hidden {
 }
 
 #open-bottom-row-two {
-  width: 95% !important;
+  width: 48% !important;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* justify-content: flex-end; */
-  align-self: center;
+  align-self: flex-end;
   cursor: pointer;
+  margin: 0px 25px 0px 0px;
 }
 
 #open-bottom-row-two > * {
@@ -1435,6 +1433,7 @@ a.thanks:hover {
   flex-direction: row;
   justify-content: space-between;
   width: 100% !important;
+  cursor: pointer;
 }
 
 .list-02.credits {
@@ -1452,6 +1451,7 @@ a.thanks:hover {
   flex-direction: row;
   justify-content: space-between;
   width: 100% !important;
+  cursor: pointer;
 }
 
 .list-03.credits {
@@ -1517,9 +1517,9 @@ a.thanks:hover {
   text-decoration: none !important;
 }
 
-.artist-bio {
+/* .artist-bio {
   display: none !important;
-}
+} */
 
 /* <!-- Teaching Guides Page (Content) --> */
 
@@ -1765,6 +1765,26 @@ h2 {
   width: 100% !important;
 }
 
+#open-bottom-row-two {
+  width: 95% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+  cursor: pointer;
+  margin: 0px 25px 0px 0px;
+}
+
+.artist-bio {
+  width: 96%;
+  align-self: flex-start;
+  margin: 0px 25px 0px 8px;
+}
+
+p.about { 
+  width: 100%;
+}
+
 /* <!-- Archive Pages (Content) --> */
 
 .top-column.archives {
@@ -1950,6 +1970,20 @@ p.resources {
 .artwork-img-top-copy > h2 {
   width: 90%;
   white-space: pre-line;
+}
+
+#open-bottom-row-two {
+  width: 95% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+}
+
+p.about {
+  width: 95%;
 }
 
 /* <!-- Resources Pages (Content) --> */
