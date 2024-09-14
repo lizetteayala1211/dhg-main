@@ -70,6 +70,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 nav * {
@@ -433,7 +434,7 @@ a.arrow {
   /* Change the color and opacity as needed */
 }
 
-/* <!-- Introduction Page (Content) --> */
+/* <!-- Intro Page (Content) --> */
 
 .intro {
   display: flex;
@@ -576,7 +577,7 @@ p.introduction {
   background-color: #1a191306;
 }
 
-/* <!-- Objects Main (Content) --> */
+/* <!-- Objects Main Page (Content) --> */
 
 #objects-main-section {
   display: flex;
@@ -948,7 +949,7 @@ p.about {
   background: #ffffff;
 }
 
-/* <!-- Archives (Content) --> */
+/* <!-- Archives Page (Content) --> */
 
 #archives-main-section {
   display: flex;
@@ -1052,7 +1053,7 @@ p.about {
   /* padding-bottom: 10px; */
 }
 
-/* <!-- Resources Pages (Content) --> */
+/* <!-- Resources Page (Content) --> */
 
 #resources-section {
   display: flex;
@@ -1189,7 +1190,7 @@ a.resources:hover {
   text-decoration: none !important;
 }
 
-/* <!-- Dialogues Pages (Content) --> */
+/* <!-- Dialogues Page (Content) --> */
 
 #dialogues-section {
   display: flex;
@@ -1319,7 +1320,7 @@ p.dialogues {
   text-decoration: none !important;
 }
 
-/* <!-- Credits Pages (Content) --> */
+/* <!-- Credits Page (Content) --> */
 
 #credits-section {
   display: flex;
@@ -1412,6 +1413,7 @@ a.thanks {
   color: black;
   font-size: 16px;
   background-color: transparent;
+  z-index: 500;
 }
 
 a.thanks:hover {
@@ -1556,6 +1558,7 @@ a.thanks:hover {
   max-width: 100%; */
   /* margin-top: 40px; */
   flex-direction: column;
+  z-index: 500;
 }
 
 .list-01.guides {
@@ -1663,7 +1666,7 @@ h2 {
   width: auto !important;
 }
 
-/* <!-- Intro (Content) --> */
+/* <!-- Intro Page (Content) --> */
 
 .title-flex-container { 
   width: 95% !important;
@@ -1688,8 +1691,7 @@ h2 {
   width: 100% !important;
 }
 
-
-/* <!-- Objects Main (Content) --> */
+/* <!-- Objects Main Page (Content) --> */
 
 .top-column {
   width: 92%;
@@ -1789,7 +1791,7 @@ p.about {
   width: 100%;
 }
 
-/* <!-- Archive Pages (Content) --> */
+/* <!-- Archive Page (Content) --> */
 
 .top-column.archives {
   flex-direction: column;
@@ -1813,7 +1815,7 @@ p.about {
   /* padding-bottom: 10px; */
 }
 
-/* <!-- Resources Pages (Content) --> */
+/* <!-- Resources Page (Content) --> */
 
 .content-container.resources {
   width: 100% !important;
@@ -1824,12 +1826,12 @@ p.resources {
 }
 
 .top-column.resources {
-  width: 88%;
+  width: 88% !important;
   flex-direction: row !important;
   /* margin: 40px 0px 40px 0px; */
 }
 
-/* <!-- Dialogues Pages (Content) --> */
+/* <!-- Dialogues Page (Content) --> */
 
 .content-container.dialogues {
   width: 100% !important;
@@ -1852,7 +1854,32 @@ p.resources {
   margin-top: 20px;
 }
 
-/* <!-- Credits Pages (Content) --> */
+/* <!-- Guides Page (Content) --> */
+
+.top-column.guides {
+  width: 92%;
+  flex-direction: column;
+}
+
+.row-content.guides {
+  width: 100%;
+  align-items: flex-end;
+}
+
+#guides-section > div > div.row-content.guides > div {
+  width: 100% !important;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.guides-list {
+    display: flex;
+    width: 100%;
+    /* margin-top: 40px; */
+    flex-direction: column;
+}
+
+/* <!-- Credits Page (Content) --> */
 
 #objects-main-section > div > div.row-content.credits > div {
   width: 100% !important;
@@ -1883,7 +1910,7 @@ p.resources {
   position: static !important;
 }
 
-/* <!-- Intro (Content) --> */
+/* <!-- Intro Page (Content) --> */
 
 .title-flex-container {
   width: 92% !important;
@@ -1923,7 +1950,7 @@ p.resources {
   margin: 10px 0px 20px 0px;
 }
 
-/* <!-- Objects Main (Content) --> */
+/* <!-- Objects Main Page (Content) --> */
 
 .top-column.objects {
   flex-direction: column;
@@ -1990,7 +2017,7 @@ p.about {
   width: 95%;
 }
 
-/* <!-- Resources Pages (Content) --> */
+/* <!-- Resources Page (Content) --> */
 
 .label-row {
   width: 100%;
@@ -2008,7 +2035,7 @@ p.about {
   /* margin-bottom: 40px; */
 }
 
-/* <!-- Dialogues Pages (Content) --> */
+/* <!-- Dialogues Page (Content) --> */
 
 .top-column.dialogues {
   width: 88%;
@@ -2020,8 +2047,24 @@ p.about {
   align-items: flex-start;
 }
 
+/* <!-- Guides Page (Content) --> */
 
-/* <!-- Credits Pages (Content) --> */
+.top-column.guides {
+  width: 88%;
+  flex-direction: column;
+  margin: 40px 0px 40px 0px;
+}
+
+.row-content.guides {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.guides-copy {
+  width: 100%;
+}
+
+/* <!-- Credits Page (Content) --> */
 
 .top-column.credits {
   width: 88%;
