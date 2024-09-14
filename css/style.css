@@ -47,9 +47,13 @@ html {
 }
 
 body {
-  background-color: #1A1019 !important;
-  /* background-color: #EDE4DD; */
+  /* background-color: #1A1019 !important; */
+  background-color: #EDE4DD;
   /* font-size: calc(.5em + 1vw); */
+}
+
+#landing {
+  background-color: #1A1019 !important;
 }
 
 main {
@@ -1689,6 +1693,10 @@ h2 {
 
 .content-container .introduction > p {
   width: 100% !important;
+}
+
+.top-column.intro {
+  flex-direction: column;
 }
 
 /* <!-- Objects Main Page (Content) --> */
