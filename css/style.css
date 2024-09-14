@@ -1905,6 +1905,11 @@ p.resources {
 
 @media only screen and (max-width: 768px) {
 
+/* <!-- Global (Content) --> */
+
+  #slide-nav {
+    width: 425px;
+  }
   
 .back-arrow {
   position: static !important;
