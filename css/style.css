@@ -1301,11 +1301,25 @@ p.dialogues {
   /* padding: 0px 20px 0px 20px; */
 }
 
+.moderator.hidden {
+  display: none;
+}
+
 .first-person {
   font-family: "Ovo", serif;
   width: 70%;
   line-height: 150% !important;
   /* padding: 0px 20px 0px 20px; */
+}
+
+.first-person.hidden {
+  display: none;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+  overflow-wrap: normal;
+  line-height: 150% !important;
+  padding: 0px 20px 0px 20px;
 }
 
 .second-person {
@@ -1316,6 +1330,27 @@ p.dialogues {
   line-height: 150% !important;
   /* padding: 0px 20px 0px 20px; */
 }
+
+.second-person.hidden {
+  display: none;
+}
+
+.end.hidden {
+  display: none;
+}
+
+#patssi-mario.hidden {
+  display: none;
+}
+
+#timoi-ladypink.hidden {
+  display: none;
+}
+
+#yreina-judithe.hidden {
+  display: none;
+}
+
 
 /* Dialogues Main Page Arrow */
 
