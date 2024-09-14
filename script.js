@@ -215,6 +215,7 @@ $(document).ready(function () {
     // Credits Page (Curator) Drawer Toggle Open //
     $('.credits-title-one').on('click', function () {
       $('.curators.hidden').slideToggle("slow");
+      $('.label-hr.curators-line.hidden').slideToggle("fast");
     }
     );
 
@@ -227,6 +228,7 @@ $(document).ready(function () {
     // Credits Page (Contributor) Drawer Toggle Open //
     $('.credits-title-two').on('click', function () {
       $('.credits.hidden').slideToggle("slow");
+      $('.label-hr.contributors.hidden').slideToggle("fast");
     }
     );
   
@@ -239,18 +241,21 @@ $(document).ready(function () {
   // Resources Page (Digital Archives) Drawer Toggle Open //
   $('.resources-title.first').on('click', function () {
     $('.resources.archives.hidden').slideToggle("slow");
+    $('.label-hr.d-a.hidden').slideToggle("fast");
   }
   );
   
     // Resources Page (Books & Articles) Drawer Toggle Open //
     $('.resources-title.second').on('click', function () {
       $('.resources.books-articles.hidden').slideToggle("slow");
+      $('.label-hr.b-a.hidden').slideToggle("fast");
     }
     );
   
     // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
     $('.resources-title.third').on('click', function () {
       $('.resources.interviews-profiles.hidden').slideToggle("slow");
+      $('.label-hr.r-i-p.hidden').slideToggle("fast");
     }
     );
 
@@ -263,6 +268,7 @@ $(document).ready(function () {
     // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
     $('#guides-title-two').on('click', function () {
       $('.guides.02.hidden').slideToggle("slow");
+      $('.label-hr.guides-02.hidden').slideToggle("fast");
     }
     );
 
@@ -275,6 +281,7 @@ $(document).ready(function () {
     ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
     $('#guides-title-one').on('click', function () {
       $('.guides.01.hidden').slideToggle("slow");
+      $('.label-hr.guides-01.hidden').slideToggle("fast");
     }
     );
 

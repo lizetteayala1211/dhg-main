@@ -493,6 +493,10 @@ a.arrow {
   padding: 0;
 }
 
+.label-hr.hidden {
+  display: none;
+}
+
 .row-content {
   display: flex;
   flex-direction: column;
@@ -1829,9 +1833,9 @@ p.about {
   width: 100% !important;
 }
 
-p.resources {
+/* p.resources {
   white-space: pre-line;
-}
+} */
 
 .top-column.resources {
   width: 88% !important;
