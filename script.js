@@ -206,32 +206,32 @@ $(document).ready(function () {
   }
   );
 
-    ////// Show/Hide (Credits 01) Button Toggle ///////
-    $('.credits-title-one').click(function () {
-      var toggleIcon = $(this).find('.toggle_icon');
-      toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    })
+  ////// Show/Hide (Credits 01) Button Toggle ///////
+  $('.credits-title-one').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  })
 
-    // Credits Page (Curator) Drawer Toggle Open //
-    $('.credits-title-one').on('click', function () {
-      $('.curators.hidden').slideToggle("slow");
-      $('.label-hr.curators-line.hidden').slideToggle("fast");
-    }
-    );
+  // Credits Page (Curator) Drawer Toggle Open //
+  $('.credits-title-one').on('click', function () {
+    $('.curators.hidden').slideToggle("slow");
+    $('.label-hr.curators-line.hidden').slideToggle("fast");
+  }
+  );
 
-    ////// Show/Hide (Credits 02) Button Toggle ///////
-    $('.credits-title-two').click(function () {
-      var toggleIcon = $(this).find('.toggle_icon');
-      toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    })
-  
-    // Credits Page (Contributor) Drawer Toggle Open //
-    $('.credits-title-two').on('click', function () {
-      $('.credits.hidden').slideToggle("slow");
-      $('.label-hr.contributors.hidden').slideToggle("fast");
-    }
-    );
-  
+  ////// Show/Hide (Credits 02) Button Toggle ///////
+  $('.credits-title-two').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  })
+
+  // Credits Page (Contributor) Drawer Toggle Open //
+  $('.credits-title-two').on('click', function () {
+    $('.credits.hidden').slideToggle("slow");
+    $('.label-hr.contributors.hidden').slideToggle("fast");
+  }
+  );
+
   ////// Show/Hide (Resources) Button Toggle ///////
   $('.resources-title').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
@@ -244,20 +244,20 @@ $(document).ready(function () {
     $('.label-hr.d-a.hidden').slideToggle("fast");
   }
   );
-  
-    // Resources Page (Books & Articles) Drawer Toggle Open //
-    $('.resources-title.second').on('click', function () {
-      $('.resources.books-articles.hidden').slideToggle("slow");
-      $('.label-hr.b-a.hidden').slideToggle("fast");
-    }
-    );
-  
-    // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
-    $('.resources-title.third').on('click', function () {
-      $('.resources.interviews-profiles.hidden').slideToggle("slow");
-      $('.label-hr.r-i-p.hidden').slideToggle("fast");
-    }
-    );
+
+  // Resources Page (Books & Articles) Drawer Toggle Open //
+  $('.resources-title.second').on('click', function () {
+    $('.resources.books-articles.hidden').slideToggle("slow");
+    $('.label-hr.b-a.hidden').slideToggle("fast");
+  }
+  );
+
+  // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
+  $('.resources-title.third').on('click', function () {
+    $('.resources.interviews-profiles.hidden').slideToggle("slow");
+    $('.label-hr.r-i-p.hidden').slideToggle("fast");
+  }
+  );
 
   ////// Show/Hide (Dialogues) Button Toggle ///////
   $('.dialogues-title').click(function () {
@@ -265,63 +265,63 @@ $(document).ready(function () {
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
   })
 
-    // Dialogues Page (Dialogue 01) Drawer Toggle Open //
-    $('.dialogues-title.first').on('click', function () {
-      $('.dialogues.01.first-person.hidden').slideToggle("slow");
-      $('.dialogues.01.second-person.hidden').slideToggle("slow");
-      $('.dialogues.01.end.hidden').slideToggle("slow");
-      $('#patssi-mario.hidden').slideToggle("slow");
-      // $('.label-hr.guides-02.hidden').slideToggle("fast");
-    }
-    );
+  // Dialogues Page (Dialogue 01) Drawer Toggle Open //
+  $('.dialogues-title.first').on('click', function () {
+    $('.dialogues.01.first-person.hidden').slideToggle("slow");
+    $('.dialogues.01.second-person.hidden').slideToggle("slow");
+    $('.dialogues.01.end.hidden').slideToggle("slow");
+    $('#patssi-mario.hidden').slideToggle("slow");
+    // $('.label-hr.guides-02.hidden').slideToggle("fast");
+  }
+  );
 
-    // Dialogues Page (Dialogue 02) Drawer Toggle Open //
-    $('.dialogues-title.second').on('click', function () {
-      $('.dialogues.02.moderator.hidden').slideToggle("slow");
-      $('.dialogues.02.first-person.hidden').slideToggle("slow");
-      $('.dialogues.02.second-person.hidden').slideToggle("slow");
-      $('.dialogues.02.end.hidden').slideToggle("slow");
-      $('#timoi-ladypink.hidden').slideToggle("slow");
-      // $('.label-hr.guides-02.hidden').slideToggle("fast");
-    }
-    );
+  // Dialogues Page (Dialogue 02) Drawer Toggle Open //
+  $('.dialogues-title.second').on('click', function () {
+    $('.dialogues.02.moderator.hidden').slideToggle("slow");
+    $('.dialogues.02.first-person.hidden').slideToggle("slow");
+    $('.dialogues.02.second-person.hidden').slideToggle("slow");
+    $('.dialogues.02.end.hidden').slideToggle("slow");
+    $('#timoi-ladypink.hidden').slideToggle("slow");
+    // $('.label-hr.guides-02.hidden').slideToggle("fast");
+  }
+  );
 
-    // Dialogues Page (Dialogue 03) Drawer Toggle Open //
-    $('.dialogues-title.third').on('click', function () {
-      $('.dialogues.03.moderator.hidden').slideToggle("slow");
-      $('.dialogues.03.first-person.hidden').slideToggle("slow");
-      $('.dialogues.03.second-person.hidden').slideToggle("slow");
-      $('.dialogues.03.end.hidden').slideToggle("slow");
-      $('#yreina-judithe.hidden').slideToggle("slow");
-      // $('.label-hr.guides-02.hidden').slideToggle("fast");
-    }
-    );
+  // Dialogues Page (Dialogue 03) Drawer Toggle Open //
+  $('.dialogues-title.third').on('click', function () {
+    $('.dialogues.03.moderator.hidden').slideToggle("slow");
+    $('.dialogues.03.first-person.hidden').slideToggle("slow");
+    $('.dialogues.03.second-person.hidden').slideToggle("slow");
+    $('.dialogues.03.end.hidden').slideToggle("slow");
+    $('#yreina-judithe.hidden').slideToggle("slow");
+    // $('.label-hr.guides-02.hidden').slideToggle("fast");
+  }
+  );
 
   ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
   $('#guides-title-two').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
   })
-  
-    // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
-    $('#guides-title-two').on('click', function () {
-      $('.guides.02.hidden').slideToggle("slow");
-      $('.label-hr.guides-02.hidden').slideToggle("fast");
-    }
-    );
+
+  // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
+  $('#guides-title-two').on('click', function () {
+    $('.guides.02.hidden').slideToggle("slow");
+    $('.label-hr.guides-02.hidden').slideToggle("fast");
+  }
+  );
 
   ////// Show/Hide (Teaching Guide 02) Button Toggle ///////
   $('#guides-title-one').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
   })
-  
-    ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
-    $('#guides-title-one').on('click', function () {
-      $('.guides.01.hidden').slideToggle("slow");
-      $('.label-hr.guides-01.hidden').slideToggle("fast");
-    }
-    );
+
+  ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
+  $('#guides-title-one').on('click', function () {
+    $('.guides.01.hidden').slideToggle("slow");
+    $('.label-hr.guides-01.hidden').slideToggle("fast");
+  }
+  );
 
 
 
