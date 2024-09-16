@@ -646,15 +646,19 @@ img.objects-artwork-img.rafagabby {
 /* SPANISH TOGGLE DISPLAY SETTINGS */
 
 h2.sp {
-  display: none;
+  display: none !important;
 }
 
 p.sp {
-  display: none;
+  display: none !important;
 }
 
 #open-bottom-row-two > p.sp {
-  display: none;
+  display: none !important;
+}
+
+p.about.hidden.sp {
+  display: none !important;
 }
 
 .objects-artwork-img-copy {
