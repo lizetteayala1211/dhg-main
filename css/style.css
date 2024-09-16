@@ -643,6 +643,20 @@ img.objects-artwork-img.rafagabby {
   object-position: 0% 0;
 }
 
+/* SPANISH TOGGLE DISPLAY SETTINGS */
+
+h2.sp {
+  display: none;
+}
+
+p.sp {
+  display: none;
+}
+
+#open-bottom-row-two > p.sp {
+  display: none;
+}
+
 .objects-artwork-img-copy {
   display: flex;
   flex-direction: column;
