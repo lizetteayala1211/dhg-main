@@ -537,6 +537,10 @@ p.introduction {
   line-height: 175% !important;
 }
 
+p.introduction.sp {
+  display: none !important;
+}
+
 .bottom-column {
   display: flex;
   align-content: center;
