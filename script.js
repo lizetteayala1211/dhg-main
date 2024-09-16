@@ -323,12 +323,21 @@ $(document).ready(function () {
   }
   );
 
+  // $(function () {
+  //   var parent = $("#archives-content");
+  //   var divs = parent.children().not(':last');
+  //   while (divs.length) {
+  //       parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+  //   }
+  // });
 
-
-
-  // $('.circle-plus').on('click', function () {
-  //   $(this).toggleClass('opened');
-  // })
+$(function () {
+  var parent = $("#shuffle");
+  var divs = parent.children();
+  while (divs.length) {
+      parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+  }
+});
 
 
 });

@@ -676,6 +676,43 @@ img.objects-artwork-img.rafagabby {
   margin: 0px 0px 5px 0px;
 }
 
+button.objects-label {
+  /* font-size: 1.8rem; */
+  font-size: 14px;
+  font-weight: 500;
+  padding: 18px 36px 18px 36px !important;
+  margin: 10px 0px 0px 0px;
+  color: #1A1019;
+  border: 1px solid #1A1019;
+  border-radius: 40px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.objects-label {
+  display: flex;
+  /* align-self: flex-end; */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.object-label-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  gap: 25px;
+}
+
+.objects-label:hover {
+  background-color: transparent;
+}
+
+.objects-small {
+  width: 75%;
+}
+
 /* Objects Main Page Arrow */
 
 #objects-arrow {
@@ -746,6 +783,7 @@ img.objects-artwork-img.rafagabby {
 
 .p-under-h2 {
   width: 80% !important;
+  font-size: 16px;
 }
 
 /* Artwork Material & Artist About */
@@ -1052,6 +1090,22 @@ p.about {
   color: #1A1019 !important;
 }
 
+.archives-img-top-copy.extra-short {
+  height: 200px !important;
+}
+
+.archives-img-top-copy.short {
+  height: 250px !important;
+}
+
+.archives-img-top-copy.medium {
+  height: 300px !important;
+}
+
+.archives-img-top-copy.long {
+  height: 385px !important;
+}
+
 .archives-small {
   display: none;
 }
@@ -1063,15 +1117,16 @@ p.about {
   width: 100%;
   height: 100%;
   border-bottom: 1.5px solid #1A1019;
+  z-index: 500;
   /* padding-bottom: 10px; */
 }
 
 button.archive-label {
   /* font-size: 1.8rem; */
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   padding: 18px 36px 18px 36px !important;
-  margin: 28px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   color: #1A1019;
   border: 1px solid #1A1019;
   border-radius: 40px;
@@ -1875,10 +1930,12 @@ p.guides.title {
 
   .archives-content {
     width: 100% !important;
+    z-index: 1000;
   }
 
   .archives-artwork-container {
     width: 100% !important;
+
   }
 
   .archives-small {
@@ -1888,8 +1945,29 @@ p.guides.title {
   .archives-wrapper {
     flex-direction: column;
     border-bottom: none;
+    height: max-content;
     /* padding-bottom: 10px; */
   }
+
+  .archives-img-top-copy.extra-short {
+    height: auto !important;
+  }
+  
+  .archives-img-top-copy.short {
+    height: auto !important;
+  }
+  
+  .archives-img-top-copy.medium {
+    height: auto !important;
+  }
+  
+  .archives-img-top-copy.long {
+    height: auto !important;
+  }
+  
+  /* .archives-small {
+    display: none;
+  } */
 
   /* <!-- Resources Page (Content) --> */
 
