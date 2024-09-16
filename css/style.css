@@ -709,7 +709,7 @@ button.objects-label {
   background-color: transparent;
 }
 
-.objects-small {
+.label-hr.objects-small {
   width: 75%;
 }
 
@@ -1920,6 +1920,18 @@ p.guides.title {
 
   p.about {
     width: 100%;
+  }
+
+  .label-hr.objects-small {
+    width: 100% !important;
+  }
+
+  .object-label-wrapper {
+    width: 100%;
+    gap: 25px;
+    margin: 0px 0px 20px 0px;
+    padding-bottom: 30px;
+    border-bottom: 1.5px solid #1A1019;
   }
 
   /* <!-- Archive Page (Content) --> */
