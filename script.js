@@ -268,15 +268,15 @@ $(document).ready(function () {
   // Dialogues Page (Dialogue 01) Drawer Toggle Open //
   $('.dialogues-title.first').on('click', function () {
     // close all other dialogues
-    $('.dialogues.02.moderator.hidden').slideUp("slow");
-    $('.dialogues.02.first-person.hidden').slideUp("slow");
-    $('.dialogues.02.second-person.hidden').slideUp("slow");
-    $('.dialogues.02.end.hidden').slideUp("slow");
-    $('#timoi-ladypink.hidden').slideUp("fast");
-    $('.dialogues.03.moderator.hidden').slideUp("slow");
-    $('.dialogues.03.first-person.hidden').slideUp("slow");
-    $('.dialogues.03.second-person.hidden').slideUp("slow");
-    $('.dialogues.03.end.hidden').slideUp("slow");
+    $('.dialogues.02.moderator.hidden').slideUp("fast");
+    $('.dialogues.02.first-person.hidden').slideUp("fast");
+    $('.dialogues.02.second-person.hidden').slideUp("fast");
+    $('.dialogues.02.end.hidden').slideUp("fast");
+    $('#timoi-ladypink.hidden').slideUp("slow");
+    $('.dialogues.03.moderator.hidden').slideUp("fast");
+    $('.dialogues.03.first-person.hidden').slideUp("fast");
+    $('.dialogues.03.second-person.hidden').slideUp("fast");
+    $('.dialogues.03.end.hidden').slideUp("fast");
     $('#yreina-judithe.hidden').slideUp("fast");
 
     // set up '+' for all other dialogues
@@ -293,15 +293,15 @@ $(document).ready(function () {
   // Dialogues Page (Dialogue 02) Drawer Toggle Open //
   $('.dialogues-title.second').on('click', function () {
     // close all other dialogues
-    $('.dialogues.01.first-person.hidden').slideUp("slow");
-    $('.dialogues.01.second-person.hidden').slideUp("slow");
-    $('.dialogues.01.end.hidden').slideUp("slow");
+    $('.dialogues.01.first-person.hidden').slideUp("fast");
+    $('.dialogues.01.second-person.hidden').slideUp("fast");
+    $('.dialogues.01.end.hidden').slideUp("fast");
     $('#patssi-mario.hidden').slideUp("slow");
-    $('.dialogues.03.moderator.hidden').slideUp("slow");
-    $('.dialogues.03.first-person.hidden').slideUp("slow");
-    $('.dialogues.03.second-person.hidden').slideUp("slow");
-    $('.dialogues.03.end.hidden').slideUp("slow");
-    $('#yreina-judithe.hidden').slideUp("slow");
+    $('.dialogues.03.moderator.hidden').slideUp("fast");
+    $('.dialogues.03.first-person.hidden').slideUp("fast");
+    $('.dialogues.03.second-person.hidden').slideUp("fast");
+    $('.dialogues.03.end.hidden').slideUp("fast");
+    $('#yreina-judithe.hidden').slideUp("fast");
 
     // set up '+' for all other dialogues
     $('.dialogues-title.first .toggle_icon').text('+');
