@@ -655,6 +655,10 @@ p.sp {
   display: none !important;
 }
 
+span.sp {
+  display: none !important;
+}
+
 #open-bottom-row-two > p.sp {
   display: none !important;
 }
