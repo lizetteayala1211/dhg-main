@@ -358,9 +358,10 @@ main {
   /* background-color: red; */
 }
 
-.title-top h3 {
+.title-top h2 {
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  font-size: 22px;
   margin: 0px;
 }
 
@@ -388,7 +389,7 @@ main {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   height: 10%;
   width: 96vw;
   text-align: center;
@@ -399,6 +400,7 @@ main {
 .title-bottom h2 {
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  font-size: 22px;
   margin: 0px;
 }
 
@@ -2134,7 +2136,7 @@ p.guides.title {
     margin: 20px 0px 20px 0px;
   }
 
-  .title-top>h3 {
+  .title-top>h2 {
     font-size: 14px;
     width: 75%;
   }
@@ -2158,7 +2160,7 @@ p.guides.title {
     margin: 20px 0px 20px 0px;
   }
 
-  .title-bottom>h3 {
+  .title-bottom>h2 {
     font-size: 14px;
     width: 100%;
     line-height: 150% !important;
