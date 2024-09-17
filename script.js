@@ -261,28 +261,42 @@ $(document).ready(function () {
 
   ////// Show/Hide (Dialogues) Button Toggle ///////
   $('.dialogues-title').click(function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $('.dialogues-copy').slideUp();
+    $('.toggle_icon').text('+');
+
+    var content = $(this).next('.dialogues-copy');
+    console.log('conent ===', content)
+    if(!content.is(':visible')) {
+      console.log('visible ===', content.is(':visible'))
+      content.slideDown();
+      $(this).find('.toggle_icon').text('-');
+    }
+    // var toggleIcon = $(this).find('.toggle_icon');
+    // toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
   })
 
   // Dialogues Page (Dialogue 01) Drawer Toggle Open //
   $('.dialogues-title.first').on('click', function () {
+    console.log("first slide start ===")
     $('.dialogues.01.first-person.hidden').slideToggle("slow");
     $('.dialogues.01.second-person.hidden').slideToggle("slow");
     $('.dialogues.01.end.hidden').slideToggle("slow");
     $('#patssi-mario.hidden').slideToggle("slow");
+    console.log("first slide end ===")
     // $('.label-hr.guides-02.hidden').slideToggle("fast");
   }
   );
 
   // Dialogues Page (Dialogue 02) Drawer Toggle Open //
   $('.dialogues-title.second').on('click', function () {
+    console.log("second slide start ===")
     $('.dialogues.02.moderator.hidden').slideToggle("slow");
     $('.dialogues.02.first-person.hidden').slideToggle("slow");
     $('.dialogues.02.second-person.hidden').slideToggle("slow");
     $('.dialogues.02.end.hidden').slideToggle("slow");
     $('#timoi-ladypink.hidden').slideToggle("slow");
     // $('.label-hr.guides-02.hidden').slideToggle("fast");
+    console.log("second slide start ===")
   }
   );
 
@@ -337,6 +351,32 @@ $(function () {
   while (divs.length) {
       parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
   }
+});
+
+
+// document.querySelectorAll('.toggle-label').forEach(button => {
+//   button.addEventListener('click', function() {
+//     document.querySelectorAll('.toggle-label').forEach(btn => {
+//       btn.classList.remove('active')
+//     })
+
+//     //Add active to the clicked button
+//     this.classList.add('active');
+//   })
+// })
+
+// Default Language
+$("[language='spanish']").hide();
+
+// Switching to English
+$(".language-toggle-en").on("click", function() {
+  $("[language='spanish']").hide();
+  $("[language='english']").show();
+});
+// Switching to Spanish
+$(".language-toggle-sp").on("click", function() {
+  $("[language='spanish']").show();
+  $("[language='english']").hide();
 });
 
 

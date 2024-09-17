@@ -647,6 +647,10 @@ img.objects-artwork-img.rafagabby {
 
 /* SPANISH TOGGLE DISPLAY SETTINGS */
 
+h1.sp {
+  display: none !important;
+}
+
 h2.sp {
   display: none !important;
 }
@@ -698,6 +702,29 @@ button.toggle-label.index {
   background-color: transparent;
   cursor: pointer;
 }
+
+a.skip-main {
+  font-family: "Perstare", Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+@media only screen and (max-width: 930px) {
+  a.skip-main {
+      display: none;
+  }
+}
+
+/* Add basic styles for active state */
+/* button.active {
+  background-color: #4CAF50;
+  color: white;
+} */
 
 .objects-artwork-img-copy {
   display: flex;
