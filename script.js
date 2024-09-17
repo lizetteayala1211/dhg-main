@@ -272,12 +272,12 @@ $(document).ready(function () {
     $('.dialogues.02.first-person.hidden').slideUp("slow");
     $('.dialogues.02.second-person.hidden').slideUp("slow");
     $('.dialogues.02.end.hidden').slideUp("slow");
-    $('#timoi-ladypink.hidden').slideUp("slow");
+    $('#timoi-ladypink.hidden').slideUp("fast");
     $('.dialogues.03.moderator.hidden').slideUp("slow");
     $('.dialogues.03.first-person.hidden').slideUp("slow");
     $('.dialogues.03.second-person.hidden').slideUp("slow");
     $('.dialogues.03.end.hidden').slideUp("slow");
-    $('#yreina-judithe.hidden').slideUp("slow");
+    $('#yreina-judithe.hidden').slideUp("fast");
 
     // set up '+' for all other dialogues
     $('.dialogues-title.second .toggle_icon').text('+');
@@ -394,13 +394,11 @@ $(document).ready(function () {
   //   })
   // })
 
-  // Default Language
-  $("[language='spanish']").hide();
 
   // Switching to English
   $(".language-toggle-en").on("click", function () {
-    $("[language='spanish']").hide();
-    $("[language='english']").show();
+    $(".sp").hide();
+    $("en").show();
   });
   // Switching to Spanish
   $(".language-toggle-sp").on("click", function () {
