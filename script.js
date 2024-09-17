@@ -261,55 +261,84 @@ $(document).ready(function () {
 
   ////// Show/Hide (Dialogues) Button Toggle ///////
   $('.dialogues-title').click(function () {
-    $('.dialogues-copy').slideUp();
-    $('.toggle_icon').text('+');
-
-    var content = $(this).next('.dialogues-copy');
-    console.log('conent ===', content)
-    if(!content.is(':visible')) {
-      console.log('visible ===', content.is(':visible'))
-      content.slideDown();
-      $(this).find('.toggle_icon').text('-');
-    }
-    // var toggleIcon = $(this).find('.toggle_icon');
-    // toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  })
+    let toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
+  });
 
   // Dialogues Page (Dialogue 01) Drawer Toggle Open //
   $('.dialogues-title.first').on('click', function () {
-    console.log("first slide start ===")
+    // close all other dialogues
+    $('.dialogues.02.moderator.hidden').slideUp("slow");
+    $('.dialogues.02.first-person.hidden').slideUp("slow");
+    $('.dialogues.02.second-person.hidden').slideUp("slow");
+    $('.dialogues.02.end.hidden').slideUp("slow");
+    $('#timoi-ladypink.hidden').slideUp("slow");
+    $('.dialogues.03.moderator.hidden').slideUp("slow");
+    $('.dialogues.03.first-person.hidden').slideUp("slow");
+    $('.dialogues.03.second-person.hidden').slideUp("slow");
+    $('.dialogues.03.end.hidden').slideUp("slow");
+    $('#yreina-judithe.hidden').slideUp("slow");
+
+    // set up '+' for all other dialogues
+    $('.dialogues-title.second .toggle_icon').text('+');
+    $('.dialogues-title.third .toggle_icon').text('+');
+
+    // open dialogue 01
     $('.dialogues.01.first-person.hidden').slideToggle("slow");
     $('.dialogues.01.second-person.hidden').slideToggle("slow");
     $('.dialogues.01.end.hidden').slideToggle("slow");
     $('#patssi-mario.hidden').slideToggle("slow");
-    console.log("first slide end ===")
-    // $('.label-hr.guides-02.hidden').slideToggle("fast");
-  }
-  );
+  });
 
   // Dialogues Page (Dialogue 02) Drawer Toggle Open //
   $('.dialogues-title.second').on('click', function () {
-    console.log("second slide start ===")
+    // close all other dialogues
+    $('.dialogues.01.first-person.hidden').slideUp("slow");
+    $('.dialogues.01.second-person.hidden').slideUp("slow");
+    $('.dialogues.01.end.hidden').slideUp("slow");
+    $('#patssi-mario.hidden').slideUp("slow");
+    $('.dialogues.03.moderator.hidden').slideUp("slow");
+    $('.dialogues.03.first-person.hidden').slideUp("slow");
+    $('.dialogues.03.second-person.hidden').slideUp("slow");
+    $('.dialogues.03.end.hidden').slideUp("slow");
+    $('#yreina-judithe.hidden').slideUp("slow");
+
+    // set up '+' for all other dialogues
+    $('.dialogues-title.first .toggle_icon').text('+');
+    $('.dialogues-title.third .toggle_icon').text('+');
+
+    // open dialogue 02
     $('.dialogues.02.moderator.hidden').slideToggle("slow");
     $('.dialogues.02.first-person.hidden').slideToggle("slow");
     $('.dialogues.02.second-person.hidden').slideToggle("slow");
     $('.dialogues.02.end.hidden').slideToggle("slow");
     $('#timoi-ladypink.hidden').slideToggle("slow");
-    // $('.label-hr.guides-02.hidden').slideToggle("fast");
-    console.log("second slide start ===")
-  }
-  );
+  });
 
   // Dialogues Page (Dialogue 03) Drawer Toggle Open //
   $('.dialogues-title.third').on('click', function () {
+    // close all other dialogues
+    $('.dialogues.01.first-person.hidden').slideUp("slow");
+    $('.dialogues.01.second-person.hidden').slideUp("slow");
+    $('.dialogues.01.end.hidden').slideUp("slow");
+    $('#patssi-mario.hidden').slideUp("slow");
+    $('.dialogues.02.moderator.hidden').slideUp("slow");
+    $('.dialogues.02.first-person.hidden').slideUp("slow");
+    $('.dialogues.02.second-person.hidden').slideUp("slow");
+    $('.dialogues.02.end.hidden').slideUp("slow");
+    $('#timoi-ladypink.hidden').slideUp("slow");
+
+    // set up '+' for all other dialogues
+    $('.dialogues-title.first .toggle_icon').text('+');
+    $('.dialogues-title.second .toggle_icon').text('+');
+
+    // open dialogue 03
     $('.dialogues.03.moderator.hidden').slideToggle("slow");
     $('.dialogues.03.first-person.hidden').slideToggle("slow");
     $('.dialogues.03.second-person.hidden').slideToggle("slow");
     $('.dialogues.03.end.hidden').slideToggle("slow");
     $('#yreina-judithe.hidden').slideToggle("slow");
-    // $('.label-hr.guides-02.hidden').slideToggle("fast");
-  }
-  );
+  });
 
   ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
   $('#guides-title-two').click(function () {
@@ -345,39 +374,39 @@ $(document).ready(function () {
   //   }
   // });
 
-$(function () {
-  var parent = $("#shuffle");
-  var divs = parent.children();
-  while (divs.length) {
+  $(function () {
+    var parent = $("#shuffle");
+    var divs = parent.children();
+    while (divs.length) {
       parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-  }
-});
+    }
+  });
 
 
-// document.querySelectorAll('.toggle-label').forEach(button => {
-//   button.addEventListener('click', function() {
-//     document.querySelectorAll('.toggle-label').forEach(btn => {
-//       btn.classList.remove('active')
-//     })
+  // document.querySelectorAll('.toggle-label').forEach(button => {
+  //   button.addEventListener('click', function() {
+  //     document.querySelectorAll('.toggle-label').forEach(btn => {
+  //       btn.classList.remove('active')
+  //     })
 
-//     //Add active to the clicked button
-//     this.classList.add('active');
-//   })
-// })
+  //     //Add active to the clicked button
+  //     this.classList.add('active');
+  //   })
+  // })
 
-// Default Language
-$("[language='spanish']").hide();
-
-// Switching to English
-$(".language-toggle-en").on("click", function() {
+  // Default Language
   $("[language='spanish']").hide();
-  $("[language='english']").show();
-});
-// Switching to Spanish
-$(".language-toggle-sp").on("click", function() {
-  $("[language='spanish']").show();
-  $("[language='english']").hide();
-});
+
+  // Switching to English
+  $(".language-toggle-en").on("click", function () {
+    $("[language='spanish']").hide();
+    $("[language='english']").show();
+  });
+  // Switching to Spanish
+  $(".language-toggle-sp").on("click", function () {
+    $("[language='spanish']").show();
+    $("[language='english']").hide();
+  });
 
 
 });

@@ -565,7 +565,7 @@ p.introduction.sp {
   flex-direction: column;
   align-self: center;
   text-decoration: none;
-  width: 100vw;
+  /* width: 100vw; */
   margin: 0px 0px 40px 0px;
 }
 
