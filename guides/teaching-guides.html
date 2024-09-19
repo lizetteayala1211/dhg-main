@@ -31,13 +31,14 @@
 
     <!-- Navigation -->
     <nav class="nav">
+        
         <!-- Language Toggle -->
         <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
             <p class="hidden" id="language-switcher1"> </p>
             <div class="language__container--left language__container--en">
                 <input class="language__control" type="radio" id="language1-1" name="language-switch1">
                 <label class="language__label__dark" for="language1-1" id="language-toggle-en"> <button type="button"
-                        class="toggle-label language-sp-button"> EN </button>
+                        class="toggle-label language-en-button"> EN </button>
                     <span class="hidden"></span>
                 </label>
             </div>
@@ -57,30 +58,22 @@
         <div id="slide-nav" class="slide-content">
             <button type="button" id="close" class="close-btn" aria-label="close navigation">&times;</button>
             <ul id="link-list">
-                <li class="text-on" id="nav-intro-link en"><a href="../index.html"> HOME </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../index.html"> INICIAL </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../introduction.html"> INTRODUCTION </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../introduction.html"> INTRODUCCIÓN </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../objects/objects.html"> OBJECTS </a>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../objects/objects.html"> OBJETOS </a>
-                <li class="text-on" id="nav-intro-link en"><a href="../archive/archive.html"> ARCHIVE </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../archive/archive.html"> ARCHIVO </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../dialogues/dialogues.html"> DIALOGUES </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../dialogues/dialogues.html"> DIÁLOGOS </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../guides/teaching-guides.html"> TEACHING GUIDES
-                    </a>
-                </li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../guides/teaching-guides.html"> GUÍAS DOCENTES
-                    </a>
-                </li>
-                <li class="text-on" id="nav-intro-link en"><a href="../resources/resources.html"> ADDITIONAL RESOURCES
-                    </a>
-                </li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../resources/resources.html"> RECURSOS
-                        ADICIONALES
-                    </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../credits.html"> CREDITS </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../credits.html"> CRÉDITOS </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../index.html"> HOME </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../index.html"> INICIAL </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../introduction.html"> INTRODUCTION </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../introduction.html"> INTRODUCCIÓN </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../objects/objects.html"> OBJECTS </a>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../objects/objects.html"> OBJETOS </a>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../archive/archive.html"> ARCHIVE </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../archive/archive.html"> ARCHIVO </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../dialogues/dialogues.html"> DIALOGUES </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../dialogues/dialogues.html"> DIÁLOGOS </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../guides/teaching-guides.html"> TEACHING GUIDES </a> </li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../guides/teaching-guides.html"> GUÍAS DOCENTES </a> </li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../resources/resources.html"> ADDITIONAL RESOURCES </a> </li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../resources/resources.html"> RECURSOS ADICIONALES </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../credits.html"> CREDITS </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../credits.html"> CRÉDITOS </a></li>
             </ul>
         </div>
     </nav>
@@ -89,7 +82,8 @@
         <div class="guides" id="guides-section">
             <div class="top-column guides">
                 <div class="label-row">
-                    <h2 class="page-label"> TEACHING GUIDES </h2>
+                    <h2 class="page-label en toggleable-english-text"> TEACHING GUIDES </h2>
+                    <h2 class="page-label sp toggleable-spanish-text"> GUÍAS DOCENTES </h2>
                 </div>
                 <div class="row-content guides">
                     <hr class="label-hr" />
@@ -97,11 +91,11 @@
                         <div class="guides-list">
                             <div class="list-02 guides">
                                 <div id="guides-title-two">
-                                    <p class="guides title en"> Neighborhood Murals Zine Making
+                                    <p class="guides title en toggleable-english-text"> Neighborhood Murals Zine Making
                                         <br>
                                         by Salvador de la Torre
                                     </p>
-                                    <p class="guides title sp"> Murales del Barrio - Creación de Fanzines (zines)
+                                    <p class="guides title sp toggleable-spanish-text"> Murales del Barrio - Creación de Fanzines (zines)
                                         <br>
                                         by Salvador de la Torre
                                     </p>
@@ -109,7 +103,7 @@
                                 </div>
                                 <hr class="label-hr">
                                 <div class="guides-copy">
-                                    <p class="guides 02 hidden en">
+                                    <p class="guides 02 hidden en toggleable-english-text">
                                         <b class="guides-bold"> Objective </b>
                                         <br>
                                         Learn about local artists and murals in students' individual neighborhoods via
@@ -145,7 +139,7 @@
                                             href="https://docs.google.com/document/d/1LaBvNJR7L-3HGM3Vu0LZfxK5QZPQapkJ/edit?usp=sharing&ouid=109935444962882847791&rtpof=true&sd=true"
                                             target="_blank" class="thanks"> <b> here. </b> </a>
                                     </p>
-                                    <p class="guides 02 hidden sp">
+                                    <p class="guides 02 hidden sp toggleable-spanish-text">
                                         <b class="guides-bold"> Objetivo </b>
                                         <br>
                                         Aprender sobre artistas locales y los murales que hicieron en los vecindarios de
@@ -186,11 +180,11 @@
                         <div class="guides-list">
                             <div class="list-01 guides">
                                 <div id="guides-title-one">
-                                    <p class="guides title en"> From East LA to East Harlem: Mujeres in Murals
+                                    <p class="guides title en toggleable-english-text"> From East LA to East Harlem: Mujeres in Murals
                                         <br>
                                         by Itzél Delgado-Gonzalez
                                     </p>
-                                    <p class="guides title sp"> Desde East LA a East Harlem: Mujeres en Murales
+                                    <p class="guides title sp toggleable-spanish-text"> Desde East LA a East Harlem: Mujeres en Murales
                                         <br>
                                         by Itzél Delgado-Gonzalez
                                     </p>
@@ -198,7 +192,7 @@
                                 </div>
                                 <hr class="label-hr">
                                 <div class="guides-copy">
-                                    <p class="guides 01 hidden en">
+                                    <p class="guides 01 hidden en toggleable-english-text">
                                         <b class="guides-bold"> Objectives </b>
                                         <br>
                                         <i> Enhance awareness of art in their environment </i> &#8212; Students will see
@@ -238,7 +232,7 @@
                                             href="https://docs.google.com/document/d/1kzTb38v6pZ0j3qUdBLyBMbA7dIyHqVnE/edit?usp=sharing&ouid=109935444962882847791&rtpof=true&sd=true"
                                             target="_blank" class="thanks"> <b> here. </b> </a>
                                     </p>
-                                    <p class="guides 01 hidden sp">
+                                    <p class="guides 01 hidden sp toggleable-spanish-text">
                                         <b class="guides-bold"> Objetivos </b>
                                         <br>
                                         <i> Mejorar la conciencia acerca del arte en su entorno </i> &#8212; Les

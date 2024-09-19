@@ -1859,6 +1859,14 @@ p.guides.title {
   line-height: 175% !important;
 }
 
+#guides-title-two > p.guides.title.sp {
+  display: none;
+}
+
+#guides-title-one > p.guides.title.sp {
+  display: none;
+}
+
 .guides-img-wrapper {
   display: flex;
   flex-direction: row;
