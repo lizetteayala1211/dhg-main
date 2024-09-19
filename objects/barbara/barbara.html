@@ -23,282 +23,391 @@
 
 <body id="barbara">
     <script src="/script.js"></script>
-</body>
 
-<!-- Navigation -->
-<nav class="nav">
-    <!-- Language Toggle -->
-    <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
-        <p class="hidden" id="language-switcher1"> </p>
-        <div class="language__container--left language__container--en">
-          <input class="language__control" type="radio" id="language1-1" name="language-switch1">
-          <label class="language__label__dark" for="language1-1" id="language-toggle-en"> <button type="button" class="toggle-label language-sp-button"> EN </button>
-          <span class="hidden"></span> 
-          </label>
-        </div>
-        <div class="language__container--right language__container--sp">
-          <input class="language__control" type="radio" id="language1-2" name="language-switch1">
-          <label class="language__label__dark" for="language1-2" id="language-toggle-sp"><button type="button" class="toggle-label language-sp-button"> SP </button>
-          <span class="hidden"></span>
-          </label>
-        </div>
-    </div>
+    <!-- Skip Link -->
+    <a href="#main" class="skip-link"> Skip to main content of barbara carrasco's artwork page (Press enter to skip past
+        the navigation & language toggle links below) </a>
 
-    <div class="buffer-space"></div>
-    <!-- Pop-out Sub Navigation -->
-    <button type="button" id="hamburger-menu__dark" class="open-nav-btn__dark" aria-label="open navigation"
-        aria-controls="link-list" aria-expanded="false"> MENU </button>
-    <div id="slide-nav" class="slide-content">
-        <button type="button" id="close" class="close-btn" aria-label="close navigation">&times;</button>
-        <ul id="link-list">
-            <li class="text-on" id="nav-intro-link en"><a href="../../index.html"> HOME </a></li>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../index.html"> INICIAL </a></li>
-            <li class="text-on" id="nav-intro-link en"><a href="../../introduction.html"> INTRODUCTION </a></li>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../introduction.html"> INTRODUCCIÓN </a></li>
-            <li class="text-on" id="nav-intro-link en"><a href="../../objects/objects.html"> OBJECTS </a>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../objects/objects.html"> OBJETOS </a>
-            <li class="text-on" id="nav-intro-link en"><a href="../../archive/archive.html"> ARCHIVE </a></li>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../archive/archive.html"> ARCHIVO </a></li>
-            <li class="text-on" id="nav-intro-link en"><a href="../../dialogues/dialogues.html"> DIALOGUES </a></li>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../dialogues/dialogues.html"> DIÁLOGOS </a></li>
-            <li class="text-on" id="nav-intro-link en"><a href="../../guides/teaching-guides.html"> TEACHING GUIDES </a>
-            </li>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../guides/teaching-guides.html"> GUÍAS DOCENTES
-                </a></li>
-            <li class="text-on" id="nav-intro-link en"><a href="../../resources/resources.html"> ADDITIONAL RESOURCES
-                </a></li>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../resources/resources.html"> RECURSOS
-                    ADICIONALES </a></li>
-            <li class="text-on" id="nav-intro-link en"><a href="../../credits.html"> CREDITS </a></li>
-            <li class="text-hidden" id="nav-intro-link sp"><a href="../../credits.html"> CRÉDITOS </a></li>
-        </ul>
-    </div>
-</nav>
-<main>
-    <!-- Barbara Object Inner Page Section -->
-    <div class="objects-inner" id="objects-inner-section">
-        <div class="top-column objects-inner">
-            <div class="label-row">
-                <h2 class="page-label"> OBJECTS </h2>
+    <!-- Navigation -->
+    <nav class="nav">
+        <!-- Language Toggle -->
+        <div class="language" role="radiogroup" aria-labelledby="language-switcher1">
+            <p class="hidden" id="language-switcher1"> </p>
+            <div class="language__container--left language__container--en">
+                <input class="language__control" type="radio" id="language1-1" name="language-switch1">
+                <label class="language__label__dark" for="language1-1" id="language-toggle-en"> <button type="button"
+                        class="toggle-label language-sp-button"> EN </button>
+                    <span class="hidden"></span>
+                </label>
             </div>
-            <div class="row-content object-inner">
-                <hr class="label-hr" />
-                <div class="content-container objects-inner">
-                    <div class="objects-artwork-container inner">
+            <div class="language__container--right language__container--sp">
+                <input class="language__control" type="radio" id="language1-2" name="language-switch1">
+                <label class="language__label__dark" for="language1-2" id="language-toggle-sp"><button type="button"
+                        class="toggle-label language-sp-button"> SP </button>
+                    <span class="hidden"></span>
+                </label>
+            </div>
+        </div>
 
-                        <!-- Barbara Object Inner Gallery Carousel -->
-                        <div class="carousel">
-                            <div class="carousel-slider">
-                                <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
-                                        src="/objects/barbara/imgs/barbara-carrasco-sections-01.jpg"
-                                        alt="A portion of the Barbara Carrasco mural with the full face of a woman on the left side, features vignettes of Los Angeles historical events.                                        "></div>
-                                <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
-                                        src="/objects/barbara/imgs/barbara-carrasco-sections-02.jpg"
-                                        alt="A secondary portion of vignettes featuring Los Angeles historical events."></div>
-                                <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
-                                        src="/objects/barbara/imgs/barbara-carrasco-sections-03.jpg"
-                                        alt="A tiertiary portion of vignettes featuring Los Angeles historical events."></div>
-                                <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
-                                        src="/objects/barbara/imgs/barbara_carrasco-1-min.jpg"
-                                        alt="A full image of the portioned vignettes featuring Los Angeles historical events."></div>
-                            </div>
-                        </div>
-                        <div class="objects-artwork-img-copy inner">
-                            <div class="artwork-img-top-copy inner">
-                                <h2 class="artwork-h2 en"> BARBARA CARRASCO — <i> L.A. HISTORY: A MEXICAN PERSPECTIVE
-                                    </i>, 1981 </h2>
-                                <h2 class="artwork-h2 sp"> BARBARA CARRASCO — <i> L.A. HISTORY: A MEXICAN PERSPECTIVE
-                                        (LA HISTORIA DE L.A.: UNA PERSPECTIVA MEXICANA) </i>, 1981 </h2>
-                                <p class="p-under-h2 en"> Portable mural, 43 Masonite-and-wood panels. </p>
-                                <p class="p-under-h2 en"> Photo credit: LA Plaza de Cultura y Artes </p>
-                                <p class="p-under-h2 sp"> Mural móvil, 43 páneles de madera y masonita. </p>
-                                <p class="p-under-h2 sp"> Cortesía del artista y del Museo de Historia Natural en Los
-                                    Ángeles </p>
-                                <hr class="label-hr objects-small">
-                                <div class="object-label-wrapper">
-                                    <a href="/archive/archive.html" class="objects-label">
-                                        <button type="button" class="objects-label">  <span class="en"> ARCHIVE </span>
-                                            <span class="sp"> ARCHIVO </span>
-                                        </button>
-                                    </a>
-                                    <a href="/resources/resources.html" class="objects-label">
-                                        <button type="button" class="objects-label"> <span class="en"> ADDITIONAL RESOURCES </span>
-                                            <span class="sp"> RECURSOS ADICIONALES </span> </button>
-                                    </a>
-                                    <a href="/guides/teaching-guides.html" class="objects-label">
-                                        <button type="button" class="objects-label"> <span class="en"> TEACHING GUIDES </span>
-                                            <span class="sp"> GUÍAS DOCENTES </span> </button>
-                                    </a>
+        <div class="buffer-space"></div>
+        <!-- Pop-out Sub Navigation -->
+        <button type="button" id="hamburger-menu__dark" class="open-nav-btn__dark" aria-label="open navigation"
+            aria-controls="link-list" aria-expanded="false"> MENU </button>
+        <div id="slide-nav" class="slide-content">
+            <button type="button" id="close" class="close-btn" aria-label="close navigation">&times;</button>
+            <ul id="link-list">
+                <li class="text-on" id="nav-intro-link en"><a href="../../index.html"> HOME </a></li>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../index.html"> INICIAL </a></li>
+                <li class="text-on" id="nav-intro-link en"><a href="../../introduction.html"> INTRODUCTION </a></li>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../introduction.html"> INTRODUCCIÓN </a></li>
+                <li class="text-on" id="nav-intro-link en"><a href="../../objects/objects.html"> OBJECTS </a>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../objects/objects.html"> OBJETOS </a>
+                <li class="text-on" id="nav-intro-link en"><a href="../../archive/archive.html"> ARCHIVE </a></li>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../archive/archive.html"> ARCHIVO </a></li>
+                <li class="text-on" id="nav-intro-link en"><a href="../../dialogues/dialogues.html"> DIALOGUES </a></li>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../dialogues/dialogues.html"> DIÁLOGOS </a>
+                </li>
+                <li class="text-on" id="nav-intro-link en"><a href="../../guides/teaching-guides.html"> TEACHING GUIDES
+                    </a>
+                </li>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../guides/teaching-guides.html"> GUÍAS
+                        DOCENTES
+                    </a></li>
+                <li class="text-on" id="nav-intro-link en"><a href="../../resources/resources.html"> ADDITIONAL
+                        RESOURCES
+                    </a></li>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../resources/resources.html"> RECURSOS
+                        ADICIONALES </a></li>
+                <li class="text-on" id="nav-intro-link en"><a href="../../credits.html"> CREDITS </a></li>
+                <li class="text-hidden" id="nav-intro-link sp"><a href="../../credits.html"> CRÉDITOS </a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- Barbara Object Inner Page Section -->
+        <div class="objects-inner" id="objects-inner-section">
+            <div class="top-column objects-inner">
+                <div class="label-row">
+                    <h2 class="page-label"> OBJECTS </h2>
+                </div>
+                <div class="row-content object-inner">
+                    <hr class="label-hr" />
+                    <div class="content-container objects-inner">
+                        <div class="objects-artwork-container inner">
+
+                            <!-- Barbara Object Inner Gallery Carousel -->
+                            <div class="carousel">
+                                <div class="carousel-slider">
+                                    <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
+                                            src="/objects/barbara/imgs/barbara-carrasco-sections-01.jpg"
+                                            alt="A portion of the Barbara Carrasco mural with the full face of a woman on the left side, features vignettes of Los Angeles historical events.                                        ">
+                                    </div>
+                                    <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
+                                            src="/objects/barbara/imgs/barbara-carrasco-sections-02.jpg"
+                                            alt="A secondary portion of vignettes featuring Los Angeles historical events.">
+                                    </div>
+                                    <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
+                                            src="/objects/barbara/imgs/barbara-carrasco-sections-03.jpg"
+                                            alt="A tiertiary portion of vignettes featuring Los Angeles historical events.">
+                                    </div>
+                                    <div class="carousel-slide"><img data-enlargeable style="cursor: zoom-in"
+                                            src="/objects/barbara/imgs/barbara_carrasco-1-min.jpg"
+                                            alt="A full image of the portioned vignettes featuring Los Angeles historical events.">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="artwork-img-top-copy inner">
-                                <p class="en"> A sweeping network of vignettes are set into the flowing hair of <i> La
-                                        Reina de Los Ángeles </i> (the Princess of Los Angeles) in Barbara
-                                    Carrasco&#39;s multi-part mural, <i> L.A. History: A Mexican Perspective </i>
-                                    (1981). Centering the contributions of Mexican migrants and their descendants, as
-                                    well as indigenous peoples who lived in the region before Spanish colonial
-                                    settlement in the 1700s, Carrasco unites together wide-ranging fields like
-                                    agriculture, local politics, and the Hollywood film industry. Moreover, as the
-                                    scenes narrate crucial events of the formation of Los Angeles, the mural
-                                    constellates an intersectional history that pushes against the city&#39;s policies
-                                    and practices that attempted to segregate racial minorities both geographically and
-                                    culturally. By visualizing the city&#39;s diverse population, Carrasco reminds of
-                                    the simultaneous survival, victories, and struggles of these communities.
-                                    <br><br>
-                                    Arranged chronologically from left to right, the mural starts with the region&#39;s
-                                    pre-settlement history and culminates with political activism agitating for labor
-                                    and housing equality in the present. Now on permanent display at the Natural History
-                                    Museum of Los Angeles, where the artist conducted the bulk of the research for the
-                                    mural, it was initially censored. When Carrasco refused to remove the fourteen
-                                    scenes deemed too controversial for public display by the commissioning
-                                    organization, the Community Redevelopment Agency, it was disassembled and put into
-                                    storage. One compartment even chronicles the similar whitewashing of the Mexican
-                                    muralist David Alfaro Siqueiros&#39;s mural <i> América Tropical </i> (1932), made
-                                    for an outdoor market in Downtown Los Angeles due to its overt critique of American
-                                    imperialism&#8212;an earlier instance in which those in positions of power attempted
-                                    to erase a public work contending with race, coloniality, and a Chicane imaginary.
-                                    <br><br>
-                                    This mural&#39;s censored panels documented the Chicano Movement, as well as
-                                    brutalities that impacted other ethnic groups like the 1871 massacre of twenty-two
-                                    Chinese men and the Japanese American internment during World War II. One panel
-                                    commemorates the triumphs of the Black community by giving a portrait of Bridget
-                                    &#34;Biddy&#34; Mason, a freed slave who eventually became a nurse and founder of
-                                    Los Angeles&#39;s First African Methodist Episcopal Church. Throughout, Carrasco
-                                    considers housing, homebuilding, and the built environment as part of the city&#39;s
-                                    history. For instance, one scene spotlights an indigenous domicile made of willow
-                                    branches and tule (a durable grass) and depicts a worker gathering these natural
-                                    resources. The artist also considers the ways that the physical landscape is often
-                                    the source and site of oppression as another scene devises a visual metaphor for the
-                                    practice of eminent domain, which claims private property for public use and
-                                    frequently services segregation. Yet another depicts the transcontinental railroads
-                                    rapidly built in the nineteenth century and enabled by the exploitation of Chinese
-                                    laborers. Carrasco undertook extensive research into this under examined racial
-                                    atrocity, looking through the archives of the Chinese Historical Society for letters
-                                    and documents that shed light on these events.
-                                    <br><br>
-                                    As the mural progresses, community gathering spaces like churches and markets, and
-                                    eventually skyscrapers, provide possible stability amid episodes of racial strife,
-                                    as if to remind that shared spaces allow for communion and relationality. The
-                                    project itself is one of collaboration: Carrasco employed seventeen students from
-                                    the Summer Youth Employment Program to assist with the mural. In a display of
-                                    gratitude, she included their portraits. A final ensemble also portrays celebrities,
-                                    politicians, and &#34;community members&#34;&#8212;including portraits of Yreina
-                                    Cervántez and Harry Gamboa Jr, two other artists in this exhibition.
-                                </p>
-                                <p class="sp">
-                                    Una red de viñetas aparece distribuida en el cabello flotante de La Reina de Los
-                                    Ángeles en el mural de múltiples paneles realizado por Barbara Carrasco, llamado <i>
-                                        L.A. History: A Mexican Perspective (La historia de L.A.: Una perspectiva
-                                        mexicana) </i> (1981). Enfocándose en las contribuciones de inmigrantes
-                                    mexicanos y sus descendientes, así como de los pueblos Indígenas que vivieron en la
-                                    región antes del asentamiento colonial español en el siglo XVIII, Carrasco
-                                    representa en el mural diversos campos temáticos como la agricultura, la política
-                                    local y la industria cinematográfica de Hollywood. Además, a medida que las escenas
-                                    narran eventos cruciales en el desarrollo de Los Ángeles, el mural entreteje una
-                                    historia interseccional que sirve como contra narrativa a políticas y prácticas de
-                                    la ciudad que buscaron segregar minorías raciales, tanto geográfica como
-                                    culturalmente. Al visualizar la población diversa presente en la ciudad, Carrasco
-                                    hace recordar de manera simultánea la supervivencia, las victorias y las luchas de
-                                    estas comunidades.
-                                    <br><br>
-                                    Organizado cronológicamente de izquierda a derecha, el mural comienza con la
-                                    historia anterior a los primeros asentamientos en la región y culmina con el
-                                    activismo político que en la presente lucha por la igualdad laboral y de vivienda.
-                                    El mural, que ahora se encuentra en exhibición permanente en el Museo de Historia
-                                    Natural de Los Ángeles, donde el artista realizó la mayor parte de la investigación,
-                                    fue inicialmente censurado. Cuando Carrasco se negó a retirar catorce paneles con
-                                    escenas consideradas controversiales por la organización encargada, la Agencia de
-                                    Reurbanización Comunitaria, la obra fue desensamblada y guardada en el depósito. Un
-                                    compartimento de hecho presenta una censura similar que recibió el mural <i> América
-                                        Tropical </i> (1932), realizado por el muralista mexicano David Alfaro Siqueiros
-                                    para un mercado al aire libre en el centro de Los Ángeles, debido a su abierta
-                                    crítica al imperialismo de Estados Unidos&#8212;un ejemplo anterior del abuso de aquellos
-                                    en posiciones de poder que buscaron borrar una obra pública que cuestiona temas de
-                                    raza, colonialismo y el imaginario Chicane.
-                                    <br><br>
-                                    Los paneles censurados en este mural documentan el Movimiento Chicano, así como las
-                                    brutalidades que afectaron a otros grupos étnicos, como el caso de la masacre de
-                                    veintidós personas de China en 1871 y los campos de internamiento de japoneses
-                                    estadounidenses durante la Segunda Guerra Mundial. Un panel conmemora los triunfos
-                                    de la comunidad Afro-estadounidense a través de un retrato de Bridget “Biddy” Mason,
-                                    una mujer esclava liberada, quien se convirtió en enfermera y fundó la Primera
-                                    Iglesia Episcopal Metodista Africana en Los Ángeles. En cada panel del mural,
-                                    Carrasco considera los hogares, la construcción de viviendas y el entorno construido
-                                    como partes fundamentales de la historia de la ciudad. Por ejemplo, una escena
-                                    destaca un domicilio indígena hecho de ramas de sauce y junco (una hierba duradera)
-                                    y representa a un trabajador recolectando estos recursos naturales. La artista
-                                    también considera formas en que el paisaje físico ha sido usado como fuente y lugar
-                                    de opresión. En este sentido, otra escena funciona como una metáfora visual de la
-                                    práctica de expropiación, que reclama propiedad privada para uso público y, con
-                                    frecuencia, refuerza la segregación. Incluso, otro más describe los ferrocarriles
-                                    transcontinentales construidos en el siglo XIX y habilitados gracias a la
-                                    explotación de los trabajadores de China. Carrasco emprendió una extensa
-                                    investigación sobre esta atrocidad racial poco examinada, buscando cartas y
-                                    documentos en los archivos de la Sociedad Histórica de China, los cuales arrojaron
-                                    luz sobre estos eventos.
-                                    <br><br>
-                                    A medida que la historia avanza en el mural, los espacios de reunión comunitaria
-                                    como iglesias y mercados, así como eventualmente los rascacielos, brindan una
-                                    posible estabilidad en medio de episodios de conflicto racial, que hacen recordar
-                                    que los espacios compartidos permiten comunión y sociabilidad. El proyecto en sí
-                                    resultó en un proceso de colaboración: Carrasco empleó a diecisiete estudiantes del
-                                    Programa de Empleo Juvenil de Verano <i> (Summer Youth Employment Program) </i> para
-                                    ayudar con el desarrollo del mural. En muestra de agradecimiento, la artista incluyó
-                                    sus retratos. Un conjunto final también retrata a celebridades, políticos y otros
-                                    “miembros de la comunidad”, incluidos los retratos de Yreina Cervántez y Harry
-                                    Gamboa Jr., que son otros dos artistas de esta exposición.
-                                </p>
-                            </div>
-                        </div>
-                        <hr class="label-hr">
-                        <div class="objects-artwork-img-copy inner bottom-row">
-                            <div class="artwork-img-top-copy inner bottom-row">
-                                <div id="open-bottom-row-two">
-                                    <p class="en"> ABOUT THE ARTISTS </p>
-                                    <p class="sp"> SOBRE LA ARTISTA </p>
-                                    <p class="toggle_icon">+</p>
+                            <div class="objects-artwork-img-copy inner">
+                                <div class="artwork-img-top-copy inner">
+                                    <h2 class="artwork-h2 en"> BARBARA CARRASCO — <i> L.A. HISTORY: A MEXICAN
+                                            PERSPECTIVE
+                                        </i>, 1981 </h2>
+                                    <h2 class="artwork-h2 sp"> BARBARA CARRASCO — <i> L.A. HISTORY: A MEXICAN
+                                            PERSPECTIVE
+                                            (LA HISTORIA DE L.A.: UNA PERSPECTIVA MEXICANA) </i>, 1981 </h2>
+                                    <p class="p-under-h2 en"> Portable mural, 43 Masonite-and-wood panels. </p>
+                                    <p class="p-under-h2 en"> Photo credit: LA Plaza de Cultura y Artes </p>
+                                    <p class="p-under-h2 sp"> Mural móvil, 43 páneles de madera y masonita. </p>
+                                    <p class="p-under-h2 sp"> Cortesía del artista y del Museo de Historia Natural en
+                                        Los
+                                        Ángeles </p>
+                                    <hr class="label-hr objects-small">
+                                    <div class="object-label-wrapper">
+                                        <a href="/archive/archive.html" class="objects-label">
+                                            <button type="button" class="objects-label"> <span class="en"> ARCHIVE
+                                                </span>
+                                                <span class="sp"> ARCHIVO </span>
+                                            </button>
+                                        </a>
+                                        <a href="/resources/resources.html" class="objects-label">
+                                            <button type="button" class="objects-label"> <span class="en"> ADDITIONAL
+                                                    RESOURCES </span>
+                                                <span class="sp"> RECURSOS ADICIONALES </span> </button>
+                                        </a>
+                                        <a href="/guides/teaching-guides.html" class="objects-label">
+                                            <button type="button" class="objects-label"> <span class="en"> TEACHING
+                                                    GUIDES </span>
+                                                <span class="sp"> GUÍAS DOCENTES </span> </button>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="artist-bio accordion-content">
-                                    <p class="about hidden en">
-                                        <b> Barbara Carrasco </b> a mixed-media artist, was born in El Paso, Texas, in
-                                        1955 to Mexican American parents and grew up in the predominantly Mexican
-                                        American and African American community of Mar Vista Gardens, near Culver City,
-                                        California. She received her associate of arts degree in English from West Los
-                                        Angeles College before transferring to the University of California, Los Angeles
-                                        (BFA 1978). She was the first woman editor of the UCLA newspaper <i> La Gente.
-                                        </i> At age nineteen Carrasco met César Chávez, leader of the United Farm
-                                        Workers of America (UFW), after which she began a long association with the
-                                        organization. She designed and created flyers and banners for the UFW. In 1981
-                                        Carrasco was commissioned by the Community Redevelopment Agency to create a
-                                        sixteen-by-eighty-foot portable mural titled <i> LA History: A Mexican
-                                            Perspective. </i> Carrasco is a founding member and board member of the
-                                        Dolores Huerta Foundation. Students and scholars of her work can find her
-                                        original mural sketches and drawings in the Permanent Collection of Works on
-                                        Paper at the Library of Congress in Washington, DC; her oral history is archived
-                                        by the Smithsonian Archives of American Art and UCLA Chicano Studies Research
-                                        Center; and a permanent collection of her papers has been established and
-                                        archived at Stanford University&#39;s Special Collections.
-                                        <br><br> 
-                                        [text credit: Marcela Guerrero, Hammer Museum, Digital Archive: Radical Women: Latin American Art,
-                                        1960-1985]
+                                <div class="artwork-img-top-copy inner">
+                                    <p class="en"> A sweeping network of vignettes are set into the flowing hair of <i>
+                                            La
+                                            Reina de Los Ángeles </i> (the Princess of Los Angeles) in Barbara
+                                        Carrasco&#39;s multi-part mural, <i> L.A. History: A Mexican Perspective </i>
+                                        (1981). Centering the contributions of Mexican migrants and their descendants,
+                                        as
+                                        well as indigenous peoples who lived in the region before Spanish colonial
+                                        settlement in the 1700s, Carrasco unites together wide-ranging fields like
+                                        agriculture, local politics, and the Hollywood film industry. Moreover, as the
+                                        scenes narrate crucial events of the formation of Los Angeles, the mural
+                                        constellates an intersectional history that pushes against the city&#39;s
+                                        policies
+                                        and practices that attempted to segregate racial minorities both geographically
+                                        and
+                                        culturally. By visualizing the city&#39;s diverse population, Carrasco reminds
+                                        of
+                                        the simultaneous survival, victories, and struggles of these communities.
+                                        <br><br>
+                                        Arranged chronologically from left to right, the mural starts with the
+                                        region&#39;s
+                                        pre-settlement history and culminates with political activism agitating for
+                                        labor
+                                        and housing equality in the present. Now on permanent display at the Natural
+                                        History
+                                        Museum of Los Angeles, where the artist conducted the bulk of the research for
+                                        the
+                                        mural, it was initially censored. When Carrasco refused to remove the fourteen
+                                        scenes deemed too controversial for public display by the commissioning
+                                        organization, the Community Redevelopment Agency, it was disassembled and put
+                                        into
+                                        storage. One compartment even chronicles the similar whitewashing of the Mexican
+                                        muralist David Alfaro Siqueiros&#39;s mural <i> América Tropical </i> (1932),
+                                        made
+                                        for an outdoor market in Downtown Los Angeles due to its overt critique of
+                                        American
+                                        imperialism&#8212;an earlier instance in which those in positions of power
+                                        attempted
+                                        to erase a public work contending with race, coloniality, and a Chicane
+                                        imaginary.
+                                        <br><br>
+                                        This mural&#39;s censored panels documented the Chicano Movement, as well as
+                                        brutalities that impacted other ethnic groups like the 1871 massacre of
+                                        twenty-two
+                                        Chinese men and the Japanese American internment during World War II. One panel
+                                        commemorates the triumphs of the Black community by giving a portrait of Bridget
+                                        &#34;Biddy&#34; Mason, a freed slave who eventually became a nurse and founder
+                                        of
+                                        Los Angeles&#39;s First African Methodist Episcopal Church. Throughout, Carrasco
+                                        considers housing, homebuilding, and the built environment as part of the
+                                        city&#39;s
+                                        history. For instance, one scene spotlights an indigenous domicile made of
+                                        willow
+                                        branches and tule (a durable grass) and depicts a worker gathering these natural
+                                        resources. The artist also considers the ways that the physical landscape is
+                                        often
+                                        the source and site of oppression as another scene devises a visual metaphor for
+                                        the
+                                        practice of eminent domain, which claims private property for public use and
+                                        frequently services segregation. Yet another depicts the transcontinental
+                                        railroads
+                                        rapidly built in the nineteenth century and enabled by the exploitation of
+                                        Chinese
+                                        laborers. Carrasco undertook extensive research into this under examined racial
+                                        atrocity, looking through the archives of the Chinese Historical Society for
+                                        letters
+                                        and documents that shed light on these events.
+                                        <br><br>
+                                        As the mural progresses, community gathering spaces like churches and markets,
+                                        and
+                                        eventually skyscrapers, provide possible stability amid episodes of racial
+                                        strife,
+                                        as if to remind that shared spaces allow for communion and relationality. The
+                                        project itself is one of collaboration: Carrasco employed seventeen students
+                                        from
+                                        the Summer Youth Employment Program to assist with the mural. In a display of
+                                        gratitude, she included their portraits. A final ensemble also portrays
+                                        celebrities,
+                                        politicians, and &#34;community members&#34;&#8212;including portraits of Yreina
+                                        Cervántez and Harry Gamboa Jr, two other artists in this exhibition.
                                     </p>
-                                    <p class="about hidden sp">
-                                        <b> Barbara Carrasco </b> es una artista de técnicas mixtas nacida en 1955 en El Paso, Texas. De padres mexico-estadounidenses, Carrasco creció en la comunidad de Mar Vista Gardens&#8212;cerca de Culver City, California&#8212;habitada predominantemente por familias mexico y afro-estadounidenses. Recibió su título asociado en inglés y artes de West Los Angeles College antes de transferirse a la Universidad de California, Los Ángeles (UCLA), en donde recibió su título de Bellas Artes en 1978. Fue la primera mujer editora del periódico de UCLA titulado <i> La Gente. </i> A los diecinueve años, Carrasco conoció a César Chávez, líder del Sindicato Unido de Trabajadores Agrícolas (UFW), tras lo cual inició una larga relación con la organización. Diseñó y creó volantes y pancartas para la UFW. En 1981, la Agencia de Reurbanización Comunitaria le encargó a Carrasco la creación de un mural portátil de dieciséis por ochenta pies titulado <i> LA History: A Mexican Perspective. </i> Además, Carrasco es miembro fundador y miembro del consejo de la Fundación Dolores Huerta. Estudiantes y estudiosos de su trabajo pueden encontrar sus bocetos y dibujos para murales en la Colección Permanente de Obras sobre Papel de la Biblioteca del Congreso de los Estados Unidos en Washington, DC. Su historia oral está archivada por los Archivos de Arte Americano del Smithsonian y el Centro de Investigación de Estudios Chicanos de UCLA. Al mismo tiempo, una colección permanente de sus documentos se ha establecido y archivado en las Colecciones Especiales de la Universidad de Stanford.
-                                        <br><br> 
-                                        [crédito de texto: Marcela Guerrero, Hammer Museum, Archivo Digital: Radical Women: Latin American Art, 1960-1985].                                        
+                                    <p class="sp">
+                                        Una red de viñetas aparece distribuida en el cabello flotante de La Reina de Los
+                                        Ángeles en el mural de múltiples paneles realizado por Barbara Carrasco, llamado
+                                        <i>
+                                            L.A. History: A Mexican Perspective (La historia de L.A.: Una perspectiva
+                                            mexicana) </i> (1981). Enfocándose en las contribuciones de inmigrantes
+                                        mexicanos y sus descendientes, así como de los pueblos Indígenas que vivieron en
+                                        la
+                                        región antes del asentamiento colonial español en el siglo XVIII, Carrasco
+                                        representa en el mural diversos campos temáticos como la agricultura, la
+                                        política
+                                        local y la industria cinematográfica de Hollywood. Además, a medida que las
+                                        escenas
+                                        narran eventos cruciales en el desarrollo de Los Ángeles, el mural entreteje una
+                                        historia interseccional que sirve como contra narrativa a políticas y prácticas
+                                        de
+                                        la ciudad que buscaron segregar minorías raciales, tanto geográfica como
+                                        culturalmente. Al visualizar la población diversa presente en la ciudad,
+                                        Carrasco
+                                        hace recordar de manera simultánea la supervivencia, las victorias y las luchas
+                                        de
+                                        estas comunidades.
+                                        <br><br>
+                                        Organizado cronológicamente de izquierda a derecha, el mural comienza con la
+                                        historia anterior a los primeros asentamientos en la región y culmina con el
+                                        activismo político que en la presente lucha por la igualdad laboral y de
+                                        vivienda.
+                                        El mural, que ahora se encuentra en exhibición permanente en el Museo de
+                                        Historia
+                                        Natural de Los Ángeles, donde el artista realizó la mayor parte de la
+                                        investigación,
+                                        fue inicialmente censurado. Cuando Carrasco se negó a retirar catorce paneles
+                                        con
+                                        escenas consideradas controversiales por la organización encargada, la Agencia
+                                        de
+                                        Reurbanización Comunitaria, la obra fue desensamblada y guardada en el depósito.
+                                        Un
+                                        compartimento de hecho presenta una censura similar que recibió el mural <i>
+                                            América
+                                            Tropical </i> (1932), realizado por el muralista mexicano David Alfaro
+                                        Siqueiros
+                                        para un mercado al aire libre en el centro de Los Ángeles, debido a su abierta
+                                        crítica al imperialismo de Estados Unidos&#8212;un ejemplo anterior del abuso de
+                                        aquellos
+                                        en posiciones de poder que buscaron borrar una obra pública que cuestiona temas
+                                        de
+                                        raza, colonialismo y el imaginario Chicane.
+                                        <br><br>
+                                        Los paneles censurados en este mural documentan el Movimiento Chicano, así como
+                                        las
+                                        brutalidades que afectaron a otros grupos étnicos, como el caso de la masacre de
+                                        veintidós personas de China en 1871 y los campos de internamiento de japoneses
+                                        estadounidenses durante la Segunda Guerra Mundial. Un panel conmemora los
+                                        triunfos
+                                        de la comunidad Afro-estadounidense a través de un retrato de Bridget “Biddy”
+                                        Mason,
+                                        una mujer esclava liberada, quien se convirtió en enfermera y fundó la Primera
+                                        Iglesia Episcopal Metodista Africana en Los Ángeles. En cada panel del mural,
+                                        Carrasco considera los hogares, la construcción de viviendas y el entorno
+                                        construido
+                                        como partes fundamentales de la historia de la ciudad. Por ejemplo, una escena
+                                        destaca un domicilio indígena hecho de ramas de sauce y junco (una hierba
+                                        duradera)
+                                        y representa a un trabajador recolectando estos recursos naturales. La artista
+                                        también considera formas en que el paisaje físico ha sido usado como fuente y
+                                        lugar
+                                        de opresión. En este sentido, otra escena funciona como una metáfora visual de
+                                        la
+                                        práctica de expropiación, que reclama propiedad privada para uso público y, con
+                                        frecuencia, refuerza la segregación. Incluso, otro más describe los
+                                        ferrocarriles
+                                        transcontinentales construidos en el siglo XIX y habilitados gracias a la
+                                        explotación de los trabajadores de China. Carrasco emprendió una extensa
+                                        investigación sobre esta atrocidad racial poco examinada, buscando cartas y
+                                        documentos en los archivos de la Sociedad Histórica de China, los cuales
+                                        arrojaron
+                                        luz sobre estos eventos.
+                                        <br><br>
+                                        A medida que la historia avanza en el mural, los espacios de reunión comunitaria
+                                        como iglesias y mercados, así como eventualmente los rascacielos, brindan una
+                                        posible estabilidad en medio de episodios de conflicto racial, que hacen
+                                        recordar
+                                        que los espacios compartidos permiten comunión y sociabilidad. El proyecto en sí
+                                        resultó en un proceso de colaboración: Carrasco empleó a diecisiete estudiantes
+                                        del
+                                        Programa de Empleo Juvenil de Verano <i> (Summer Youth Employment Program) </i>
+                                        para
+                                        ayudar con el desarrollo del mural. En muestra de agradecimiento, la artista
+                                        incluyó
+                                        sus retratos. Un conjunto final también retrata a celebridades, políticos y
+                                        otros
+                                        “miembros de la comunidad”, incluidos los retratos de Yreina Cervántez y Harry
+                                        Gamboa Jr., que son otros dos artistas de esta exposición.
                                     </p>
                                 </div>
-                                <hr class="label-hr">
+                            </div>
+                            <hr class="label-hr">
+                            <div class="objects-artwork-img-copy inner bottom-row">
+                                <div class="artwork-img-top-copy inner bottom-row">
+                                    <div id="open-bottom-row-two">
+                                        <p class="en"> ABOUT THE ARTISTS </p>
+                                        <p class="sp"> SOBRE LA ARTISTA </p>
+                                        <p class="toggle_icon">+</p>
+                                    </div>
+                                    <div class="artist-bio accordion-content">
+                                        <p class="about hidden en">
+                                            <b> Barbara Carrasco </b> a mixed-media artist, was born in El Paso, Texas,
+                                            in
+                                            1955 to Mexican American parents and grew up in the predominantly Mexican
+                                            American and African American community of Mar Vista Gardens, near Culver
+                                            City,
+                                            California. She received her associate of arts degree in English from West
+                                            Los
+                                            Angeles College before transferring to the University of California, Los
+                                            Angeles
+                                            (BFA 1978). She was the first woman editor of the UCLA newspaper <i> La
+                                                Gente.
+                                            </i> At age nineteen Carrasco met César Chávez, leader of the United Farm
+                                            Workers of America (UFW), after which she began a long association with the
+                                            organization. She designed and created flyers and banners for the UFW. In
+                                            1981
+                                            Carrasco was commissioned by the Community Redevelopment Agency to create a
+                                            sixteen-by-eighty-foot portable mural titled <i> LA History: A Mexican
+                                                Perspective. </i> Carrasco is a founding member and board member of the
+                                            Dolores Huerta Foundation. Students and scholars of her work can find her
+                                            original mural sketches and drawings in the Permanent Collection of Works on
+                                            Paper at the Library of Congress in Washington, DC; her oral history is
+                                            archived
+                                            by the Smithsonian Archives of American Art and UCLA Chicano Studies
+                                            Research
+                                            Center; and a permanent collection of her papers has been established and
+                                            archived at Stanford University&#39;s Special Collections.
+                                            <br><br>
+                                            [text credit: Marcela Guerrero, Hammer Museum, Digital Archive: Radical
+                                            Women: Latin American Art,
+                                            1960-1985]
+                                        </p>
+                                        <p class="about hidden sp">
+                                            <b> Barbara Carrasco </b> es una artista de técnicas mixtas nacida en 1955
+                                            en El Paso, Texas. De padres mexico-estadounidenses, Carrasco creció en la
+                                            comunidad de Mar Vista Gardens&#8212;cerca de Culver City,
+                                            California&#8212;habitada predominantemente por familias mexico y
+                                            afro-estadounidenses. Recibió su título asociado en inglés y artes de West
+                                            Los Angeles College antes de transferirse a la Universidad de California,
+                                            Los Ángeles (UCLA), en donde recibió su título de Bellas Artes en 1978. Fue
+                                            la primera mujer editora del periódico de UCLA titulado <i> La Gente. </i> A
+                                            los diecinueve años, Carrasco conoció a César Chávez, líder del Sindicato
+                                            Unido de Trabajadores Agrícolas (UFW), tras lo cual inició una larga
+                                            relación con la organización. Diseñó y creó volantes y pancartas para la
+                                            UFW. En 1981, la Agencia de Reurbanización Comunitaria le encargó a Carrasco
+                                            la creación de un mural portátil de dieciséis por ochenta pies titulado <i>
+                                                LA History: A Mexican Perspective. </i> Además, Carrasco es miembro
+                                            fundador y miembro del consejo de la Fundación Dolores Huerta. Estudiantes y
+                                            estudiosos de su trabajo pueden encontrar sus bocetos y dibujos para murales
+                                            en la Colección Permanente de Obras sobre Papel de la Biblioteca del
+                                            Congreso de los Estados Unidos en Washington, DC. Su historia oral está
+                                            archivada por los Archivos de Arte Americano del Smithsonian y el Centro de
+                                            Investigación de Estudios Chicanos de UCLA. Al mismo tiempo, una colección
+                                            permanente de sus documentos se ha establecido y archivado en las
+                                            Colecciones Especiales de la Universidad de Stanford.
+                                            <br><br>
+                                            [crédito de texto: Marcela Guerrero, Hammer Museum, Archivo Digital: Radical
+                                            Women: Latin American Art, 1960-1985].
+                                        </p>
+                                    </div>
+                                    <hr class="label-hr">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="bottom-column">
-            <div class="back-arrow objects" id="objects-arrow">
-                <div class="section-arrow"> <a href="/objects/objects.html"> &#8592; </a> </div>
+            <div class="bottom-column">
+                <div class="back-arrow objects" id="objects-arrow">
+                    <div class="section-arrow"> <a href="/objects/objects.html"> &#8592; </a> </div>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
+</body>
