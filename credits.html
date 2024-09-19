@@ -38,7 +38,7 @@
             <div class="language__container--left language__container--en">
                 <input class="language__control" type="radio" id="language1-1" name="language-switch1">
                 <label class="language__label__dark" for="language1-1" id="language-toggle-en"> <button type="button"
-                        class="toggle-label language-sp-button"> EN </button>
+                        class="toggle-label language-en-button"> EN </button>
                     <span class="hidden"></span>
                 </label>
             </div>
@@ -58,30 +58,22 @@
         <div id="slide-nav" class="slide-content">
             <button type="button" id="close" class="close-btn" aria-label="close navigation">&times;</button>
             <ul id="link-list">
-                <li class="text-on" id="nav-intro-link en"><a href="../index.html"> HOME </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../index.html"> INICIAL </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../introduction.html"> INTRODUCTION </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../introduction.html"> INTRODUCCIÓN </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../objects/objects.html"> OBJECTS </a>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../objects/objects.html"> OBJETOS </a>
-                <li class="text-on" id="nav-intro-link en"><a href="../archive/archive.html"> ARCHIVE </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../archive/archive.html"> ARCHIVO </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../dialogues/dialogues.html"> DIALOGUES </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../dialogues/dialogues.html"> DIÁLOGOS </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../guides/teaching-guides.html"> TEACHING GUIDES
-                    </a>
-                </li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../guides/teaching-guides.html"> GUÍAS DOCENTES
-                    </a>
-                </li>
-                <li class="text-on" id="nav-intro-link en"><a href="../resources/resources.html"> ADDITIONAL RESOURCES
-                    </a>
-                </li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../resources/resources.html"> RECURSOS
-                        ADICIONALES
-                    </a></li>
-                <li class="text-on" id="nav-intro-link en"><a href="../credits.html"> CREDITS </a></li>
-                <li class="text-hidden" id="nav-intro-link sp"><a href="../credits.html"> CRÉDITOS </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../index.html"> HOME </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../index.html"> INICIAL </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../introduction.html"> INTRODUCTION </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../introduction.html"> INTRODUCCIÓN </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../objects/objects.html"> OBJECTS </a>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../objects/objects.html"> OBJETOS </a>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../archive/archive.html"> ARCHIVE </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../archive/archive.html"> ARCHIVO </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../dialogues/dialogues.html"> DIALOGUES </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../dialogues/dialogues.html"> DIÁLOGOS </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../guides/teaching-guides.html"> TEACHING GUIDES</a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../guides/teaching-guides.html"> GUÍAS DOCENTES </a> </li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../resources/resources.html"> ADDITIONAL RESOURCES </a> </li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../resources/resources.html"> RECURSOS ADICIONALES </a></li>
+                <li class="text-on" id="nav-intro-link toggleable-english-text"><a href="../credits.html"> CREDITS </a></li>
+                <li class="text-hidden" id="nav-intro-link toggleable-spanish-text"><a href="../credits.html"> CRÉDITOS </a></li>
             </ul>
         </div>
     </nav>
@@ -90,7 +82,8 @@
         <div class="credits" id="credits-section">
             <div class="top-column credits">
                 <div class="label-row">
-                    <h2 class="page-label"> CREDITS </h2>
+                    <h2 class="page-label en toggleable-english-text"> CREDITS </h2>
+                    <h2 class="page-label sp toggleable-spanish-text"> CRÉDITOS </h2>
                 </div>
                 <div class="row-content credits">
                     <hr class="label-hr" />
@@ -98,7 +91,7 @@
                         <div class="credits-list">
                             <div class="list-03 credits">
                                 <div class="credit-bios special-thanks">
-                                    <p class="thanks en">
+                                    <p class="thanks en toggleable-english-text">
                                         <i> Five Decades of Chicane Muralism in Los Angeles, 1972-2019 </i> was funded
                                         through the <a href="https://digitalhumanities.nyu.edu/funding/seed-grants/"
                                             target="_blank" class="thanks"> NYU Digital Humanities Seed Grant
@@ -120,7 +113,7 @@
                                         McGhie, and Jason Varone. Faculty support provided by Dr. Edward J. Sullivan.
                                         <br><br><br>
                                     </p>
-                                    <p class="thanks sp">
+                                    <p class="thanks sp toggleable-spanish-text">
                                         <i> Five Decades of Chicane Muralism in Los Angeles, 1972-2019 </i> fue
                                         financiada a
                                         través del programa NYU Digital Humanities Seed Grant y está organizada por el
@@ -155,13 +148,13 @@
                         <div class="credits-list">
                             <div class="list-01 credits">
                                 <div class="credits-title-one">
-                                    <p class="credits title en"> CURATORS </p>
+                                    <p class="credits title en toggleable-english-text"> CURATORS </p>
                                     <p class="credits title sp"> CURADORES </p>
                                     <p class="credits title toggle_icon">+</p>
                                 </div>
                                 <hr class="label-hr">
                                 <div class="credit-bios accordion-content">
-                                    <p class="curators hidden en">
+                                    <p class="curators hidden en toggleable-english-text">
                                         <b> Summer Sloane-Britt </b> (she/her) is a doctoral candidate in Art History at
                                         the
                                         Institute of Fine Arts, New York University. Her research centers on the
@@ -184,7 +177,7 @@
                                         photo
                                         and poetry book with writer Jess Cole.
                                     </p>
-                                    <p class="curators hidden en">
+                                    <p class="curators hidden en toggleable-english-text">
                                         <b> Megan Kincaid </b> is an art historian based in New York. Kincaid is a
                                         scholar
                                         of twentieth-century modernism with an interest in the history of abstraction in
@@ -209,7 +202,7 @@
                                         book on pan-American, transatlantic abstraction, a retrospective exhibition
                                         organized by Aperture, and several publications on contemporary artists.
                                     </p>
-                                    <p class="curators hidden sp">
+                                    <p class="curators hidden sp toggleable-spanish-text">
                                         <b> Summer Sloane-Britt </b> (ella) es candidata a doctorado en la historia del
                                         arte
                                         del Institute of Fine Arts de la Universidad de Nueva York. Su investigación se
@@ -264,13 +257,13 @@
                             </div>
                             <div class="list-02 credits">
                                 <div class="credits-title-two">
-                                    <p class="credits title en"> CONTRIBUTORS </p>
+                                    <p class="credits title en toggleable-english-text"> CONTRIBUTORS </p>
                                     <p class="credits title sp"> CONTRIBUYENTES </p>
                                     <p class="credits title toggle_icon">+</p>
                                 </div>
                                 <hr class="label-hr">
                                 <div class="credit-bios accordion-content">
-                                    <p class="credits hidden en">
+                                    <p class="credits hidden en toggleable-english-text">
                                         <b> Lizette Ayala </b> is a Salvadoran-Mexican digital designer based in New
                                         York
                                         City, with roots in the greater Texas area. A graduate of Parsons School of
@@ -288,7 +281,7 @@
                                         The New Museum, Swiss Institute, El Museo del Barrio, Dallas Museum of Art, and
                                         Scope of Work.
                                     </p>
-                                    <p class="credits hidden en">
+                                    <p class="credits hidden en toggleable-english-text">
                                         <b> Mario Ayala </b> (b. 1991, Los Angeles) reimagines a contemporary landscape
                                         where identity, observation, and the presence of material fact play equal roles.
                                         In
@@ -314,7 +307,7 @@
                                         surprising—and even unsettling—moments of cohesion in a world defined by
                                         multiplicity and rapid, ever-changing flux.
                                     </p>
-                                    <p class="credits hidden en">
+                                    <p class="credits hidden en toggleable-english-text">
                                         <b> Juan Gabriel Bolívar </b> is a PhD Candidate in Art History at the Institute
                                         of
                                         Fine Arts, NYU. Born in Bogotá, Colombia, Juan Gabriel received his B.A. in
@@ -334,14 +327,14 @@
                                         the
                                         Metropolitan Museum of Art in New York.
                                     </p>
-                                    <p class="credits hidden en">
+                                    <p class="credits hidden en toggleable-english-text">
                                         <b> Itzél Delgado-Gonzalez </b> was born and raised in East Harlem by her
                                         Oaxacan
                                         family. She is a PhD candidate in the American Studies program at NYU and hopes
                                         future generations will appreciate their neighborhoods and people around them as
                                         powerful sources of knowledge.
                                     </p>
-                                    <p class="credits hidden en">
+                                    <p class="credits hidden en toggleable-english-text">
                                         <b> Lady Pink </b> was born in Ecuador, raised in NYC, and currently resides in
                                         the
                                         countryside north of the city. In 1979, she started writing graffiti and soon
@@ -361,7 +354,7 @@
                                         vision. She also shares her 40 years of experience with teens by holding mural
                                         workshops and actively lecturing to college students throughout the world.
                                     </p>
-                                    <p class="credits hidden en">
+                                    <p class="credits hidden en toggleable-english-text">
                                         <b> Adela Tapia </b> is an art historian based in Southern California. Her
                                         research
                                         focuses on the progressive tactical offensive waged by Chicanas of the 1960s
@@ -386,7 +379,7 @@
                                         the
                                         art of Judithe Hernández.
                                     </p>
-                                    <p class="credits hidden en">
+                                    <p class="credits hidden en toggleable-english-text">
                                         <b> Salvador de la Torre </b> is a transmasculine artist, educator, and
                                         storyteller.
                                         He was born in Guadalajara, Mexico and migrated with their family at a young age
@@ -405,7 +398,7 @@
                                         Gallery, and Laband Art Gallery. They live and work in Los Angeles, California.
                                         <br><br>
                                     </p>
-                                    <p class="credits hidden sp">
+                                    <p class="credits hidden sp toggleable-spanish-text">
                                         <b> Lizette Ayala </b> es una diseñadora digital salvadoreña-mexicana radicada
                                         en la
                                         ciudad de Nueva York, con raíces en Dallas, Texas. Graduada de la Escuela de
@@ -425,7 +418,7 @@
                                         de
                                         Dallas y Scope of Work.
                                     </p>
-                                    <p class="credits hidden sp">
+                                    <p class="credits hidden sp toggleable-spanish-text">
                                         <b> Mario Ayala </b> (n. 1991, Los Ángeles) re-imagina un paisaje contemporáneo
                                         donde la identidad, la observación y la presencia de hechos materiales tienen el
                                         mismo valor. En sus pinturas, Ayala reúne figuras y formas extraídas de cada uno
@@ -455,7 +448,7 @@
                                         sorprendentes—incluso inquietantes—en un mundo definido por multiplicidad y un
                                         rápido y cambiante flujo.
                                     </p>
-                                    <p class="credits hidden sp">
+                                    <p class="credits hidden sp toggleable-spanish-text">
                                         <b> Juan Gabriel Bolívar </b> es candidato a doctorado del Institute of Fine
                                         Arts de
                                         la Universidad de Nueva York. Nacido en Bogotá, Colombia, Juan Gabriel recibió
@@ -474,14 +467,14 @@
                                         Visual and Material Culture of Mexico and Colombia (1920-1940),” apoyada por el
                                         Global Research Initiative de NYU y el Museo Metropolitano de Nueva York.
                                     </p>
-                                    <p class="credits hidden sp">
+                                    <p class="credits hidden sp toggleable-spanish-text">
                                         <b> Itzél Delgado-Gonzalez </b> nació y creció en East Harlem de una familia
                                         oaxaqueña. Es candidata a doctorado en el programa de Estudios Americanos de la
                                         Universidad de Nueva York y espera que las generaciones futuras aprecien sus
                                         barrios
                                         y a las personas que les rodean como poderosas fuentes de conocimiento.
                                     </p>
-                                    <p class="credits hidden sp">
+                                    <p class="credits hidden sp toggleable-spanish-text">
                                         <b> Lady Pink </b> nació en Ecuador, creció en Nueva York y actualmente reside
                                         en el
                                         campo al norte de la ciudad. En 1979, comenzó a realizar graffiti y pronto se
@@ -502,7 +495,7 @@
                                         murales
                                         y dando conferencias a estudiantes universitarios de todo el mundo.
                                     </p>
-                                    <p class="credits hidden sp">
+                                    <p class="credits hidden sp toggleable-spanish-text">
                                         <b> Adela Tapia </b> es una historiadora del arte radicada en el sur de
                                         California.
                                         Su investigación se centra en la ofensiva táctica progresista emprendida por
@@ -527,7 +520,7 @@
                                         visual
                                         del arte realizado por Judithe Hernández.
                                     </p>
-                                    <p class="credits hidden sp">
+                                    <p class="credits hidden sp toggleable-spanish-text">
                                         <b> Salvador de la Torre </b> es un artista transmasculino, educador y
                                         cuentista.
                                         Nació en Guadalajara, México y emigró con su familia a una edad temprana a

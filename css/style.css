@@ -672,27 +672,27 @@ img.objects-artwork-img.rafagabby {
 /* SPANISH TOGGLE DISPLAY SETTINGS */
 
 h1.sp {
-  display: none ;
+  display: none;
 }
 
 h2.sp {
-  display: none ;
+  display: none;
 }
 
 p.sp {
-  display: none ;
+  display: none;
 }
 
 span.sp {
-  display: none ;
+  display: none;
 }
 
 #open-bottom-row-two > p.sp {
-  display: none ;
+  display: none;
 }
 
 p.about.hidden.sp {
-  display: none ;
+  display: none;
 }
 
 button.toggle-label {
@@ -1544,6 +1544,9 @@ p.dialogues {
   display: none;
 }
 
+.dialogues.sp {
+  display: none;
+}
 
 /* Dialogues Main Page Arrow */
 
@@ -1626,12 +1629,25 @@ p.thanks {
   border-bottom: 1.5px solid #1A1019;
 }
 
+#credits-section > div > div.row-content.credits > div > div:nth-child(1) > div > div > p.thanks.sp {
+  display: none;
+}
+
+div.credits-title-one > p.credits.title.sp {
+  display: none;
+}
+
+div.credits-title-two > p.credits.title.sp {
+  display: none;
+}
+
 p.credits.title {
   width: auto !important;
   padding: 0px 20px 0px 20px;
   cursor: pointer;
   line-height: 150%;
 }
+
 
 a.credits {
   color: black;
