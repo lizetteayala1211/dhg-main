@@ -1290,6 +1290,10 @@ button.archive-label {
   padding: 0px 20px 0px 20px;
 }
 
+.resources-title > p.sp {
+  display: none;
+}
+
 .font-change {
   font-family: "Inter", sans-serif !important;
 }
