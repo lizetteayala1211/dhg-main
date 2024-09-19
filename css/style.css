@@ -77,6 +77,12 @@ button {
   white-space: nowrap; /* added line */
 }
 
+/* Add basic styles for active state */
+button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 /* Navigation */
 nav {
   position: relative;
@@ -380,7 +386,7 @@ main {
   align-content: center;
   justify-content: center;
   align-items: center;
-  height: 55%;
+  height: auto;
   width: 100vw;
   font-size: calc(.5 * (6.5vh + 6.1vw));
   text-align: center;
@@ -393,6 +399,10 @@ main {
   font-weight: 700;
   margin: 0px;
   padding-bottom: 0px;
+}
+
+#main > div > div.title-middle > h1.sp.toggleable-spanish-text {
+  font-size: 1.8em;
 }
 
 .title-bottom {
@@ -543,14 +553,18 @@ a.arrow {
 }
 
 p.introduction {
-  display: inline-block !important;
+  display: inline-block;
   color: black;
   overflow-wrap: normal;
   line-height: 175% !important;
 }
 
+#intro-section > div > div.row-content.introduction > div > p {
+  display: inline-block;
+}
+
 p.introduction.sp {
-  display: none !important;
+  display: none;
 }
 
 .bottom-column {
@@ -658,27 +672,27 @@ img.objects-artwork-img.rafagabby {
 /* SPANISH TOGGLE DISPLAY SETTINGS */
 
 h1.sp {
-  display: none !important;
+  display: none ;
 }
 
 h2.sp {
-  display: none !important;
+  display: none ;
 }
 
 p.sp {
-  display: none !important;
+  display: none ;
 }
 
 span.sp {
-  display: none !important;
+  display: none ;
 }
 
 #open-bottom-row-two > p.sp {
-  display: none !important;
+  display: none ;
 }
 
 p.about.hidden.sp {
-  display: none !important;
+  display: none ;
 }
 
 button.toggle-label {
@@ -729,12 +743,6 @@ a.skip-main {
       display: none;
   }
 }
-
-/* Add basic styles for active state */
-/* button.active {
-  background-color: #4CAF50;
-  color: white;
-} */
 
 .objects-artwork-img-copy {
   display: flex;

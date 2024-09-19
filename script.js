@@ -366,13 +366,6 @@ $(document).ready(function () {
   }
   );
 
-  // $(function () {
-  //   var parent = $("#archives-content");
-  //   var divs = parent.children().not(':last');
-  //   while (divs.length) {
-  //       parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-  //   }
-  // });
 
   $(function () {
     var parent = $("#shuffle");
@@ -383,27 +376,29 @@ $(document).ready(function () {
   });
 
 
-  // document.querySelectorAll('.toggle-label').forEach(button => {
-  //   button.addEventListener('click', function() {
-  //     document.querySelectorAll('.toggle-label').forEach(btn => {
-  //       btn.classList.remove('active')
-  //     })
+  document.querySelectorAll('.toggle-label.index').forEach(button => {
+    button.addEventListener('click', function() {
+      document.querySelectorAll('.toggle-label.index').forEach(btn => {
+        btn.classList.remove('active')
+      })
 
-  //     //Add active to the clicked button
-  //     this.classList.add('active');
-  //   })
-  // })
+      //Add active to the clicked button
+      this.classList.add('active');
+    })
+  })
 
+
+      // Language Toggle EN/SP Global //
 
   // Switching to English
-  $(".language-toggle-en").on("click", function () {
-    $(".sp").hide();
-    $("en").show();
+  $(".language-en-button").on("click", function () {
+    $(".toggleable-spanish-text").hide();
+    $(".toggleable-english-text").show();
   });
   // Switching to Spanish
-  $(".language-toggle-sp").on("click", function () {
-    $("[language='spanish']").show();
-    $("[language='english']").hide();
+  $(".language-sp-button").on("click", function () {
+    $(".toggleable-spanish-text").show();
+    $(".toggleable-english-text").hide();
   });
 
 
