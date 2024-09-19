@@ -2235,6 +2235,10 @@ p.guides.title {
     font-size: 70px !important;
   }
 
+  #main > div > div.title-middle > h1.sp.toggleable-spanish-text {
+    font-size: 64px;
+  }
+
   .title-bottom {
     width: 100%;
     align-items: center;

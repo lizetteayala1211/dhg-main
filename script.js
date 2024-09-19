@@ -377,7 +377,7 @@ $(document).ready(function () {
 
 
   document.querySelectorAll('.toggle-label.index').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       document.querySelectorAll('.toggle-label.index').forEach(btn => {
         btn.classList.remove('active')
       })
@@ -388,7 +388,7 @@ $(document).ready(function () {
   })
 
 
-      // Language Toggle EN/SP Global //
+  // Language Toggle EN/SP Global //
 
   // Switching to English
   $(".language-en-button").on("click", function () {
