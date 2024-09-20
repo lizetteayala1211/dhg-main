@@ -196,16 +196,48 @@ $(document).ready(function () {
 
   // Language Toggle EN/SP Global //
 
-// Introduction Page
-$(".introduction.sp.toggleable-spanish-text").removeClass('active');
-$(".introduction.sp.toggleable-spanish-text").addClass('reactive');
-$('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  // Introduction Page
+  $(".introduction.sp.toggleable-spanish-text").removeClass('active');
+  $(".introduction.sp.toggleable-spanish-text").addClass('reactive');
+  $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+
+  // Teaching Guide(s) Page
+  $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('active');
+  $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('reactive');
+  // $(".guides.02.hidden.sp.toggleable-spanish-text").attr('style', 'display: none !important');
+  $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('active');
+  $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('reactive');
+  $(".guides.01.hidden.sp.toggleable-spanish-text").attr('style', 'display: none !important');
+
+  // Credits Page
+  $(".accordion-content.01").slideToggle("slow");
+  $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
+  $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  $(".accordion-content.02").slideToggle("slow");
+  $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
+  $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+
+  $(".about.hidden.sp.toggleable-spanish-text").addClass('reactive');
 
   // Switching to English
   $(".language-en-button").on("click", function () {
 
-    $(".introduction.sp.toggleable-spanish-text").removeClass('active');
-    $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  // Introduction Page
+  $(".introduction.sp.toggleable-spanish-text").removeClass('active');
+  $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+
+  // Credits Page
+  $('.credits.02.hidden.en.toggleable-english-text').removeClass('reactive');
+  $('.credits.02.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
+  $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  $('.credits.02.hidden.sp.toggleable-spanish-text').addClass('reactive');
+  $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
+  $('.curators.01.hidden.en.toggleable-english-text').removeClass('reactive');
+  $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
+  $('.credits.01.hidden.sp.toggleable-spanish-text').addClass('reactive');
+  $('.curators.01.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
+  $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  
 
     $(".about.hidden.en.toggleable-english-text").css('display', 'block');
     $(".toggleable-english-text").css('display', 'block');
@@ -227,21 +259,30 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
     // Introduction Page
     $(".introduction.sp.toggleable-spanish-text").removeClass('reactive');
     $(".introduction.sp.toggleable-spanish-text").addClass('active');
+
+     // Teaching Guide Page
+    $(".guides.02.hidden.en.toggleable-english-text").toggleClass('reactive');
+    $(".guides.01.hidden.en.toggleable-english-text").toggleClass('reactive');
+
+    // $(".accordion-content.01").css('display', 'block');
+    // $(".accordion-content.02").css('display', 'block');
+
+    $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('reactive');
+    // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('active');
+
+    $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
+    // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('active');
+
     // Object Inner Pages
     $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
-    // Teaching Guide Page
-    // $("p.guides.hidden.sp.toggleable-spanish-text").show();
-    $('.guides.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: block !important');
-    $('.guides.02.hidden.en.toggleable-english-text').attr('style', 'display: none !important');
+    $(".about.hidden.sp.toggleable-spanish-text").removeClass('reactive');
 
     // Credits Page
+    $('.credits.02.hidden.en.toggleable-english-text').addClass('reactive');
+    $('.curators.01.hidden.en.toggleable-english-text').addClass('reactive');
 
-    $(".curators.hidden.sp.toggleable-spanish-text").css('display', 'block');
-    
-    // $(".guides.hidden.sp.toggleable-spanish-text").css('display', 'block');
-    // $("p.credits.hidden.sp.toggleable-spanish-text").css('display', 'block');
-    // $("p.credits.hidden.en.toggleable-english-text").css('display', 'none');
-    // $("p.guides.hidden.en.toggleable-english-text").css('display', 'none');
+   
+
     $(".toggleable-spanish-text").css('display', 'block');
     $(".toggleable-english-text").css('display', 'none');
     $(".accordion-content").css('display', 'none');
@@ -278,6 +319,8 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
     });
   });
 
+    // Object Inner Pages
+    $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
 
 
 
@@ -285,7 +328,11 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
   $('.credits-title-one').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $(".accordion-content").css('display', 'block');
+    $(".curators.01.hidden").css('display', 'block');
+    $(".accordion-content.01").slideToggle("slow");
+    $('.curators.01.hidden.sp.toggleable-spanish-text').slideToggle("fast");
+    $('.curators.01.hidden').slideToggle("slow");
+    $('.label-hr.d-a.hidden').slideToggle("fast");
   })
 
   // Credits Page (Curator) Drawer Toggle Open //
@@ -298,7 +345,11 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
   $('.credits-title-two').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $(".accordion-content").css('display', 'block');
+    $(".credits.02.hidden").css('display', 'block');
+    $(".accordion-content.02").slideToggle("slow");
+    $('.credits.02.hidden.en.toggleable-english-text').slideToggle("fast");
+    $('.credits.02.hidden.sp.toggleable-spanish-text').slideToggle("fast");
+    $('.credits.02.hidden').slideToggle("slow");
   })
 
   // Credits Page (Contributor) Drawer Toggle Open //
@@ -318,7 +369,6 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
       $(".accordion-content").slideToggle("slow");
     });
   });
-
 
 
   ////// Show/Hide (Resources) Button Toggle ///////
@@ -375,7 +425,7 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
     $('.dialogues.03.first-person.hidden').slideUp("fast");
     $('.dialogues.03.second-person.hidden').slideUp("fast");
     $('.dialogues.03.end.hidden').slideUp("fast");
-    
+
 
     // set up '+' for all other dialogues
     $('.dialogues-title.second .toggle_icon').text('+');
@@ -442,13 +492,15 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
   $('#guides-title-two').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".accordion-content.02").css('display', 'block');
   })
 
   // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
   $('#guides-title-two').on('click', function () {
-    $('.guides.02.hidden').slideToggle("slow");
+    // $('.label-hr.guides-02.hidden').addClass('active');
     $('.label-hr.guides-02.hidden').slideToggle("fast");
-    $(".accordion-content").css('display', 'block');
+    $('.guides.02.hidden').slideToggle("slow");
+    // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('active');
   }
   );
 
@@ -456,13 +508,15 @@ $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !impo
   $('#guides-title-one').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $('.label-hr.guides-01.hidden').slideToggle("fast");
+    $(".accordion-content.01").css('display', 'block');
   })
 
   ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
   $('#guides-title-one').on('click', function () {
     $('.guides.01.hidden').slideToggle("slow");
-    $('.label-hr.guides-01.hidden').slideToggle("fast");
-    $(".accordion-content").css('display', 'block');
+    // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
+    // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('active');
   }
   );
 
