@@ -196,12 +196,21 @@ $(document).ready(function () {
 
   // Language Toggle EN/SP Global //
 
+// Introduction Page
+$(".introduction.sp.toggleable-spanish-text").removeClass('active');
+$(".introduction.sp.toggleable-spanish-text").addClass('reactive');
+$('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+
   // Switching to English
   $(".language-en-button").on("click", function () {
+
+    $(".introduction.sp.toggleable-spanish-text").removeClass('active');
+    $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+
     $(".about.hidden.en.toggleable-english-text").css('display', 'block');
     $(".toggleable-english-text").css('display', 'block');
     $(".toggleable-spanish-text").css('display', 'none');
-    $(".accordion-content").css('display', 'block');
+    $(".accordion-content").css('display', 'none');
     $(".toggleable-spanish-text").hide();
     $(".toggleable-english-text").show();
 
@@ -214,7 +223,25 @@ $(document).ready(function () {
 
   // Switching to Spanish
   $(".language-sp-button").on("click", function () {
+
+    // Introduction Page
+    $(".introduction.sp.toggleable-spanish-text").removeClass('reactive');
+    $(".introduction.sp.toggleable-spanish-text").addClass('active');
+    // Object Inner Pages
     $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
+    // Teaching Guide Page
+    // $("p.guides.hidden.sp.toggleable-spanish-text").show();
+    $('.guides.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: block !important');
+    $('.guides.02.hidden.en.toggleable-english-text').attr('style', 'display: none !important');
+
+    // Credits Page
+
+    $(".curators.hidden.sp.toggleable-spanish-text").css('display', 'block');
+    
+    // $(".guides.hidden.sp.toggleable-spanish-text").css('display', 'block');
+    // $("p.credits.hidden.sp.toggleable-spanish-text").css('display', 'block');
+    // $("p.credits.hidden.en.toggleable-english-text").css('display', 'none');
+    // $("p.guides.hidden.en.toggleable-english-text").css('display', 'none');
     $(".toggleable-spanish-text").css('display', 'block');
     $(".toggleable-english-text").css('display', 'none');
     $(".accordion-content").css('display', 'none');
@@ -227,6 +254,9 @@ $(document).ready(function () {
       $(".toggleable-spanish-text").css('display', 'none');
     }
   });
+
+
+
 
   ////// Show/Hide (Object Inner Pages) Button Toggle ///////
   $('#open-bottom-row-two').click(function () {
@@ -248,15 +278,18 @@ $(document).ready(function () {
     });
   });
 
+
+
+
   ////// Show/Hide (Credits 01) Button Toggle ///////
   $('.credits-title-one').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".accordion-content").css('display', 'block');
   })
 
   // Credits Page (Curator) Drawer Toggle Open //
   $('.credits-title-one').on('click', function () {
-    $('.curators.hidden').slideToggle("slow");
     $('.label-hr.curators-line.hidden').slideToggle("fast");
   }
   );
@@ -265,14 +298,28 @@ $(document).ready(function () {
   $('.credits-title-two').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".accordion-content").css('display', 'block');
   })
 
   // Credits Page (Contributor) Drawer Toggle Open //
   $('.credits-title-two').on('click', function () {
-    $('.credits.hidden').slideToggle("slow");
-    $('.label-hr.contributors.hidden').slideToggle("fast");
+    $('.label-hr.contributors.hidden').slideToggle("slow");
   }
   );
+
+  let creditsbuttons = document.querySelectorAll('button.credits');
+  let creditbios = document.querySelectorAll('.credits');
+
+  creditsbuttons.forEach(button => {
+    button.addEventListener('click', e => {
+      creditbios.forEach(about => {
+        credits.style.display = credits.id === e.target.dataset.credits ? 'block' : 'none';
+      });
+      $(".accordion-content").slideToggle("slow");
+    });
+  });
+
+
 
   ////// Show/Hide (Resources) Button Toggle ///////
   $('.resources-title.first').click(function () {
@@ -305,6 +352,9 @@ $(document).ready(function () {
   }
   );
 
+
+
+
   ////// Show/Hide (Dialogues) Button Toggle ///////
   $('.dialogues-title').click(function () {
     let toggleIcon = $(this).find('.toggle_icon');
@@ -313,26 +363,28 @@ $(document).ready(function () {
 
   // Dialogues Page (Dialogue 01) Drawer Toggle Open //
   $('.dialogues-title.first').on('click', function () {
+
     // close all other dialogues
+    $('#timoi-ladypink.hidden').slideUp("fast");
+    $('#yreina-judithe.hidden').slideUp("fast");
     $('.dialogues.02.moderator.hidden').slideUp("fast");
     $('.dialogues.02.first-person.hidden').slideUp("fast");
     $('.dialogues.02.second-person.hidden').slideUp("fast");
     $('.dialogues.02.end.hidden').slideUp("fast");
-    $('#timoi-ladypink.hidden').slideUp("slow");
     $('.dialogues.03.moderator.hidden').slideUp("fast");
     $('.dialogues.03.first-person.hidden').slideUp("fast");
     $('.dialogues.03.second-person.hidden').slideUp("fast");
     $('.dialogues.03.end.hidden').slideUp("fast");
-    $('#yreina-judithe.hidden').slideUp("fast");
+    
 
     // set up '+' for all other dialogues
     $('.dialogues-title.second .toggle_icon').text('+');
     $('.dialogues-title.third .toggle_icon').text('+');
 
     // open dialogue 01
-    $('.dialogues.01.first-person.hidden').slideToggle("slow");
-    $('.dialogues.01.second-person.hidden').slideToggle("slow");
-    $('.dialogues.01.end.hidden').slideToggle("slow");
+    $('.dialogues.01.first-person.hidden').slideToggle("fast");
+    $('.dialogues.01.second-person.hidden').slideToggle("fast");
+    $('.dialogues.01.end.hidden').slideToggle("fast");
     $('#patssi-mario.hidden').slideToggle("slow");
   });
 
@@ -396,6 +448,7 @@ $(document).ready(function () {
   $('#guides-title-two').on('click', function () {
     $('.guides.02.hidden').slideToggle("slow");
     $('.label-hr.guides-02.hidden').slideToggle("fast");
+    $(".accordion-content").css('display', 'block');
   }
   );
 
@@ -409,6 +462,7 @@ $(document).ready(function () {
   $('#guides-title-one').on('click', function () {
     $('.guides.01.hidden').slideToggle("slow");
     $('.label-hr.guides-01.hidden').slideToggle("fast");
+    $(".accordion-content").css('display', 'block');
   }
   );
 

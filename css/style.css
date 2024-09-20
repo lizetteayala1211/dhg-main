@@ -194,6 +194,7 @@ nav * {
 
 .text-hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .text-on {
@@ -517,6 +518,7 @@ a.arrow {
 
 .label-hr.hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .row-content {
@@ -728,6 +730,23 @@ button.sp.toggleable-spanish-text {
   display: none;
 }
 
+
+.toggleable-spanish-text {
+ display: none;
+}
+
+p.introduction.sp.toggleable-spanish-text {
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.reactive {
+  display: none!important;
+}
+
 a.skip-main {
   font-family: "Perstare", Arial, Helvetica, sans-serif;
   position: absolute;
@@ -808,6 +827,7 @@ button.objects-label {
 
 button.accordion {
   /* font-size: 1.8rem; */
+  width:fit-content;
   font-size: 20px;
   font-weight: 400;
   /* padding: 18px 36px 18px 36px !important; */
@@ -941,6 +961,7 @@ p.transparent {
 
 p.hidden {
   display: none;
+  transition: all 1s ease-in-out;
   margin-top: 30px;
   margin-bottom: 20px;
 }
@@ -1347,6 +1368,7 @@ p.resources {
 
 .resources.hidden {
   display: none;
+  transition: all 1s ease-in-out;
   width: 90% !important;
 }
 
@@ -1525,6 +1547,7 @@ p.dialogues {
 
 .moderator.hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .first-person {
@@ -1536,6 +1559,7 @@ p.dialogues {
 
 .first-person.hidden {
   display: none;
+  transition: all 1s ease-in-out;
   flex-direction: column;
   width: 80%;
   align-self: center;
@@ -1555,26 +1579,32 @@ p.dialogues {
 
 .second-person.hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .end.hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 #patssi-mario.hidden {
   display: none;
+  /* transition: all 1s ease-in-out; */
 }
 
 #timoi-ladypink.hidden {
   display: none;
+  /* transition: all 1s ease-in-out; */
 }
 
 #yreina-judithe.hidden {
   display: none;
+  /* transition: all 1s ease-in-out; */
 }
 
 .dialogues.sp {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 /* Dialogues Main Page Arrow */
@@ -1608,12 +1638,20 @@ p.dialogues {
 
 .content-container .credits {
   display: block;
-  width: 45%;
+  width: auto;
 }
 
 #credits-section>div>div.row-content.credits>div {
   flex-direction: row !important;
 }
+
+/* p.curators.hidden.sp.toggleable-spanish-text {
+  display: none;
+}
+
+p.credits.hidden.sp.toggleable-spanish-text {
+  display: none;
+} */
 
 .credits-list {
   display: flex;
@@ -1675,6 +1713,12 @@ p.credits.title {
   padding: 0px 20px 0px 20px;
   cursor: pointer;
   line-height: 150%;
+}
+
+
+p.guides.hidden.sp.toggleable-spanish-text {
+  display: none;
+  transition: all 1s ease-in-out;
 }
 
 
@@ -1761,14 +1805,17 @@ a.thanks:hover {
 
 .curators.hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .credits.hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .thanks.hidden {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 .credit-logos-wrapper {
@@ -1825,8 +1872,11 @@ a.thanks:hover {
 
 .content-container .guides {
   display: block;
-  width: 45%;
+  width: auto;
+  text-align: left;
 }
+
+
 
 #guides-section>div>div.row-content.guides>div {
   width: 100% !important;
@@ -1897,6 +1947,7 @@ p.guides {
 
 p.guides.hidden {
   display: none;
+  transition: all 1s ease-in-out;
   margin-top: 30px;
   margin-bottom: 20px;
 }
