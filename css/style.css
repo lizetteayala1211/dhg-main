@@ -724,6 +724,10 @@ button.toggle-label.index {
   cursor: pointer;
 }
 
+button.sp.toggleable-spanish-text {
+  display: none;
+}
+
 a.skip-main {
   font-family: "Perstare", Arial, Helvetica, sans-serif;
   position: absolute;

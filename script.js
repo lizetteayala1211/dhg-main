@@ -284,6 +284,8 @@ $(document).ready(function () {
 
   // Resources Page (Digital Archives) Drawer Toggle Open //
   $('.resources-title.first').on('click', function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
     $('.resources.archives.hidden').slideToggle("slow");
     $('.label-hr.d-a.hidden').slideToggle("fast");
   }
