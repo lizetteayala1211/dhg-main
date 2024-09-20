@@ -691,9 +691,6 @@ span.sp {
   display: none;
 }
 
-p.about.hidden.sp {
-  display: none;
-}
 
 button.toggle-label {
   /* font-size: 1.8rem; */
@@ -742,6 +739,10 @@ a.skip-main {
   a.skip-main {
       display: none;
   }
+
+  /* button.accordion.resources {
+    display: none;
+} */
 }
 
 .objects-artwork-img-copy {
@@ -797,6 +798,20 @@ button.objects-label {
 .objects-label {
   display: flex;
   /* align-self: flex-end; */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button.accordion {
+  /* font-size: 1.8rem; */
+  font-size: 20px;
+  font-weight: 400;
+  /* padding: 18px 36px 18px 36px !important; */
+  /* margin: 10px 0px 0px 0px; */
+  color: #1A1019;
+  border: none;
+  /* border-radius: 40px; */
+  background-color: transparent;
   cursor: pointer;
   text-decoration: none;
 }
@@ -925,6 +940,16 @@ p.hidden {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+
+/* p.about.hidden.en.toggleable-english-text {
+  display: none;
+}
+
+p.about.hidden.sp.toggleable-spanish-text {
+  display: none;
+} */
+
+
 
 p.about {
   align-self: flex-end;

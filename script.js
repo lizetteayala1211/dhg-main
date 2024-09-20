@@ -194,17 +194,59 @@ $(document).ready(function () {
   els(".carousel").forEach(carousel);
 
 
-  ////// Show/Hide (Asco Inner Page) Button Toggle ///////
+  // Language Toggle EN/SP Global //
+
+  // Switching to English
+  $(".language-en-button").on("click", function () {
+    $(".about.hidden.en.toggleable-english-text").css('display', 'block');
+    $(".toggleable-english-text").css('display', 'block');
+    $(".toggleable-spanish-text").css('display', 'none');
+    $(".accordion-content").css('display', 'block');
+    $(".toggleable-spanish-text").hide();
+    $(".toggleable-english-text").show();
+
+    if ($(".toggleable-english-text").css("display") == 'block') {
+      $(".toggleable-spanish-text").hide();
+    } else {
+      $(".toggleable-english-text").css('display', 'block');
+    }
+  });
+
+  // Switching to Spanish
+  $(".language-sp-button").on("click", function () {
+    $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
+    $(".toggleable-spanish-text").css('display', 'block');
+    $(".toggleable-english-text").css('display', 'none');
+    $(".accordion-content").css('display', 'none');
+    $(".toggleable-spanish-text").show();
+    $(".toggleable-english-text").hide();
+
+    if ($(".toggleable-spanish-text").css("display") == 'block') {
+      $(".toggleable-english-text").hide();
+    } else {
+      $(".toggleable-spanish-text").css('display', 'none');
+    }
+  });
+
+  ////// Show/Hide (Object Inner Pages) Button Toggle ///////
   $('#open-bottom-row-two').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".accordion-content").css('display', 'block');
   })
 
-  // Asco Inner Page (About) Drawer Toggle Open //
-  $('#open-bottom-row-two').on('click', function () {
-    $('.about.hidden').slideToggle("slow");
-  }
-  );
+  // Object Inner Pages (About) Drawer Toggle Open //
+  let buttons = document.querySelectorAll('button.objects');
+  let bios = document.querySelectorAll('.about');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', e => {
+      bios.forEach(about => {
+        about.style.display = about.id === e.target.dataset.about ? 'block' : 'none';
+      });
+      $(".accordion-content").slideToggle("slow");
+    });
+  });
 
   ////// Show/Hide (Credits 01) Button Toggle ///////
   $('.credits-title-one').click(function () {
@@ -233,9 +275,11 @@ $(document).ready(function () {
   );
 
   ////// Show/Hide (Resources) Button Toggle ///////
-  $('.resources-title').click(function () {
+  $('.resources-title.first').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".accordion-content").css('display', 'block');
+    $('.label-hr.d-a.hidden').slideToggle("fast");
   })
 
   // Resources Page (Digital Archives) Drawer Toggle Open //
@@ -386,20 +430,6 @@ $(document).ready(function () {
       this.classList.add('active');
     })
   })
-
-
-  // Language Toggle EN/SP Global //
-
-  // Switching to English
-  $(".language-en-button").on("click", function () {
-    $(".toggleable-spanish-text").hide();
-    $(".toggleable-english-text").show();
-  });
-  // Switching to Spanish
-  $(".language-sp-button").on("click", function () {
-    $(".toggleable-spanish-text").show();
-    $(".toggleable-english-text").hide();
-  });
 
 
 });
