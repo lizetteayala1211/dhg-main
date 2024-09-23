@@ -196,28 +196,29 @@ $(document).ready(function () {
 
   // Language Toggle EN/SP Global //
 
-  // Introduction Page
-  $(".introduction.sp.toggleable-spanish-text").removeClass('active');
-  $(".introduction.sp.toggleable-spanish-text").addClass('reactive');
-  $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  // // Introduction Page
+  // $(".introduction.sp.toggleable-spanish-text").removeClass('active');
+  // $(".introduction.sp.toggleable-spanish-text").addClass('reactive');
+  // $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
 
-  // Teaching Guide(s) Page
-  $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('active');
-  $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('reactive');
-  // $(".guides.02.hidden.sp.toggleable-spanish-text").attr('style', 'display: none !important');
-  $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('active');
-  $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('reactive');
-  $(".guides.01.hidden.sp.toggleable-spanish-text").attr('style', 'display: none !important');
+  // // Teaching Guide(s) Page
+  // $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('active');
+  // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('reactive');
+  // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('active');
+  // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('reactive');
+  // $(".guides.01.hidden.sp.toggleable-spanish-text").attr('style', 'display: none !important');
 
-  // Credits Page
-  $(".accordion-content.01").slideToggle("slow");
-  $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
-  $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-  $(".accordion-content.02").slideToggle("slow");
-  $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
-  $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  // // Credits Page
+  // $(".accordion-content.01").slideToggle("slow");
+  // $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
+  // $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  // $(".accordion-content.02").slideToggle("slow");
+  // $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
+  // $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
 
-  $(".about.hidden.sp.toggleable-spanish-text").addClass('reactive');
+  // $(".about.hidden.sp.toggleable-spanish-text").addClass('reactive');
+
+
 
   // Switching to English
   $(".language-en-button").on("click", function () {
@@ -227,24 +228,24 @@ $(document).ready(function () {
   $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
 
   // Credits Page
-  $('.credits.02.hidden.en.toggleable-english-text').removeClass('reactive');
-  $('.credits.02.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
-  $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-  $('.credits.02.hidden.sp.toggleable-spanish-text').addClass('reactive');
-  $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
-  $('.curators.01.hidden.en.toggleable-english-text').removeClass('reactive');
-  $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
-  $('.credits.01.hidden.sp.toggleable-spanish-text').addClass('reactive');
-  $('.curators.01.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
-  $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  // $('.credits.02.hidden.en.toggleable-english-text').removeClass('reactive');
+  // $('.credits.02.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
+  // $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
+  // $('.credits.02.hidden.sp.toggleable-spanish-text').addClass('reactive');
+  // $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
+  // $('.curators.01.hidden.en.toggleable-english-text').removeClass('reactive');
+  // $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
+  // $('.credits.01.hidden.sp.toggleable-spanish-text').addClass('reactive');
+  // $('.curators.01.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
+  // $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
   
 
-    $(".about.hidden.en.toggleable-english-text").css('display', 'block');
-    $(".toggleable-english-text").css('display', 'block');
-    $(".toggleable-spanish-text").css('display', 'none');
-    $(".accordion-content").css('display', 'none');
-    $(".toggleable-spanish-text").hide();
-    $(".toggleable-english-text").show();
+    // $(".about.hidden.en.toggleable-english-text").css('display', 'block');
+    // $(".toggleable-english-text").css('display', 'block');
+    // $(".toggleable-spanish-text").css('display', 'none');
+    // $(".accordion-content").css('display', 'none');
+    // $(".toggleable-spanish-text").hide();
+    // $(".toggleable-english-text").show();
 
     if ($(".toggleable-english-text").css("display") == 'block') {
       $(".toggleable-spanish-text").hide();
@@ -261,33 +262,26 @@ $(document).ready(function () {
     $(".introduction.sp.toggleable-spanish-text").addClass('active');
 
      // Teaching Guide Page
-    $(".guides.02.hidden.en.toggleable-english-text").toggleClass('reactive');
-    $(".guides.01.hidden.en.toggleable-english-text").toggleClass('reactive');
+    // $(".guides.02.hidden.en.toggleable-english-text").toggleClass('reactive');
+    // $(".guides.01.hidden.en.toggleable-english-text").toggleClass('reactive');
 
-    // $(".accordion-content.01").css('display', 'block');
-    // $(".accordion-content.02").css('display', 'block');
+    // $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('reactive');
 
-    $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('reactive');
-    // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('active');
-
-    $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
-    // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('active');
+    // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
 
     // Object Inner Pages
-    $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
-    $(".about.hidden.sp.toggleable-spanish-text").removeClass('reactive');
+    // $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
+    // $(".about.hidden.sp.toggleable-spanish-text").removeClass('reactive');
 
-    // Credits Page
-    $('.credits.02.hidden.en.toggleable-english-text').addClass('reactive');
-    $('.curators.01.hidden.en.toggleable-english-text').addClass('reactive');
+    // // Credits Page
+    // $('.credits.02.hidden.en.toggleable-english-text').addClass('reactive');
+    // $('.curators.01.hidden.en.toggleable-english-text').addClass('reactive');
 
-   
-
-    $(".toggleable-spanish-text").css('display', 'block');
-    $(".toggleable-english-text").css('display', 'none');
-    $(".accordion-content").css('display', 'none');
-    $(".toggleable-spanish-text").show();
-    $(".toggleable-english-text").hide();
+    // $(".toggleable-spanish-text").css('display', 'block');
+    // $(".toggleable-english-text").css('display', 'none');
+    // $(".accordion-content").css('display', 'none');
+    // $(".toggleable-spanish-text").show();
+    // $(".toggleable-english-text").hide();
 
     if ($(".toggleable-spanish-text").css("display") == 'block') {
       $(".toggleable-english-text").hide();
@@ -296,250 +290,262 @@ $(document).ready(function () {
     }
   });
 
+  // ////// Show/Hide (Object Inner Pages) Button Toggle ///////
+  // $('#open-bottom-row-two').click(function () {
+  //   var toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  //   $(".accordion-content").css('display', 'block');
+  // })
 
+  // // Object Inner Pages (About) Drawer Toggle Open //
+  // let buttons = document.querySelectorAll('button.objects');
+  // let bios = document.querySelectorAll('.about');
 
+  // buttons.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     bios.forEach(about => {
+  //       about.style.display = about.id === e.target.dataset.about ? 'block' : 'none';
+  //     });
+  //     $(".accordion-content").slideToggle("slow");
+  //   });
+  // });
 
-  ////// Show/Hide (Object Inner Pages) Button Toggle ///////
-  $('#open-bottom-row-two').click(function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $(".accordion-content").css('display', 'block');
-  })
-
-  // Object Inner Pages (About) Drawer Toggle Open //
-  let buttons = document.querySelectorAll('button.objects');
-  let bios = document.querySelectorAll('.about');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', e => {
-      bios.forEach(about => {
-        about.style.display = about.id === e.target.dataset.about ? 'block' : 'none';
-      });
-      $(".accordion-content").slideToggle("slow");
-    });
-  });
-
-    // Object Inner Pages
-    $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
-
-
-
-  ////// Show/Hide (Credits 01) Button Toggle ///////
-  $('.credits-title-one').click(function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $(".curators.01.hidden").css('display', 'block');
-    $(".accordion-content.01").slideToggle("slow");
-    $('.curators.01.hidden.sp.toggleable-spanish-text').slideToggle("fast");
-    $('.curators.01.hidden').slideToggle("slow");
-    $('.label-hr.d-a.hidden').slideToggle("fast");
-  })
-
-  // Credits Page (Curator) Drawer Toggle Open //
-  $('.credits-title-one').on('click', function () {
-    $('.label-hr.curators-line.hidden').slideToggle("fast");
-  }
-  );
-
-  ////// Show/Hide (Credits 02) Button Toggle ///////
-  $('.credits-title-two').click(function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $(".credits.02.hidden").css('display', 'block');
-    $(".accordion-content.02").slideToggle("slow");
-    $('.credits.02.hidden.en.toggleable-english-text').slideToggle("fast");
-    $('.credits.02.hidden.sp.toggleable-spanish-text').slideToggle("fast");
-    $('.credits.02.hidden').slideToggle("slow");
-  })
-
-  // Credits Page (Contributor) Drawer Toggle Open //
-  $('.credits-title-two').on('click', function () {
-    $('.label-hr.contributors.hidden').slideToggle("slow");
-  }
-  );
-
-  let creditsbuttons = document.querySelectorAll('button.credits');
-  let creditbios = document.querySelectorAll('.credits');
-
-  creditsbuttons.forEach(button => {
-    button.addEventListener('click', e => {
-      creditbios.forEach(about => {
-        credits.style.display = credits.id === e.target.dataset.credits ? 'block' : 'none';
-      });
-      $(".accordion-content").slideToggle("slow");
-    });
-  });
-
-
-  ////// Show/Hide (Resources) Button Toggle ///////
-  $('.resources-title.first').click(function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $(".accordion-content").css('display', 'block');
-    $('.label-hr.d-a.hidden').slideToggle("fast");
-  })
-
-  // Resources Page (Digital Archives) Drawer Toggle Open //
-  $('.resources-title.first').on('click', function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $('.resources.archives.hidden').slideToggle("slow");
-    $('.label-hr.d-a.hidden').slideToggle("fast");
-  }
-  );
-
-  // Resources Page (Books & Articles) Drawer Toggle Open //
-  $('.resources-title.second').on('click', function () {
-    $('.resources.books-articles.hidden').slideToggle("slow");
-    $('.label-hr.b-a.hidden').slideToggle("fast");
-  }
-  );
-
-  // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
-  $('.resources-title.third').on('click', function () {
-    $('.resources.interviews-profiles.hidden').slideToggle("slow");
-    $('.label-hr.r-i-p.hidden').slideToggle("fast");
-  }
-  );
+  //   // Object Inner Pages
+  //   $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
 
 
 
 
-  ////// Show/Hide (Dialogues) Button Toggle ///////
-  $('.dialogues-title').click(function () {
-    let toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
-  });
+  // ////// Show/Hide (Credits 01) Button Toggle ///////
+  // $('.credits-title-one').click(function () {
+  //   var toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  //   $(".curators.01.hidden").css('display', 'block');
+  //   $(".accordion-content.01").slideToggle("slow");
+  //   $('.curators.01.hidden.sp.toggleable-spanish-text').slideToggle("fast");
+  //   $('.curators.01.hidden').slideToggle("slow");
+  //   $('.label-hr.d-a.hidden').slideToggle("fast");
+  // })
 
-  // Dialogues Page (Dialogue 01) Drawer Toggle Open //
-  $('.dialogues-title.first').on('click', function () {
+  // // Credits Page (Curator) Drawer Toggle Open //
+  // $('.credits-title-one').on('click', function () {
+  //   $('.label-hr.curators-line.hidden').slideToggle("fast");
+  // }
+  // );
 
-    // close all other dialogues
-    $('#timoi-ladypink.hidden').slideUp("fast");
-    $('#yreina-judithe.hidden').slideUp("fast");
-    $('.dialogues.02.moderator.hidden').slideUp("fast");
-    $('.dialogues.02.first-person.hidden').slideUp("fast");
-    $('.dialogues.02.second-person.hidden').slideUp("fast");
-    $('.dialogues.02.end.hidden').slideUp("fast");
-    $('.dialogues.03.moderator.hidden').slideUp("fast");
-    $('.dialogues.03.first-person.hidden').slideUp("fast");
-    $('.dialogues.03.second-person.hidden').slideUp("fast");
-    $('.dialogues.03.end.hidden').slideUp("fast");
+  // ////// Show/Hide (Credits 02) Button Toggle ///////
+  // $('.credits-title-two').click(function () {
+  //   var toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  //   $(".credits.02.hidden").css('display', 'block');
+  //   $(".accordion-content.02").slideToggle("slow");
+  //   $('.credits.02.hidden.en.toggleable-english-text').slideToggle("fast");
+  //   $('.credits.02.hidden.sp.toggleable-spanish-text').slideToggle("fast");
+  //   $('.credits.02.hidden').slideToggle("slow");
+  // })
 
+  // // Credits Page (Contributor) Drawer Toggle Open //
+  // $('.credits-title-two').on('click', function () {
+  //   $('.label-hr.contributors.hidden').slideToggle("slow");
+  // }
+  // );
 
-    // set up '+' for all other dialogues
-    $('.dialogues-title.second .toggle_icon').text('+');
-    $('.dialogues-title.third .toggle_icon').text('+');
+  // let creditsbuttons = document.querySelectorAll('button.credits');
+  // let creditbios = document.querySelectorAll('.credits');
 
-    // open dialogue 01
-    $('.dialogues.01.first-person.hidden').slideToggle("fast");
-    $('.dialogues.01.second-person.hidden').slideToggle("fast");
-    $('.dialogues.01.end.hidden').slideToggle("fast");
-    $('#patssi-mario.hidden').slideToggle("slow");
-  });
-
-  // Dialogues Page (Dialogue 02) Drawer Toggle Open //
-  $('.dialogues-title.second').on('click', function () {
-    // close all other dialogues
-    $('.dialogues.01.first-person.hidden').slideUp("fast");
-    $('.dialogues.01.second-person.hidden').slideUp("fast");
-    $('.dialogues.01.end.hidden').slideUp("fast");
-    $('#patssi-mario.hidden').slideUp("slow");
-    $('.dialogues.03.moderator.hidden').slideUp("fast");
-    $('.dialogues.03.first-person.hidden').slideUp("fast");
-    $('.dialogues.03.second-person.hidden').slideUp("fast");
-    $('.dialogues.03.end.hidden').slideUp("fast");
-    $('#yreina-judithe.hidden').slideUp("fast");
-
-    // set up '+' for all other dialogues
-    $('.dialogues-title.first .toggle_icon').text('+');
-    $('.dialogues-title.third .toggle_icon').text('+');
-
-    // open dialogue 02
-    $('.dialogues.02.moderator.hidden').slideToggle("slow");
-    $('.dialogues.02.first-person.hidden').slideToggle("slow");
-    $('.dialogues.02.second-person.hidden').slideToggle("slow");
-    $('.dialogues.02.end.hidden').slideToggle("slow");
-    $('#timoi-ladypink.hidden').slideToggle("slow");
-  });
-
-  // Dialogues Page (Dialogue 03) Drawer Toggle Open //
-  $('.dialogues-title.third').on('click', function () {
-    // close all other dialogues
-    $('.dialogues.01.first-person.hidden').slideUp("slow");
-    $('.dialogues.01.second-person.hidden').slideUp("slow");
-    $('.dialogues.01.end.hidden').slideUp("slow");
-    $('#patssi-mario.hidden').slideUp("slow");
-    $('.dialogues.02.moderator.hidden').slideUp("slow");
-    $('.dialogues.02.first-person.hidden').slideUp("slow");
-    $('.dialogues.02.second-person.hidden').slideUp("slow");
-    $('.dialogues.02.end.hidden').slideUp("slow");
-    $('#timoi-ladypink.hidden').slideUp("slow");
-
-    // set up '+' for all other dialogues
-    $('.dialogues-title.first .toggle_icon').text('+');
-    $('.dialogues-title.second .toggle_icon').text('+');
-
-    // open dialogue 03
-    $('.dialogues.03.moderator.hidden').slideToggle("slow");
-    $('.dialogues.03.first-person.hidden').slideToggle("slow");
-    $('.dialogues.03.second-person.hidden').slideToggle("slow");
-    $('.dialogues.03.end.hidden').slideToggle("slow");
-    $('#yreina-judithe.hidden').slideToggle("slow");
-  });
-
-  ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
-  $('#guides-title-two').click(function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $(".accordion-content.02").css('display', 'block');
-  })
-
-  // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
-  $('#guides-title-two').on('click', function () {
-    // $('.label-hr.guides-02.hidden').addClass('active');
-    $('.label-hr.guides-02.hidden').slideToggle("fast");
-    $('.guides.02.hidden').slideToggle("slow");
-    // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('active');
-  }
-  );
-
-  ////// Show/Hide (Teaching Guide 02) Button Toggle ///////
-  $('#guides-title-one').click(function () {
-    var toggleIcon = $(this).find('.toggle_icon');
-    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-    $('.label-hr.guides-01.hidden').slideToggle("fast");
-    $(".accordion-content.01").css('display', 'block');
-  })
-
-  ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
-  $('#guides-title-one').on('click', function () {
-    $('.guides.01.hidden').slideToggle("slow");
-    // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
-    // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('active');
-  }
-  );
+  // creditsbuttons.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     creditbios.forEach(about => {
+  //       credits.style.display = credits.id === e.target.dataset.credits ? 'block' : 'none';
+  //     });
+  //     $(".accordion-content").slideToggle("slow");
+  //   });
+  // });
 
 
-  $(function () {
-    var parent = $("#shuffle");
-    var divs = parent.children();
-    while (divs.length) {
-      parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-    }
-  });
 
 
-  document.querySelectorAll('.toggle-label.index').forEach(button => {
-    button.addEventListener('click', function () {
-      document.querySelectorAll('.toggle-label.index').forEach(btn => {
-        btn.classList.remove('active')
-      })
+  // ////// Show/Hide (Resources) Button Toggle ///////
+  // $('.resources-title.first').click(function () {
+  //   var toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  //   $(".accordion-content").css('display', 'block');
+  //   $('.label-hr.d-a.hidden').slideToggle("fast");
+  // })
 
-      //Add active to the clicked button
-      this.classList.add('active');
-    })
-  })
+  // // Resources Page (Digital Archives) Drawer Toggle Open //
+  // $('.resources-title.first').on('click', function () {
+  //   var toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  //   $('.resources.archives.hidden').slideToggle("slow");
+  //   $('.label-hr.d-a.hidden').slideToggle("fast");
+  // }
+  // );
+
+  // // Resources Page (Books & Articles) Drawer Toggle Open //
+  // $('.resources-title.second').on('click', function () {
+  //   $('.resources.books-articles.hidden').slideToggle("slow");
+  //   $('.label-hr.b-a.hidden').slideToggle("fast");
+  // }
+  // );
+
+  // // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
+  // $('.resources-title.third').on('click', function () {
+  //   $('.resources.interviews-profiles.hidden').slideToggle("slow");
+  //   $('.label-hr.r-i-p.hidden').slideToggle("fast");
+  // }
+  // );
+
+
+
+
+  // ////// Show/Hide (Dialogues) Button Toggle ///////
+  // $('.dialogues-title').click(function () {
+  //   let toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
+  // });
+
+  // // Dialogues Page (Dialogue 01) Drawer Toggle Open //
+  // $('.dialogues-title.first').on('click', function () {
+
+  //   // close all other dialogues
+  //   $('#timoi-ladypink.hidden').slideUp("fast");
+  //   $('#yreina-judithe.hidden').slideUp("fast");
+  //   $('.dialogues.02.moderator.hidden').slideUp("fast");
+  //   $('.dialogues.02.first-person.hidden').slideUp("fast");
+  //   $('.dialogues.02.second-person.hidden').slideUp("fast");
+  //   $('.dialogues.02.end.hidden').slideUp("fast");
+  //   $('.dialogues.03.moderator.hidden').slideUp("fast");
+  //   $('.dialogues.03.first-person.hidden').slideUp("fast");
+  //   $('.dialogues.03.second-person.hidden').slideUp("fast");
+  //   $('.dialogues.03.end.hidden').slideUp("fast");
+
+
+  //   // set up '+' for all other dialogues
+  //   $('.dialogues-title.second .toggle_icon').text('+');
+  //   $('.dialogues-title.third .toggle_icon').text('+');
+
+  //   // open dialogue 01
+  //   $('.dialogues.01.first-person.hidden').slideToggle("fast");
+  //   $('.dialogues.01.second-person.hidden').slideToggle("fast");
+  //   $('.dialogues.01.end.hidden').slideToggle("fast");
+  //   $('#patssi-mario.hidden').slideToggle("slow");
+  // });
+
+  // // Dialogues Page (Dialogue 02) Drawer Toggle Open //
+  // $('.dialogues-title.second').on('click', function () {
+  //   // close all other dialogues
+  //   $('.dialogues.01.first-person.hidden').slideUp("fast");
+  //   $('.dialogues.01.second-person.hidden').slideUp("fast");
+  //   $('.dialogues.01.end.hidden').slideUp("fast");
+  //   $('#patssi-mario.hidden').slideUp("slow");
+  //   $('.dialogues.03.moderator.hidden').slideUp("fast");
+  //   $('.dialogues.03.first-person.hidden').slideUp("fast");
+  //   $('.dialogues.03.second-person.hidden').slideUp("fast");
+  //   $('.dialogues.03.end.hidden').slideUp("fast");
+  //   $('#yreina-judithe.hidden').slideUp("fast");
+
+  //   // set up '+' for all other dialogues
+  //   $('.dialogues-title.first .toggle_icon').text('+');
+  //   $('.dialogues-title.third .toggle_icon').text('+');
+
+  //   // open dialogue 02
+  //   $('.dialogues.02.moderator.hidden').slideToggle("slow");
+  //   $('.dialogues.02.first-person.hidden').slideToggle("slow");
+  //   $('.dialogues.02.second-person.hidden').slideToggle("slow");
+  //   $('.dialogues.02.end.hidden').slideToggle("slow");
+  //   $('#timoi-ladypink.hidden').slideToggle("slow");
+  // });
+
+  // // Dialogues Page (Dialogue 03) Drawer Toggle Open //
+  // $('.dialogues-title.third').on('click', function () {
+  //   // close all other dialogues
+  //   $('.dialogues.01.first-person.hidden').slideUp("slow");
+  //   $('.dialogues.01.second-person.hidden').slideUp("slow");
+  //   $('.dialogues.01.end.hidden').slideUp("slow");
+  //   $('#patssi-mario.hidden').slideUp("slow");
+  //   $('.dialogues.02.moderator.hidden').slideUp("slow");
+  //   $('.dialogues.02.first-person.hidden').slideUp("slow");
+  //   $('.dialogues.02.second-person.hidden').slideUp("slow");
+  //   $('.dialogues.02.end.hidden').slideUp("slow");
+  //   $('#timoi-ladypink.hidden').slideUp("slow");
+
+  //   // set up '+' for all other dialogues
+  //   $('.dialogues-title.first .toggle_icon').text('+');
+  //   $('.dialogues-title.second .toggle_icon').text('+');
+
+  //   // open dialogue 03
+  //   $('.dialogues.03.moderator.hidden').slideToggle("slow");
+  //   $('.dialogues.03.first-person.hidden').slideToggle("slow");
+  //   $('.dialogues.03.second-person.hidden').slideToggle("slow");
+  //   $('.dialogues.03.end.hidden').slideToggle("slow");
+  //   $('#yreina-judithe.hidden').slideToggle("slow");
+  // });
+
+
+
+
+  // ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
+  // $('#guides-title-two').click(function () {
+  //   var toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  //   $(".accordion-content.02").css('display', 'block');
+  // })
+
+  // // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
+  // $('#guides-title-two').on('click', function () {
+  //   // $('.label-hr.guides-02.hidden').addClass('active');
+  //   $('.label-hr.guides-02.hidden').slideToggle("fast");
+  //   $('.guides.02.hidden').slideToggle("slow");
+  //   // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('active');
+  // }
+  // );
+
+  // ////// Show/Hide (Teaching Guide 02) Button Toggle ///////
+  // $('#guides-title-one').click(function () {
+  //   var toggleIcon = $(this).find('.toggle_icon');
+  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  //   $('.label-hr.guides-01.hidden').slideToggle("fast");
+  //   $(".accordion-content.01").css('display', 'block');
+  // })
+
+  // ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
+  // $('#guides-title-one').on('click', function () {
+  //   $('.guides.01.hidden').slideToggle("slow");
+  //   // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
+  //   // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('active');
+  // }
+  // );
+
+  
+
+  // 
+  
+  // <!-- Archive Page Shuffle Effect -->
+
+  // $(function () {
+  //   var parent = $("#shuffle");
+  //   var divs = parent.children();
+  //   while (divs.length) {
+  //     parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+  //   }
+  // });
+
+
+  // document.querySelectorAll('.toggle-label.index').forEach(button => {
+  //   button.addEventListener('click', function () {
+  //     document.querySelectorAll('.toggle-label.index').forEach(btn => {
+  //       btn.classList.remove('active')
+  //     })
+
+  //     //Add active to the clicked button
+  //     this.classList.add('active');
+  //   })
+  
+  // })
+
+
+
 
 
 });
