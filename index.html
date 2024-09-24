@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
 </head>
 
-<body id="landing">
+<body id="credits">
   <script src="/script.js"></script>
 
   <!-- Background Image Slider -->
@@ -38,13 +38,13 @@
       <p class="hidden" id="language-switcher1"> </p>
       <div class="language__container--left language__container--en">
         <input class="language__control" type="radio" id="language1-1" name="language-switch1">
-        <label class="language__label__mid" for="language1-1" id="language-toggle-en">  <button type="button" class="toggle-label index language-en-button"> EN </button>
+        <label class="language__label__mid" for="language1-1" id="language-toggle-en" value="en">  <button type="button" class="toggle-label index language-en-button" onclick="document.body.className='en'"> EN </button>
           <span class="hidden"></span>
         </label>
       </div>
       <div class="language__container--right language__container--sp">
         <input class="language__control" type="radio" id="language1-2" name="language-switch1">
-        <label class="language__label__mid" for="language1-2" id="language-toggle-sp"> <button type="button" class="toggle-label index  language-sp-button"> SP </button>
+        <label class="language__label__mid" for="language1-2" id="language-toggle-sp" value="sp"> <button type="button" class="toggle-label index language-sp-button" onclick="document.body.className='sp'"> SP </button>
           <span class="hidden"></span>
         </label>
       </div>
@@ -57,22 +57,22 @@
     <div id="slide-nav" class="slide-content">
       <button type="button" id="close" class="close-btn" aria-label="close navigation">&times;</button>
       <ul id="link-list">
-            <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="index.html"> HOME </a></li>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="index.html"> INICIAL </a></li>
-                <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="introduction.html"> INTRODUCTION </a></li>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="introduction.html"> INTRODUCCIÓN </a></li>
-                <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="objects/objects.html"> OBJECTS </a>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="objects/objects.html"> OBJETOS </a>
-                <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="archive/archive.html"> ARCHIVE </a></li>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="archive/archive.html"> ARCHIVO </a></li>
-                <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="dialogues/dialogues.html"> DIALOGUES </a></li>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="dialogues/dialogues.html"> DIÁLOGOS </a></li>
-                <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="guides/teaching-guides.html"> TEACHING GUIDES </a> </li>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="guides/teaching-guides.html"> GUÍAS DOCENTES </a></li>
-                <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="resources/resources.html"> ADDITIONAL RESOURCES </a></li>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="resources/resources.html"> RECURSOS ADICIONALES </a></li>
-                <li class="text-on en toggleable-english-text" id="nav-intro-link"><a href="credits.html"> CREDITS </a></li>
-                <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link"><a href="credits.html"> CRÉDITOS </a></li>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="index.html"> HOME </a></li>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="index.html"> INICIAL </a></li>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="introduction.html"> INTRODUCTION </a></li>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="introduction.html"> INTRODUCCIÓN </a></li>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="objects/objects.html"> OBJECTS </a>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="objects/objects.html"> OBJETOS </a>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="archive/archive.html"> ARCHIVE </a></li>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="archive/archive.html"> ARCHIVO </a></li>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="dialogues/dialogues.html"> DIALOGUES </a></li>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="dialogues/dialogues.html"> DIÁLOGOS </a></li>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="guides/teaching-guides.html"> TEACHING GUIDES </a> </li>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="guides/teaching-guides.html"> GUÍAS DOCENTES </a></li>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="resources/resources.html"> ADDITIONAL RESOURCES </a></li>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="resources/resources.html"> RECURSOS ADICIONALES </a></li>
+            <li class="text-on en toggleable-english-text" id="nav-intro-link" lang="en"><a href="credits.html"> CREDITS </a></li>
+            <li class="text-hidden sp toggleable-spanish-text" id="nav-intro-link" lang="sp"><a href="credits.html"> CRÉDITOS </a></li>
       </ul>
     </div>
   </nav>
@@ -86,8 +86,8 @@
         <h2 class="landing-title-small"> JUDITHE HERNÁNDEZ </h2>
       </div>
       <div class="title-middle">
-        <h1 class="en toggleable-english-text"> FIVE DECADES OF CHICANE MURALISM IN LOS ANGELES </h1>
-        <h1 class="sp toggleable-spanish-text"> CINCO DÉCADAS DE MURALISMO CHICANO EN LOS ÁNGELES </h1>
+        <h1 class="en toggleable-english-text" lang="en"> FIVE DECADES OF CHICANE MURALISM IN LOS ANGELES </h1>
+        <h1 class="sp toggleable-spanish-text" lang="sp"> CINCO DÉCADAS DE MURALISMO CHICANO EN LOS ÁNGELES </h1>
       </div>
       <div class="title-bottom">
         <h2 class="landing-title-small"> GABRIELA RUIZ & RAFA ESPARZA </h2>

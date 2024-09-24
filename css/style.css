@@ -561,14 +561,6 @@ p.introduction {
   line-height: 175% !important;
 }
 
-#intro-section > div > div.row-content.introduction > div > p {
-  display: inline-block;
-}
-
-p.introduction.sp {
-  display: none;
-}
-
 .bottom-column {
   display: flex;
   align-content: center;
@@ -673,25 +665,100 @@ img.objects-artwork-img.rafagabby {
 
 /* SPANISH TOGGLE DISPLAY SETTINGS */
 
-h1.sp {
+/* h1.sp {
+  display: none;
+} */
+
+/* h2.sp {
+  display: none;
+} */
+
+/* p.sp {
+  display: none;
+} */
+
+/* span.sp {
+  display: none;
+} */
+
+/* #open-bottom-row-two > p.sp {
+  display: none;
+} */
+
+/* .resources-title > p.sp {
+  display: none;
+} */
+
+/* .dialogues.sp {
+  display: none;
+  transition: all 1s ease-in-out;
+} */
+
+/* #credits-section > div > div.row-content.credits > div > div:nth-child(1) > div > div > p.thanks.sp {
+  display: none;
+} */
+
+/* div.credits-title-one > p.credits.title.sp {
+  display: none;
+} */
+
+/* div.credits-title-two > p.credits.title.sp {
+  display: none;
+} */
+
+/* #guides-title-two > p.guides.title.sp {
+  display: none;
+} */
+
+/* #guides-title-one > p.guides.title.sp {
+  display: none;
+} */
+
+/* button.sp.toggleable-spanish-text {
   display: none;
 }
 
-h2.sp {
+
+/* p.introduction.sp {
+  display: none;
+} */
+
+/* .toggleable-spanish-text {
+ display: none;
+}
+
+p.introduction.sp.toggleable-spanish-text {
   display: none;
 }
 
-p.sp {
-  display: none;
+.active {
+  display: block !important;
 }
 
-span.sp {
+.reactive {
+  display: none!important;
+} */
+
+/* body.en :lang(sp) {
   display: none;
+}
+body.sp :lang(en) {
+  display: none;
+} */
+
+#intro-section > div > div.row-content.introduction > div > p {
+  display: inline-block;
 }
 
-#open-bottom-row-two > p.sp {
-  display: none;
-}
+/* Home Page Spanish Off */
+
+#landing [lang="sp"] { 
+  display: none; 
+} 
+
+#global [lang="sp"] { 
+  display: none; 
+} 
 
 
 button.toggle-label {
@@ -724,27 +791,6 @@ button.toggle-label.index {
   border-radius: 40px;
   background-color: transparent;
   cursor: pointer;
-}
-
-button.sp.toggleable-spanish-text {
-  display: none;
-}
-
-
-.toggleable-spanish-text {
- display: none;
-}
-
-p.introduction.sp.toggleable-spanish-text {
-  display: none;
-}
-
-.active {
-  display: block !important;
-}
-
-.reactive {
-  display: none!important;
 }
 
 a.skip-main {
@@ -1340,10 +1386,6 @@ button.archive-label {
   padding: 0px 20px 0px 20px;
 }
 
-.resources-title > p.sp {
-  display: none;
-}
-
 .font-change {
   font-family: "Inter", sans-serif !important;
 }
@@ -1602,11 +1644,6 @@ p.dialogues {
   /* transition: all 1s ease-in-out; */
 }
 
-.dialogues.sp {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
 /* Dialogues Main Page Arrow */
 
 #dialogues-arrow {
@@ -1694,18 +1731,6 @@ p.thanks {
   width: 100% !important;
   max-width: 100% !important;
   border-bottom: 1.5px solid #1A1019;
-}
-
-#credits-section > div > div.row-content.credits > div > div:nth-child(1) > div > div > p.thanks.sp {
-  display: none;
-}
-
-div.credits-title-one > p.credits.title.sp {
-  display: none;
-}
-
-div.credits-title-two > p.credits.title.sp {
-  display: none;
 }
 
 p.credits.title {
@@ -1957,14 +1982,6 @@ p.guides.title {
   padding: 0px 20px 0px 20px;
   cursor: pointer;
   line-height: 175% !important;
-}
-
-#guides-title-two > p.guides.title.sp {
-  display: none;
-}
-
-#guides-title-one > p.guides.title.sp {
-  display: none;
 }
 
 .guides-img-wrapper {

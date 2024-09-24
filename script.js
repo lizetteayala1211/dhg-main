@@ -541,8 +541,32 @@ $(document).ready(function () {
   //     //Add active to the clicked button
   //     this.classList.add('active');
   //   })
-  
+
   // })
+  
+
+// $('[lang]').hide(); // hide all lang attributes on start.
+// $('[lang="en"]').show(); // show just Korean text (you can change it)
+// $('.language').change(function () { // put onchange event when user select option from select
+//     var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+//     switch (lang) {
+//         case 'sp':
+//             $('[lang]').hide();
+//             $('[lang="sp"]').show();
+//         break;
+//         case 'en':
+//             $('[lang]').hide();
+//             $('[lang="en"]').show();
+//         break;
+//         default:
+//             $('[lang]').hide();
+//             $('[lang="en"]').show();
+//         }
+// });
+
+
+
+
 
 
 
