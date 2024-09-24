@@ -746,8 +746,8 @@ body.sp :lang(en) {
   display: none;
 } */
 
-#intro-section > div > div.row-content.introduction > div > p {
-  display: inline-block;
+#intro-section > div > div.row-content.introduction > div > p[lang="en"] {
+ display: inline-block;
 }
 
 /* Home Page Spanish Off */
