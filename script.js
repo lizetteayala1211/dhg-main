@@ -194,333 +194,246 @@ $(document).ready(function () {
   els(".carousel").forEach(carousel);
 
 
-  // Language Toggle EN/SP Global //
-
-  // // Introduction Page
-  // $(".introduction.sp.toggleable-spanish-text").removeClass('active');
-  // $(".introduction.sp.toggleable-spanish-text").addClass('reactive');
-  // $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-
-  // // Teaching Guide(s) Page
-  // $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('active');
-  // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('reactive');
-  // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('active');
-  // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('reactive');
-  // $(".guides.01.hidden.sp.toggleable-spanish-text").attr('style', 'display: none !important');
-
-  // // Credits Page
-  // $(".accordion-content.01").slideToggle("slow");
-  // $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
-  // $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-  // $(".accordion-content.02").slideToggle("slow");
-  // $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
-  // $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-
-  // $(".about.hidden.sp.toggleable-spanish-text").addClass('reactive');
-
-
+////// Language Toggle EN/SP Global //////
 
   // Switching to English
   $(".language-en-button").on("click", function () {
 
-  // Introduction Page
-  $(".introduction.sp.toggleable-spanish-text").removeClass('active');
-  $('.introduction.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-
-  // Credits Page
-  // $('.credits.02.hidden.en.toggleable-english-text').removeClass('reactive');
-  // $('.credits.02.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
-  // $('.credits.02.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-  // $('.credits.02.hidden.sp.toggleable-spanish-text').addClass('reactive');
-  // $('.credits.02.hidden.en.toggleable-english-text').addClass('active');
-  // $('.curators.01.hidden.en.toggleable-english-text').removeClass('reactive');
-  // $('.curators.01.hidden.en.toggleable-english-text').addClass('active');
-  // $('.credits.01.hidden.sp.toggleable-spanish-text').addClass('reactive');
-  // $('.curators.01.hidden.en.toggleable-english-text').attr('style', 'display: block !important');
-  // $('.curators.01.hidden.sp.toggleable-spanish-text').attr('style', 'display: none !important');
-  
-
-    // $(".about.hidden.en.toggleable-english-text").css('display', 'block');
-    // $(".toggleable-english-text").css('display', 'block');
-    // $(".toggleable-spanish-text").css('display', 'none');
-    // $(".accordion-content").css('display', 'none');
-    // $(".toggleable-spanish-text").hide();
-    // $(".toggleable-english-text").show();
-
-    if ($(".toggleable-english-text").css("display") == 'block') {
-      $(".toggleable-spanish-text").hide();
-    } else {
-      $(".toggleable-english-text").css('display', 'block');
-    }
+    $('[lang="sp"]').hide();
+    $('#landing [lang="en"]').css('display', 'block');
+    $('#global [lang="en"]').css('display', 'block');
   });
 
   // Switching to Spanish
   $(".language-sp-button").on("click", function () {
 
-    // Introduction Page
-    $(".introduction.sp.toggleable-spanish-text").removeClass('reactive');
-    $(".introduction.sp.toggleable-spanish-text").addClass('active');
+      $('[lang="sp"]').show();
+      $('#landing [lang="en"]').css('display', 'none');
+      $('#global [lang="en"]').css('display', 'none');
 
-     // Teaching Guide Page
-    // $(".guides.02.hidden.en.toggleable-english-text").toggleClass('reactive');
-    // $(".guides.01.hidden.en.toggleable-english-text").toggleClass('reactive');
-
-    // $(".guides.02.hidden.sp.toggleable-spanish-text").removeClass('reactive');
-
-    // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
-
-    // Object Inner Pages
-    // $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
-    // $(".about.hidden.sp.toggleable-spanish-text").removeClass('reactive');
-
-    // // Credits Page
-    // $('.credits.02.hidden.en.toggleable-english-text').addClass('reactive');
-    // $('.curators.01.hidden.en.toggleable-english-text').addClass('reactive');
-
-    // $(".toggleable-spanish-text").css('display', 'block');
-    // $(".toggleable-english-text").css('display', 'none');
-    // $(".accordion-content").css('display', 'none');
-    // $(".toggleable-spanish-text").show();
-    // $(".toggleable-english-text").hide();
-
-    if ($(".toggleable-spanish-text").css("display") == 'block') {
-      $(".toggleable-english-text").hide();
-    } else {
-      $(".toggleable-spanish-text").css('display', 'none');
-    }
   });
 
-  // ////// Show/Hide (Object Inner Pages) Button Toggle ///////
-  // $('#open-bottom-row-two').click(function () {
-  //   var toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  //   $(".accordion-content").css('display', 'block');
-  // })
 
-  // // Object Inner Pages (About) Drawer Toggle Open //
-  // let buttons = document.querySelectorAll('button.objects');
-  // let bios = document.querySelectorAll('.about');
+////// Show/Hide (Object Inner Pages) Button Toggle ///////
+  $('#open-bottom-row-two').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".artist-bio.accordion-content").slideToggle();
+  })
 
-  // buttons.forEach(button => {
-  //   button.addEventListener('click', e => {
-  //     bios.forEach(about => {
-  //       about.style.display = about.id === e.target.dataset.about ? 'block' : 'none';
-  //     });
-  //     $(".accordion-content").slideToggle("slow");
-  //   });
-  // });
+// Object Inner Pages (About) Drawer Toggle Open //
+  let buttons = document.querySelectorAll('button.objects');
+  let bios = document.querySelectorAll('.about');
 
-  //   // Object Inner Pages
-  //   $(".about.hidden.sp.toggleable-spanish-text").css('display', 'block');
+  buttons.forEach(button => {
+    button.addEventListener('click', e => {
+      bios.forEach(about => {
+        about.style.display = about.id === e.target.dataset.about ? 'block' : 'none';
+      });
+      // $(".artist-bio.accordion-content").slideUp("slow");
+    });
+  });
 
+////// Show/Hide (Credits 01) Button Toggle ///////
+  $('.credits-title-one').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".accordion-content.first").slideToggle("slow");
+  })
 
+  // Credits Page (Curator) Drawer Toggle Open //
+  let curator = document.querySelectorAll('button.curators');
+  let cucopy = document.querySelectorAll('.curators');
 
+  curator.forEach(button => {
+    button.addEventListener('click', e => {
+      cuopy.forEach(curators => {
+        curators.style.display = curators.id === e.target.dataset.curators ? 'block' : 'none';
+      });
+      $(".accordion-content.first").slideToggle("slow");
+    });
+  });
 
-  // ////// Show/Hide (Credits 01) Button Toggle ///////
-  // $('.credits-title-one').click(function () {
-  //   var toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  //   $(".curators.01.hidden").css('display', 'block');
-  //   $(".accordion-content.01").slideToggle("slow");
-  //   $('.curators.01.hidden.sp.toggleable-spanish-text').slideToggle("fast");
-  //   $('.curators.01.hidden').slideToggle("slow");
-  //   $('.label-hr.d-a.hidden').slideToggle("fast");
-  // })
+  ////// Show/Hide (Credits 02) Button Toggle ///////
+  $('.credits-title-two').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".credit-bios.accordion-content.second").slideToggle("slow");
+  })
 
-  // // Credits Page (Curator) Drawer Toggle Open //
-  // $('.credits-title-one').on('click', function () {
-  //   $('.label-hr.curators-line.hidden').slideToggle("fast");
-  // }
-  // );
+  // Credits Page (Contributor) Drawer Toggle Open //
+  let contributor = document.querySelectorAll('button.contributors-top');
+  let cocopy = document.querySelectorAll('.cp');
 
-  // ////// Show/Hide (Credits 02) Button Toggle ///////
-  // $('.credits-title-two').click(function () {
-  //   var toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  //   $(".credits.02.hidden").css('display', 'block');
-  //   $(".accordion-content.02").slideToggle("slow");
-  //   $('.credits.02.hidden.en.toggleable-english-text').slideToggle("fast");
-  //   $('.credits.02.hidden.sp.toggleable-spanish-text').slideToggle("fast");
-  //   $('.credits.02.hidden').slideToggle("slow");
-  // })
+  contributor.forEach(button => {
+    button.addEventListener('click', e => {
+      cocopy.forEach(cp => {
+        cp.style.display = cp.id === e.target.dataset.cp ? 'block' : 'none';
+      });
+      $(".credit-bios.accordion-content.second").slideToggle("slow");
+    });
+  });
 
-  // // Credits Page (Contributor) Drawer Toggle Open //
-  // $('.credits-title-two').on('click', function () {
-  //   $('.label-hr.contributors.hidden').slideToggle("slow");
-  // }
-  // );
+  ////// Show/Hide (Resources 01) Button Toggle ///////
+  $('.resources-title.first').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".digital-archives.accordion-content").slideToggle("slow");
+  })
 
-  // let creditsbuttons = document.querySelectorAll('button.credits');
-  // let creditbios = document.querySelectorAll('.credits');
+  // Resources Page (Digital Archives) Drawer Toggle Open //
+  let digitals = document.querySelectorAll('button.digital-top');
+  let dcopy = document.querySelectorAll('.digital');
 
-  // creditsbuttons.forEach(button => {
-  //   button.addEventListener('click', e => {
-  //     creditbios.forEach(about => {
-  //       credits.style.display = credits.id === e.target.dataset.credits ? 'block' : 'none';
-  //     });
-  //     $(".accordion-content").slideToggle("slow");
-  //   });
-  // });
+  digitals.forEach(button => {
+    button.addEventListener('click', e => {
+      dcopy.forEach(digital => {
+        digital.style.display = digital.id === e.target.dataset.digital ? 'block' : 'none';
+      });
+      $(".digital-archives.accordion-content").slideToggle("slow");
+    });
+  });
 
+  ////// Show/Hide (Resources 02) Button Toggle ///////
+  $('.resources-title.second').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".books-articles.accordion-content").slideToggle("slow");
+  })
 
+  // Resources Page (Books & Articles) Drawer Toggle Open //
+  let bookandsnarticles = document.querySelectorAll('button.books-articles-top');
+  let bcopy = document.querySelectorAll('.ba');
 
+  bookandsnarticles.forEach(button => {
+    button.addEventListener('click', e => {
+      bcopy.forEach(ba => {
+        ba.style.display = ba.id === e.target.dataset.ba ? 'block' : 'none';
+      });
+      $(".books-articles.accordion-content").slideToggle("slow");
+    });
+  });
 
-  // ////// Show/Hide (Resources) Button Toggle ///////
-  // $('.resources-title.first').click(function () {
-  //   var toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  //   $(".accordion-content").css('display', 'block');
-  //   $('.label-hr.d-a.hidden').slideToggle("fast");
-  // })
+  ////// Show/Hide (Resources 02) Button Toggle ///////
+  $('.resources-title.third').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".interviews-profiles.accordion-content").slideToggle("slow");
+  })
 
-  // // Resources Page (Digital Archives) Drawer Toggle Open //
-  // $('.resources-title.first').on('click', function () {
-  //   var toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  //   $('.resources.archives.hidden').slideToggle("slow");
-  //   $('.label-hr.d-a.hidden').slideToggle("fast");
-  // }
-  // );
+  // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
+  let interviewsnprofiles = document.querySelectorAll('button.interviews-profiles-top');
+  let icopy = document.querySelectorAll('.ip');
 
-  // // Resources Page (Books & Articles) Drawer Toggle Open //
-  // $('.resources-title.second').on('click', function () {
-  //   $('.resources.books-articles.hidden').slideToggle("slow");
-  //   $('.label-hr.b-a.hidden').slideToggle("fast");
-  // }
-  // );
+  interviewsnprofiles.forEach(button => {
+    button.addEventListener('click', e => {
+      icopy.forEach(ip => {
+        ip.style.display = ip.id === e.target.dataset.ip ? 'block' : 'none';
+      });
+      $(".interviews-profiles.accordion-content").slideToggle("slow");
+    });
+  });
 
-  // // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
-  // $('.resources-title.third').on('click', function () {
-  //   $('.resources.interviews-profiles.hidden').slideToggle("slow");
-  //   $('.label-hr.r-i-p.hidden').slideToggle("fast");
-  // }
-  // );
+  ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
+  $('#guides-title-one').click(function () {
+    var toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+    $(".guides-copy.accordion-content.first").slideToggle("slow");
+  })
 
+  // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
+  let mujeresinmurals = document.querySelectorAll('button.la-harlem-top');
+  let lcopy = document.querySelectorAll('.la');
 
+  mujeresinmurals.forEach(button => {
+    button.addEventListener('click', e => {
+      lcopy.forEach(la => {
+        la.style.display = la.id === e.target.dataset.la ? 'block' : 'none';
+      });
+      $(".guides-copy.accordion-content.first").slideToggle("slow");
+    });
+  });
 
+////// Show/Hide (Teaching Guide 02) Button Toggle ///////
+$('#guides-title-two').click(function () {
+  var toggleIcon = $(this).find('.toggle_icon');
+  toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
+  $(".guides-copy.accordion-content.second").slideToggle("slow");
+})
 
-  // ////// Show/Hide (Dialogues) Button Toggle ///////
-  // $('.dialogues-title').click(function () {
-  //   let toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
-  // });
+// Teaching Guides Page (Lesson 01) Drawer Toggle Open //
+let neighborhoodnmurals = document.querySelectorAll('button.neighborhood-murals-top');
+let ncopy = document.querySelectorAll('.nm');
 
-  // // Dialogues Page (Dialogue 01) Drawer Toggle Open //
-  // $('.dialogues-title.first').on('click', function () {
-
-  //   // close all other dialogues
-  //   $('#timoi-ladypink.hidden').slideUp("fast");
-  //   $('#yreina-judithe.hidden').slideUp("fast");
-  //   $('.dialogues.02.moderator.hidden').slideUp("fast");
-  //   $('.dialogues.02.first-person.hidden').slideUp("fast");
-  //   $('.dialogues.02.second-person.hidden').slideUp("fast");
-  //   $('.dialogues.02.end.hidden').slideUp("fast");
-  //   $('.dialogues.03.moderator.hidden').slideUp("fast");
-  //   $('.dialogues.03.first-person.hidden').slideUp("fast");
-  //   $('.dialogues.03.second-person.hidden').slideUp("fast");
-  //   $('.dialogues.03.end.hidden').slideUp("fast");
-
-
-  //   // set up '+' for all other dialogues
-  //   $('.dialogues-title.second .toggle_icon').text('+');
-  //   $('.dialogues-title.third .toggle_icon').text('+');
-
-  //   // open dialogue 01
-  //   $('.dialogues.01.first-person.hidden').slideToggle("fast");
-  //   $('.dialogues.01.second-person.hidden').slideToggle("fast");
-  //   $('.dialogues.01.end.hidden').slideToggle("fast");
-  //   $('#patssi-mario.hidden').slideToggle("slow");
-  // });
-
-  // // Dialogues Page (Dialogue 02) Drawer Toggle Open //
-  // $('.dialogues-title.second').on('click', function () {
-  //   // close all other dialogues
-  //   $('.dialogues.01.first-person.hidden').slideUp("fast");
-  //   $('.dialogues.01.second-person.hidden').slideUp("fast");
-  //   $('.dialogues.01.end.hidden').slideUp("fast");
-  //   $('#patssi-mario.hidden').slideUp("slow");
-  //   $('.dialogues.03.moderator.hidden').slideUp("fast");
-  //   $('.dialogues.03.first-person.hidden').slideUp("fast");
-  //   $('.dialogues.03.second-person.hidden').slideUp("fast");
-  //   $('.dialogues.03.end.hidden').slideUp("fast");
-  //   $('#yreina-judithe.hidden').slideUp("fast");
-
-  //   // set up '+' for all other dialogues
-  //   $('.dialogues-title.first .toggle_icon').text('+');
-  //   $('.dialogues-title.third .toggle_icon').text('+');
-
-  //   // open dialogue 02
-  //   $('.dialogues.02.moderator.hidden').slideToggle("slow");
-  //   $('.dialogues.02.first-person.hidden').slideToggle("slow");
-  //   $('.dialogues.02.second-person.hidden').slideToggle("slow");
-  //   $('.dialogues.02.end.hidden').slideToggle("slow");
-  //   $('#timoi-ladypink.hidden').slideToggle("slow");
-  // });
-
-  // // Dialogues Page (Dialogue 03) Drawer Toggle Open //
-  // $('.dialogues-title.third').on('click', function () {
-  //   // close all other dialogues
-  //   $('.dialogues.01.first-person.hidden').slideUp("slow");
-  //   $('.dialogues.01.second-person.hidden').slideUp("slow");
-  //   $('.dialogues.01.end.hidden').slideUp("slow");
-  //   $('#patssi-mario.hidden').slideUp("slow");
-  //   $('.dialogues.02.moderator.hidden').slideUp("slow");
-  //   $('.dialogues.02.first-person.hidden').slideUp("slow");
-  //   $('.dialogues.02.second-person.hidden').slideUp("slow");
-  //   $('.dialogues.02.end.hidden').slideUp("slow");
-  //   $('#timoi-ladypink.hidden').slideUp("slow");
-
-  //   // set up '+' for all other dialogues
-  //   $('.dialogues-title.first .toggle_icon').text('+');
-  //   $('.dialogues-title.second .toggle_icon').text('+');
-
-  //   // open dialogue 03
-  //   $('.dialogues.03.moderator.hidden').slideToggle("slow");
-  //   $('.dialogues.03.first-person.hidden').slideToggle("slow");
-  //   $('.dialogues.03.second-person.hidden').slideToggle("slow");
-  //   $('.dialogues.03.end.hidden').slideToggle("slow");
-  //   $('#yreina-judithe.hidden').slideToggle("slow");
-  // });
-
-
-
-
-  // ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
-  // $('#guides-title-two').click(function () {
-  //   var toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  //   $(".accordion-content.02").css('display', 'block');
-  // })
-
-  // // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
-  // $('#guides-title-two').on('click', function () {
-  //   // $('.label-hr.guides-02.hidden').addClass('active');
-  //   $('.label-hr.guides-02.hidden').slideToggle("fast");
-  //   $('.guides.02.hidden').slideToggle("slow");
-  //   // $(".guides.02.hidden.sp.toggleable-spanish-text").addClass('active');
-  // }
-  // );
-
-  // ////// Show/Hide (Teaching Guide 02) Button Toggle ///////
-  // $('#guides-title-one').click(function () {
-  //   var toggleIcon = $(this).find('.toggle_icon');
-  //   toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
-  //   $('.label-hr.guides-01.hidden').slideToggle("fast");
-  //   $(".accordion-content.01").css('display', 'block');
-  // })
-
-  // ////// Teaching Guides Page (Lesson 02) Drawer Toggle Open ///////
-  // $('#guides-title-one').on('click', function () {
-  //   $('.guides.01.hidden').slideToggle("slow");
-  //   // $(".guides.01.hidden.sp.toggleable-spanish-text").removeClass('reactive');
-  //   // $(".guides.01.hidden.sp.toggleable-spanish-text").addClass('active');
-  // }
-  // );
-
+neighborhoodnmurals.forEach(button => {
+  button.addEventListener('click', e => {
+    ncopy.forEach(nm => {
+      nm.style.display = nm.id === e.target.dataset.nm ? 'block' : 'none';
+    });
+    $(".guides-copy.accordion-content.second").slideToggle("slow");
+  });
+});
   
-
-  // 
+  ////// Show/Hide (Dialogues 01) Button Toggle ///////
+  $('.dialogues-title.first').click(function () {
+    let toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
+    $(".dialogues-copy-container.accordion-content.first").slideToggle("slow");
+  });
   
+  // Dialogues Page (01, Patssi & Mario) Drawer Toggle Open //
+  let patssinmario = document.querySelectorAll('button.patssi-mario-top');
+  let pmcopy = document.querySelectorAll('.pm');
+  
+  patssinmario.forEach(button => {
+    button.addEventListener('click', e => {
+      pmcopy.forEach(pm => {
+        pm.style.display = pm.id === e.target.dataset.pm ? 'block' : 'none';
+      });
+      $(".dialogues-copy-container.accordion-content.first.pm").slideToggle("slow");
+    });
+  });
+
+  ////// Show/Hide (Dialogues 02) Button Toggle ///////
+  $('.dialogues-title.second').click(function () {
+    let toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
+    $(".dialogues-copy-container.accordion-content.second").slideToggle("slow");
+  });
+
+  // Dialogues Page (02, Timoi & Lady Pink) Drawer Toggle Open //
+  let timoinladypink = document.querySelectorAll('button.timoi-ladypink-top');
+  let tlpcopy = document.querySelectorAll('.tlp');
+  
+  timoinladypink.forEach(button => {
+    button.addEventListener('click', e => {
+      tlpcopy.forEach(tlp => {
+        tlp.style.display = tlp.id === e.target.dataset.tlp ? 'block' : 'none';
+      });
+      $(".dialogues-copy-container.accordion-content.second").slideToggle("slow");
+    });
+  });
+
+  ////// Show/Hide (Dialogues 03) Button Toggle ///////
+  $('.dialogues-title.third').click(function () {
+    let toggleIcon = $(this).find('.toggle_icon');
+    toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
+    $(".dialogues-copy-container.accordion-content.third").slideToggle("slow");
+  });
+
+  // Dialogues Page (03, Yreina & Judithe) Drawer Toggle Open //
+  let yreinanjudithe = document.querySelectorAll('button.yreina-judithe-top');
+  let yjpcopy = document.querySelectorAll('.yj');
+  
+  yreinanjudithe.forEach(button => {
+    button.addEventListener('click', e => {
+      yjpcopy.forEach(tlp => {
+        yj.style.display = yj.id === e.target.dataset.yj ? 'block' : 'none';
+      });
+      $(".dialogues-copy-container.accordion-content.third").slideToggle("slow");
+    });
+  });
+
   // <!-- Archive Page Shuffle Effect -->
 
   // $(function () {

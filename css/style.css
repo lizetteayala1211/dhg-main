@@ -517,7 +517,7 @@ a.arrow {
 }
 
 .label-hr.hidden {
-  display: none;
+  /* display: none; */
   transition: all 1s ease-in-out;
 }
 
@@ -665,87 +665,6 @@ img.objects-artwork-img.rafagabby {
 
 /* SPANISH TOGGLE DISPLAY SETTINGS */
 
-/* h1.sp {
-  display: none;
-} */
-
-/* h2.sp {
-  display: none;
-} */
-
-/* p.sp {
-  display: none;
-} */
-
-/* span.sp {
-  display: none;
-} */
-
-/* #open-bottom-row-two > p.sp {
-  display: none;
-} */
-
-/* .resources-title > p.sp {
-  display: none;
-} */
-
-/* .dialogues.sp {
-  display: none;
-  transition: all 1s ease-in-out;
-} */
-
-/* #credits-section > div > div.row-content.credits > div > div:nth-child(1) > div > div > p.thanks.sp {
-  display: none;
-} */
-
-/* div.credits-title-one > p.credits.title.sp {
-  display: none;
-} */
-
-/* div.credits-title-two > p.credits.title.sp {
-  display: none;
-} */
-
-/* #guides-title-two > p.guides.title.sp {
-  display: none;
-} */
-
-/* #guides-title-one > p.guides.title.sp {
-  display: none;
-} */
-
-/* button.sp.toggleable-spanish-text {
-  display: none;
-}
-
-
-/* p.introduction.sp {
-  display: none;
-} */
-
-/* .toggleable-spanish-text {
- display: none;
-}
-
-p.introduction.sp.toggleable-spanish-text {
-  display: none;
-}
-
-.active {
-  display: block !important;
-}
-
-.reactive {
-  display: none!important;
-} */
-
-/* body.en :lang(sp) {
-  display: none;
-}
-body.sp :lang(en) {
-  display: none;
-} */
-
 #intro-section > div > div.row-content.introduction > div > p[lang="en"] {
  display: inline-block;
 }
@@ -759,6 +678,39 @@ body.sp :lang(en) {
 #global [lang="sp"] { 
   display: none; 
 } 
+
+.credit-bios.accordion-content {
+  display: none;
+}
+
+.artist-bio.accordion-content {
+  display: none;
+}
+
+.digital-archives.accordion-content {
+  display: none;
+}
+
+.interviews-profiles.accordion-content {
+  display: none;
+}
+
+.books-articles.accordion-content {
+  display: none;
+}
+
+.guides-copy.accordion-content {
+  display: none;
+}
+
+.credit-bios.accordion-content {
+  display: none;
+}
+
+.dialogues-copy-container.accordion-content {
+  display: none;
+}
+
 
 
 button.toggle-label {
@@ -1006,7 +958,7 @@ p.transparent {
 }
 
 p.hidden {
-  display: none;
+  /* display: none; */
   transition: all 1s ease-in-out;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -1019,7 +971,6 @@ p.hidden {
 p.about.hidden.sp.toggleable-spanish-text {
   display: none;
 } */
-
 
 
 p.about {
@@ -1409,7 +1360,7 @@ p.resources {
 }
 
 .resources.hidden {
-  display: none;
+  /* display: none; */
   transition: all 1s ease-in-out;
   width: 90% !important;
 }
@@ -1588,7 +1539,7 @@ p.dialogues {
 }
 
 .moderator.hidden {
-  display: none;
+  /* display: none; */
   transition: all 1s ease-in-out;
 }
 
@@ -1600,7 +1551,7 @@ p.dialogues {
 }
 
 .first-person.hidden {
-  display: none;
+  /* display: none; */
   transition: all 1s ease-in-out;
   flex-direction: column;
   width: 80%;
@@ -1619,29 +1570,19 @@ p.dialogues {
   /* padding: 0px 20px 0px 20px; */
 }
 
-.second-person.hidden {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
-.end.hidden {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
 #patssi-mario.hidden {
   display: none;
-  /* transition: all 1s ease-in-out; */
+  /* transition: all 5s ease-in-out; */
 }
 
 #timoi-ladypink.hidden {
   display: none;
-  /* transition: all 1s ease-in-out; */
+  /* transition: all 5s ease-in-out; */
 }
 
 #yreina-judithe.hidden {
   display: none;
-  /* transition: all 1s ease-in-out; */
+  /* transition: all 5s ease-in-out; */
 }
 
 /* Dialogues Main Page Arrow */
@@ -1828,21 +1769,6 @@ a.thanks:hover {
   width: 88%;
 }
 
-.curators.hidden {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
-.credits.hidden {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
-.thanks.hidden {
-  display: none;
-  transition: all 1s ease-in-out;
-}
-
 .credit-logos-wrapper {
   display: flex;
   flex-direction: row;
@@ -1971,7 +1897,7 @@ p.guides {
 }
 
 p.guides.hidden {
-  display: none;
+  /* display: none; */
   transition: all 1s ease-in-out;
   margin-top: 30px;
   margin-bottom: 20px;
