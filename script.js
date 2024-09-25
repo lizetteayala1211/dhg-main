@@ -282,17 +282,18 @@ $(document).ready(function () {
   })
 
   // Resources Page (Digital Archives) Drawer Toggle Open //
-  let digitals = document.querySelectorAll('button.digital-top');
-  let dcopy = document.querySelectorAll('.digital');
+  
+  // let digitals = document.querySelectorAll('button.digital-top');
+  // let dcopy = document.querySelectorAll('.digital');
 
-  digitals.forEach(button => {
-    button.addEventListener('click', e => {
-      dcopy.forEach(digital => {
-        digital.style.display = digital.id === e.target.dataset.digital ? 'block' : 'none';
-      });
-      $(".digital-archives.accordion-content").slideToggle("slow");
-    });
-  });
+  // digitals.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     dcopy.forEach(digital => {
+  //       digital.style.display = digital.id === e.target.dataset.digital ? 'block' : 'none';
+  //     });
+  //     $(".digital-archives.accordion-content").slideToggle("slow");
+  //   });
+  // });
 
   ////// Show/Hide (Resources 02) Button Toggle ///////
   $('.resources-title.second').click(function () {
@@ -302,19 +303,21 @@ $(document).ready(function () {
   })
 
   // Resources Page (Books & Articles) Drawer Toggle Open //
-  let bookandsnarticles = document.querySelectorAll('button.books-articles-top');
-  let bcopy = document.querySelectorAll('.ba');
 
-  bookandsnarticles.forEach(button => {
-    button.addEventListener('click', e => {
-      bcopy.forEach(ba => {
-        ba.style.display = ba.id === e.target.dataset.ba ? 'block' : 'none';
-      });
-      $(".books-articles.accordion-content").slideToggle("slow");
-    });
-  });
+  // let bookandsnarticles = document.querySelectorAll('button.books-articles-top');
+  // let bcopy = document.querySelectorAll('.ba');
 
-  ////// Show/Hide (Resources 02) Button Toggle ///////
+  // bookandsnarticles.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     bcopy.forEach(ba => {
+  //       ba.style.display = ba.id === e.target.dataset.ba ? 'block' : 'none';
+  //     });
+  //     $(".books-articles.accordion-content").slideToggle("slow");
+  //   });
+  // });
+
+  ////// Show/Hide (Resources 03) Button Toggle ///////
+
   $('.resources-title.third').click(function () {
     var toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+')
@@ -322,17 +325,17 @@ $(document).ready(function () {
   })
 
   // Resources Page (Artist Interviews & Profiles) Drawer Toggle Open //
-  let interviewsnprofiles = document.querySelectorAll('button.interviews-profiles-top');
-  let icopy = document.querySelectorAll('.ip');
+  // let interviewsnprofiles = document.querySelectorAll('button.interviews-profiles-top');
+  // let icopy = document.querySelectorAll('.ip');
 
-  interviewsnprofiles.forEach(button => {
-    button.addEventListener('click', e => {
-      icopy.forEach(ip => {
-        ip.style.display = ip.id === e.target.dataset.ip ? 'block' : 'none';
-      });
-      $(".interviews-profiles.accordion-content").slideToggle("slow");
-    });
-  });
+  // interviewsnprofiles.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     icopy.forEach(ip => {
+  //       ip.style.display = ip.id === e.target.dataset.ip ? 'block' : 'none';
+  //     });
+  //     $(".interviews-profiles.accordion-content").slideToggle("slow");
+  //   });
+  // });
 
   ////// Show/Hide (Teaching Guide 01) Button Toggle ///////
   $('#guides-title-one').click(function () {
@@ -434,6 +437,7 @@ neighborhoodnmurals.forEach(button => {
     });
   });
 
+
   // <!-- Archive Page Shuffle Effect -->
 
   // $(function () {
@@ -456,33 +460,6 @@ neighborhoodnmurals.forEach(button => {
   //   })
 
   // })
-  
-
-// $('[lang]').hide(); // hide all lang attributes on start.
-// $('[lang="en"]').show(); // show just Korean text (you can change it)
-// $('.language').change(function () { // put onchange event when user select option from select
-//     var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
-//     switch (lang) {
-//         case 'sp':
-//             $('[lang]').hide();
-//             $('[lang="sp"]').show();
-//         break;
-//         case 'en':
-//             $('[lang]').hide();
-//             $('[lang="en"]').show();
-//         break;
-//         default:
-//             $('[lang]').hide();
-//             $('[lang="en"]').show();
-//         }
-// });
-
-
-
-
-
-
-
 
 
 });
