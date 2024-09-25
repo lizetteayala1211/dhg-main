@@ -385,17 +385,17 @@ $('#guides-title-two').click(function () {
   });
   
   // Dialogues Page (01, Patssi & Mario) Drawer Toggle Open //
-  let patssinmario = document.querySelectorAll('button.patssi-mario-top');
-  let pmcopy = document.querySelectorAll('.pm');
+  // let patssinmario = document.querySelectorAll('button.patssi-mario-top');
+  // let pmcopy = document.querySelectorAll('.pm');
   
-  patssinmario.forEach(button => {
-    button.addEventListener('click', e => {
-      pmcopy.forEach(pm => {
-        pm.style.display = pm.id === e.target.dataset.pm ? 'block' : 'none';
-      });
-      $(".dialogues-copy-container.accordion-content.first.pm").slideToggle("slow");
-    });
-  });
+  // patssinmario.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     pmcopy.forEach(pm => {
+  //       pm.style.display = pm.id === e.target.dataset.pm ? 'block' : 'none';
+  //     });
+  //     $(".dialogues-copy-container.accordion-content.first.pm").slideToggle("slow");
+  //   });
+  // });
 
   ////// Show/Hide (Dialogues 02) Button Toggle ///////
   $('.dialogues-title.second').click(function () {
@@ -405,17 +405,17 @@ $('#guides-title-two').click(function () {
   });
 
   // Dialogues Page (02, Timoi & Lady Pink) Drawer Toggle Open //
-  let timoinladypink = document.querySelectorAll('button.timoi-ladypink-top');
-  let tlpcopy = document.querySelectorAll('.tlp');
+  // let timoinladypink = document.querySelectorAll('button.timoi-ladypink-top');
+  // let tlpcopy = document.querySelectorAll('.tlp');
   
-  timoinladypink.forEach(button => {
-    button.addEventListener('click', e => {
-      tlpcopy.forEach(tlp => {
-        tlp.style.display = tlp.id === e.target.dataset.tlp ? 'block' : 'none';
-      });
-      $(".dialogues-copy-container.accordion-content.second").slideToggle("slow");
-    });
-  });
+  // timoinladypink.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     tlpcopy.forEach(tlp => {
+  //       tlp.style.display = tlp.id === e.target.dataset.tlp ? 'block' : 'none';
+  //     });
+  //     $(".dialogues-copy-container.accordion-content.second").slideToggle("slow");
+  //   });
+  // });
 
   ////// Show/Hide (Dialogues 03) Button Toggle ///////
   $('.dialogues-title.third').click(function () {
@@ -425,17 +425,17 @@ $('#guides-title-two').click(function () {
   });
 
   // Dialogues Page (03, Yreina & Judithe) Drawer Toggle Open //
-  let yreinanjudithe = document.querySelectorAll('button.yreina-judithe-top');
-  let yjpcopy = document.querySelectorAll('.yj');
+  // let yreinanjudithe = document.querySelectorAll('button.yreina-judithe-top');
+  // let yjpcopy = document.querySelectorAll('.yj');
   
-  yreinanjudithe.forEach(button => {
-    button.addEventListener('click', e => {
-      yjpcopy.forEach(tlp => {
-        yj.style.display = yj.id === e.target.dataset.yj ? 'block' : 'none';
-      });
-      $(".dialogues-copy-container.accordion-content.third").slideToggle("slow");
-    });
-  });
+  // yreinanjudithe.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     yjpcopy.forEach(tlp => {
+  //       yj.style.display = yj.id === e.target.dataset.yj ? 'block' : 'none';
+  //     });
+  //     $(".dialogues-copy-container.accordion-content.third").slideToggle("slow");
+  //   });
+  // });
 
 
   // <!-- Archive Page Shuffle Effect -->
