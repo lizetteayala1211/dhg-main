@@ -282,7 +282,7 @@ $(document).ready(function () {
   })
 
   // Resources Page (Digital Archives) Drawer Toggle Open //
-  
+
   // let digitals = document.querySelectorAll('button.digital-top');
   // let dcopy = document.querySelectorAll('.digital');
 
@@ -345,17 +345,17 @@ $(document).ready(function () {
   })
 
   // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
-  let mujeresinmurals = document.querySelectorAll('button.la-harlem-top');
-  let lcopy = document.querySelectorAll('.la');
+  // let mujeresinmurals = document.querySelectorAll('button.la-harlem-top');
+  // let lcopy = document.querySelectorAll('.la');
 
-  mujeresinmurals.forEach(button => {
-    button.addEventListener('click', e => {
-      lcopy.forEach(la => {
-        la.style.display = la.id === e.target.dataset.la ? 'block' : 'none';
-      });
-      $(".guides-copy.accordion-content.first").slideToggle("slow");
-    });
-  });
+  // mujeresinmurals.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     lcopy.forEach(la => {
+  //       la.style.display = la.id === e.target.dataset.la ? 'block' : 'none';
+  //     });
+  //     $(".guides-copy.accordion-content.first").slideToggle("slow");
+  //   });
+  // });
 
 ////// Show/Hide (Teaching Guide 02) Button Toggle ///////
 $('#guides-title-two').click(function () {
@@ -365,17 +365,17 @@ $('#guides-title-two').click(function () {
 })
 
 // Teaching Guides Page (Lesson 01) Drawer Toggle Open //
-let neighborhoodnmurals = document.querySelectorAll('button.neighborhood-murals-top');
-let ncopy = document.querySelectorAll('.nm');
+// let neighborhoodnmurals = document.querySelectorAll('button.neighborhood-murals-top');
+// let ncopy = document.querySelectorAll('.nm');
 
-neighborhoodnmurals.forEach(button => {
-  button.addEventListener('click', e => {
-    ncopy.forEach(nm => {
-      nm.style.display = nm.id === e.target.dataset.nm ? 'block' : 'none';
-    });
-    $(".guides-copy.accordion-content.second").slideToggle("slow");
-  });
-});
+// neighborhoodnmurals.forEach(button => {
+//   button.addEventListener('click', e => {
+//     ncopy.forEach(nm => {
+//       nm.style.display = nm.id === e.target.dataset.nm ? 'block' : 'none';
+//     });
+//     $(".guides-copy.accordion-content.second").slideToggle("slow");
+//   });
+// });
   
   ////// Show/Hide (Dialogues 01) Button Toggle ///////
   $('.dialogues-title.first').click(function () {
