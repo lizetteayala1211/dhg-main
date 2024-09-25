@@ -712,7 +712,6 @@ img.objects-artwork-img.rafagabby {
 }
 
 
-
 button.toggle-label {
   /* font-size: 1.8rem; */
   font-size: 16px;
@@ -836,6 +835,7 @@ button.accordion {
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
+  text-align: left;
 }
 
 .object-label-wrapper {
