@@ -262,17 +262,17 @@ $(document).ready(function () {
   })
 
   // Credits Page (Contributor) Drawer Toggle Open //
-  let contributor = document.querySelectorAll('button.contributors-top');
-  let cocopy = document.querySelectorAll('.cp');
+  // let contributor = document.querySelectorAll('button.contributors-top');
+  // let cocopy = document.querySelectorAll('.cp');
 
-  contributor.forEach(button => {
-    button.addEventListener('click', e => {
-      cocopy.forEach(cp => {
-        cp.style.display = cp.id === e.target.dataset.cp ? 'block' : 'none';
-      });
-      $(".credit-bios.accordion-content.second").slideToggle("slow");
-    });
-  });
+  // contributor.forEach(button => {
+  //   button.addEventListener('click', e => {
+  //     cocopy.forEach(cp => {
+  //       cp.style.display = cp.id === e.target.dataset.cp ? 'block' : 'none';
+  //     });
+  //     $(".credit-bios.accordion-content.second").slideToggle("slow");
+  //   });
+  // });
 
   ////// Show/Hide (Resources 01) Button Toggle ///////
   $('.resources-title.first').click(function () {
