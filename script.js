@@ -401,6 +401,8 @@ $('#guides-title-two').click(function () {
     let toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
     $(".dialogues-copy-container.accordion-content.first").slideToggle("slow");
+    $(".dialogues-copy-container.accordion-content.second").css('display', 'none');
+    $(".dialogues-copy-container.accordion-content.third").css('display', 'none');
   });
   
   // Dialogues Page (01, Patssi & Mario) Drawer Toggle Open //
@@ -421,6 +423,8 @@ $('#guides-title-two').click(function () {
     let toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
     $(".dialogues-copy-container.accordion-content.second").slideToggle("slow");
+    $(".dialogues-copy-container.accordion-content.first").css('display', 'none');
+    $(".dialogues-copy-container.accordion-content.third").css('display', 'none');
   });
 
   // Dialogues Page (02, Timoi & Lady Pink) Drawer Toggle Open //
@@ -441,6 +445,8 @@ $('#guides-title-two').click(function () {
     let toggleIcon = $(this).find('.toggle_icon');
     toggleIcon.text(toggleIcon.text() === '+' ? '-' : '+');
     $(".dialogues-copy-container.accordion-content.third").slideToggle("slow");
+    $(".dialogues-copy-container.accordion-content.first").css('display', 'none');
+    $(".dialogues-copy-container.accordion-content.second").css('display', 'none');
   });
 
   // Dialogues Page (03, Yreina & Judithe) Drawer Toggle Open //
